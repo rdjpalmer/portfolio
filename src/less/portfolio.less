@@ -1,0 +1,52 @@
+[role="main"].portfolio {
+  padding: 0;
+  // clearfix
+  overflow: hidden;
+}
+
+.thumbnail:link {
+  background-color: @highlight;
+  background-image: none;
+  display: block;
+  height: 66.666666667%;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.thumbnail + .thumbnail {
+  margin-top: 0;
+}
+
+.thumbnail span {
+  color: #fff;
+  display: none;
+  font-size: 2em;
+  padding: @spacing;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.thumbnail img {
+  display: block;
+  margin-top: 0;
+  border-radius: 0;
+}
+
+.thumbnail:hover span {
+  display: block;
+}
+
+.thumbnail:hover img {
+  opacity: 0.4;
+}
+
+@media(min-width: 37.5em) {
+  .thumbnail:link {
+    width: 50%;
+    float: left;
+  }
+}

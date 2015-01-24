@@ -1,0 +1,344 @@
+@import (less) '../../node_modules/normalize.css/normalize.css';
+
+@lineHeight: 1.475;
+@spacing: @lineHeight*1rem;
+
+@highlight: rgb(192, 31, 46);
+@highlight--alt: rgb(128, 21, 31);
+
+* {
+  box-sizing: border-box;
+}
+
+* + * {
+  margin-top: @spacing;
+}
+
+html, body {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+html {
+  color: #333;
+  font-family: 'freight-sans-pro', 'helvetica', 'arial', 'sans-serif';
+  font-size: 1.3rem;
+  line-height: @lineHeight;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+@import './typography';
+@import './portfolio';
+
+/**
+ * Owl overrides
+ */
+nav, body, header, [role="main"], footer {
+  margin-top: 0;
+}
+
+header {
+  // clearfix
+  overflow: hidden;
+}
+
+nav {
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid rgb(244, 244, 244);
+  // medium style
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+nav ul {
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+nav ul:first-child {
+  margin-top: 0;
+}
+
+nav li {
+  float: left;
+  text-align: center;
+  width: 33.33333%;
+}
+
+nav li + li {
+  margin-top: 0;
+}
+
+nav a:link {
+  background-image: none;
+  cursor: pointer;
+  display: block;
+  padding-bottom: @spacing/2;
+  padding-top: @spacing/2;
+  text-align: center;
+}
+nav a:hover {
+  background-color: @highlight;
+  color: #fff;
+}
+nav a:active {
+  background-color: @highlight--alt;
+  color: #fff;
+}
+
+.logo:link {
+  background-image: none;
+}
+
+.logo > svg {
+  width: 26px;
+  vertical-align: sub;
+}
+
+.logo > svg #SVGID_1_ stop:first-child {
+  stop-color: #333;
+}
+.logo > svg #SVGID_1_ stop:last-child {
+  stop-color: #333;
+}
+
+.logo:hover > svg #SVGID_1_ stop:first-child {
+  stop-color: #fff;
+}
+.logo:hover > svg #SVGID_1_ stop:last-child {
+  stop-color: #fff;
+}
+
+// due to specifity of `:link`, need to include it here
+.close:link {
+  color: white;
+  background-image: none;
+  position: absolute;
+  margin-top: 0;
+  top: @spacing;
+  right: @spacing*2;
+}
+
+.close > svg {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  width: 26px;
+}
+
+.close > svg {
+  fill: #333;
+}
+.close:hover > svg {
+  fill: @highlight;
+}
+
+
+[role="main"] {
+  background-color: #fff;
+  margin-top: 0;
+  padding-top: @spacing*2;
+  padding-left: @spacing*1.5;
+  padding-right: @spacing*1.5;
+  min-height: 100%;
+}
+
+[role="main"] > h1 {
+  margin-top: 0;
+}
+
+nav {
+  border-bottom-width: 0;
+  border-top: 1px solid rgb(244, 244, 244);
+  // medium style
+  border-top: 1px solid rgba(0,0,0,0.15);
+  bottom: 0;
+  position: fixed;
+  z-index: 2;
+}
+
+[role="main"] {
+  padding-bottom: 62px;
+}
+
+// "single column"
+.sc-only {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.mc-only {
+  display: none !important;
+  visibility: hidde !important;
+}
+
+@media(min-width: 68.75em) {
+  h1 {
+    font-size: 3.75rem;
+    font-size: 700;
+    line-height: 0.928;
+  }
+
+  h2 {
+    font-size: 1.526rem;
+    line-height: 0.931;
+    font-weight: 700;
+  }
+
+  article > p:first-of-type {
+    font-size: 1.368em;
+  }
+
+  .sc-only {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  header {
+    float: left;
+    min-height: 100%;
+    padding-top: @spacing*2;
+    padding-left: @spacing*2;
+    padding-right: @spacing*2;
+    position: relative;
+    width: 33.33333%;
+  }
+
+  nav {
+    background-color: transparent;
+    border-bottom-width: 0;
+    // clearfix
+    overflow: hidden;
+    border-top: 0;
+    position: static;
+    text-align: center;
+  }
+
+  nav ul {
+    margin-bottom: 0;
+    list-style-type: none;
+    // hidden
+    overflow: hidden;
+  }
+
+  nav li {
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav li + li {
+    margin-top: 1rem;
+  }
+
+  .blogList li {
+    display: block;
+    text-align: left;
+  }
+
+  nav a:link {
+    display: inline;
+    text-align: center;
+    background-image: linear-gradient(to top,
+      rgba(192, 31, 46, 0) 11%,
+      rgba(192, 31, 46, 0.3) 11%,
+      rgba(192, 31, 46, 0.3) 16%,
+      rgba(192, 31, 46, 0) 16%);
+    padding: 0;
+  }
+  nav a:visited {
+    color: #333;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: @highlight--alt;
+    background: linear-gradient(to top,
+      rgba(128, 21, 31, 0) 11%,
+      rgba(128, 21, 31, 0.3) 11%,
+      rgba(128, 21, 31, 0.3) 16%,
+      rgba(128, 21, 31, 0) 16%);
+  }
+  nav a:active {
+    color: desaturate(@highlight, 20%); 
+  }
+
+  .logo > svg {
+    width: 75px;
+    vertical-align: sub;
+  }
+
+  .logo:hover {
+    background-color: transparent;
+  }
+
+  .logo > svg #SVGID_1_ stop:first-child {
+    stop-color: #BE1E2D;
+  }
+  .logo > svg #SVGID_1_ stop:last-child {
+    stop-color: #F04C23;
+  }
+
+  .logo:hover > svg #SVGID_1_ stop:first-child {
+    stop-color: darken(#BE1E2D, 10%);
+  }
+  .logo:hover > svg #SVGID_1_ stop:last-child {
+    stop-color: darken(#F04C23, 10%);
+  }
+
+  [role="main"] {
+    float: left;
+    width: 66.66666%;
+    padding-left: @spacing*2;
+    padding-right: @spacing*2;
+    padding-bottom: @spacing*2;
+
+    > p, ul, blockquote {
+      max-width: 28rem;
+    }
+  }
+
+  .mc-only {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  border-radius: 2px;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.js-blogListHeading {
+  display: none;
+}
+
+.js-blogListHeading.is-active {
+  display: block;
+}
+
+.padder {
+  display: block;
+  height: 62px;
+  margin-top: 0;
+}
+
+@media(min-width: 68.75em) {
+  .padder {
+    display: none;
+  }
+}

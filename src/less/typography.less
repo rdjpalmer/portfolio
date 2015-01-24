@@ -1,0 +1,93 @@
+h1 {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: #eee;
+  font-size: 2.25rem;
+  font-size: 700;
+  line-height: 0.928;
+  margin-bottom: 0;
+  padding-bottom: @spacing;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 0.931;
+  margin-bottom: 0;
+  margin-top: @spacing;
+}
+
+article > p:first-of-type {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+p {
+  line-height: 1.421;
+}
+
+blockquote {
+  border-width: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: @spacing;
+  border-style: solid;
+  border-left-width: 3px;
+  color: #111;
+  line-height: 1.421;
+  margin-left: -@spacing;
+}
+
+ol, ul {
+  list-style-position: outside;
+  padding-left: 0;
+}
+
+li + li {
+  margin-top: 0;
+}
+
+a:link {
+  background: linear-gradient(to top,
+    rgba(192, 31, 46, 0) 11%,
+    rgba(192, 31, 46, 0.3) 11%,
+    rgba(192, 31, 46, 0.3) 16%,
+    rgba(192, 31, 46, 0) 16%);
+  color: @highlight;
+  text-decoration: none;
+}
+a:visited {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: @highlight--alt;
+  background: linear-gradient(to top,
+    rgba(128, 21, 31, 0) 11%,
+    rgba(128, 21, 31, 0.3) 11%,
+    rgba(128, 21, 31, 0.3) 16%,
+    rgba(128, 21, 31, 0) 16%);
+}
+a:active {
+  color: desaturate(@highlight, 20%); 
+}
+
+h1 a:link {
+  background-image: none;
+  border-color: @highlight;
+  color: @highlight;
+}
+h1 a:hover {
+  background-image: none;
+  border-color: @highlight--alt;
+  color: @highlight--alt;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 2px;
+}
