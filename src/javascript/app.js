@@ -17,7 +17,8 @@
 
   util.removeClass(document.getElementsByTagName('html')[0], 'no-js');
 
-  var tumblrURL = 'blog.rdjpalmer.com';
+  // var tumblrURL = 'blog.rdjpalmer.com';
+  var tumblrURL = 'rdjpalmer.tumblr.com';
   var tumblrAPIKey = 'nScNnSKcxEaOwZE7jlTGHAaz9tkd2JXFb8TQPxK1h0QS7oyGRX';
 
   function buildTumblrArticleList(list, posts) {
@@ -36,12 +37,14 @@
   }
 
   function buildTumblrArticleLists(posts) {
-    var listHeading = document.getElementsByClassName('js-blogListHeading')[0];
+    var listHeadings = document.getElementsByClassName('js-blogListHeading');
     var aboutWritingHeading = document.getElementsByClassName('js-aboutWriting')[0];
     var parentLists = document.getElementsByClassName('js-blogList');
 
-    if(listHeading) {
-      util.addClass(listHeading, 'is-active');
+    if(listHeadings.length >= 1) {
+      for(var i = 0; i < listHeadings.length; i++) {
+        util.addClass(listHeadings[i], 'is-active');
+      }
     }
 
     if(aboutWritingHeading) {

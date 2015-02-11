@@ -1,10 +1,18 @@
-@include('./portfolio/prepend.html')
-<article role="main">
-  <h1>Eysys Limited</h1>
-  <p>Interface designer and frontend developer</p>
-  <p>A fully responsive web presence, meeting the core values and high production standards of Eysys Limited.</p>
-  <img src="/images/eysys-idevices.jpg" alt="Eysys Limited's website on Apple devices" />
-  <img src="/images/eysys-1.jpg" alt="Eysys Limited's website 1">
-  <img src="/images/eysys-2.jpg" alt="Eysys Limited's website 2" />
-</article>
-@include('./portfolio/append.html')
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <title>Eysys Limited | Richard D J Palmer's creative portfolio</title>
+    <meta name="description" content="Fully responsive web site, meeting the core values and high production standards of Eysys Limited." />
+    @include('./includes/head.html')
+  </head>
+  <body id="about" class="cf">
+    @include('./includes/header.html')
+    <article role="main">
+      <h1>Eysys Limited</h1>
+      <p>Interface designer and frontend developer</p>
+      <p>A fully responsive web site, meeting the core values and high production standards of Eysys Limited.</p>
+      <img src="http://assets.rdjpalmer.com/images/eysys-idevices.jpg" alt="Eysys Limited's website on Apple devices" />
+      <img src="http://assets.rdjpalmer.com/images/eysys-1.jpg" alt="Eysys Limited's website 1">
+      <img src="http://assets.rdjpalmer.com/images/eysys-2.jpg" alt="Eysys Limited's website 2" />
+    </article>
+    @include('./portfolio/append.html')

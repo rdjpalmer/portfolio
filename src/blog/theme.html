@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <title data-alt-title="Hey buddy! Don't forget about me!">Richard D J Palmer's Blog</title>
+    @include('../html/includes/head.html')
+  </head>
+  <body id="about" class="cf">
+    @include('../html/includes/header.html')
+    <div class="blog" role="main">
+      {block:Posts}
+        {block:Text}
+          <article>          
+            {block:Title}              
+              <h1><a href="{Permalink}">{Title}</a></h1>
+            {/block:Title}
+            {body}
+          </article>
+        {/block:Text}
+      {/block:posts}
+      {block:Pagination}
+      <div class="pagination">
+        {block:PreviousPage}
+        <a class="prev" href="{PreviousPage}">Read a newer article</a>
+        {/block:PreviousPage}
+        {block:NextPage}
+        <a class="next" href="{NextPage}">Read an older article</a>
+        {/block:NextPage}
+      </div>
+      {/block:Pagination}
+      <div>
+        <h3 class="js-blogListHeading">Latest writing</h3>
+        <ul class="js-blogList"></ul>
+      </div>
+      <div class="padder"></div>
+    </div>
+    @include('../html/includes/scripts.html')
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+    <script src="http://assets.rdjpalmer.com/scripts/rdjpalmer-blog.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/railscasts.min.css" rel="stylesheet">
+    <style>pre code.hljs { padding: 16px; padding: 1rem; margin-left: -16px; margin-left: -1rem; margin-right: -16px; margin-right: -1rem; border: 1px solid #ccc;} #cdx { margin-top: 0; }</style>
+  </body>
+</html>

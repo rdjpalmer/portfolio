@@ -1,12 +1,20 @@
-@include('./portfolio/prepend.html')
-<article role="main">     
-  <h1><a href="http://uswadvertisingdesign.co.uk/">University of South Wales Advertising Design Website</a></h1>
-  <p>Design consultant and frontend Developer</p>
-  <p>Fully responsive website, built in <a href="http://grabaperch.com/">Perch CMS</a>.</p>
-  <p><a href="http://uswadvertisingdesign.co.uk/">View website</a>.</p>
-  <img src="/images/uswad-idevices.jpg" alt="University of South Wales Adveritisng Design Website on Apple devices">
-  <img src="/images/uswad-1.jpg" alt="University of South Wales Adveritisng Design Website 1" />
-  <img src="/images/uswad-2.jpg" alt="University of South Wales Adveritisng Design Website 2" />
-  <img src="/images/uswad-3.jpg" alt="University of South Wales Adveritisng Design Website 3" />
-</article>
-@include('./portfolio/append.html')
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <title>University of South Wales Advertising Design | Richard D J Palmer's creative portfolio</title>
+    <meta name="description" content="Fully responsive website for USW's Advertising Design course" />
+    @include('./includes/head.html')
+  </head>
+  <body id="about" class="cf">
+    @include('./includes/header.html')
+    <article role="main">
+      <h1><a href="http://uswadvertisingdesign.co.uk/">University of South Wales Advertising Design Website</a></h1>
+      <p>Design consultant and frontend Developer</p>
+      <p>Fully responsive website, built in <a href="http://grabaperch.com/">Perch CMS</a>.</p>
+      <p><a href="http://uswadvertisingdesign.co.uk/">View website</a>.</p>
+      <img src="http://assets.rdjpalmer.com/images/uswad-idevices.jpg" alt="University of South Wales Adveritisng Design Website on Apple devices">
+      <img src="http://assets.rdjpalmer.com/images/uswad-1.jpg" alt="University of South Wales Adveritisng Design Website 1" />
+      <img src="http://assets.rdjpalmer.com/images/uswad-2.jpg" alt="University of South Wales Adveritisng Design Website 2" />
+      <img src="http://assets.rdjpalmer.com/images/uswad-3.jpg" alt="University of South Wales Adveritisng Design Website 3" />
+    </article>
+    @include('./portfolio/append.html')

@@ -1,12 +1,20 @@
-@include('./portfolio/prepend.html')
-<article role="main">
-  <h1>Recycle Now</h1>
-  <p>Art director and digital illustrator.</p>
-  <p>Television commercial and accompanying illustrations designed to tackle the recycling problem without resorting to fear.</p>
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <title>Recycle Now | Richard D J Palmer's creative portfolio</title>
+    <meta name="description" content="TV spot concept for Recycle Now" />
+    @include('./includes/head.html')
+  </head>
+  <body id="about" class="cf">
+    @include('./includes/header.html')
+    <article role="main">
+      <h1>Recycle Now</h1>
+      <p>Art director and digital illustrator.</p>
+      <p>Television commercial and accompanying illustrations designed to tackle the recycling problem without resorting to fear.</p>
 
-  <div class="video">
-    <iframe src="http://player.vimeo.com/video/32963377?title=0&amp;byline=0&amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <img src="/images/recycle-illustrations.jpg" alt="Recycle Now illustrations">
-</article>
-@include('./portfolio/append.html')
+      <div class="video">
+        <iframe src="http://player.vimeo.com/video/32963377?title=0&amp;byline=0&amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      </div>
+      <img src="http://assets.rdjpalmer.com/images/recycle-illustrations.jpg" alt="Recycle Now illustrations">
+    </article>
+    @include('./portfolio/append.html')

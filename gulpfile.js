@@ -5,6 +5,7 @@ var livereload = require('gulp-livereload');
 
 // html
 var include = require('gulp-file-include');
+var preprocess = require('gulp-preprocess');
 var minifyHTML = require('gulp-minify-html');
 
 // css
@@ -44,14 +45,24 @@ function handleError(err) {
 }
 
 function buildHTML(opts) {
-  // add preprocess here
-  // add minification here
-  // add development check before minifing
+  var env = 'production';
+
+  if(opts.development) {
+    env = 'development';
+  }
+
   gulp.src(opts.src)
     .pipe(include(includeConfiguration))
     .on('error', handleError)
     // cache buster
     .pipe(replace('?v=', '?v=' + UUID()))
+    .on('error', handleError)
+    .pipe(preprocess({
+      'extension': opts.extension,
+      'context': {
+        'NODE_ENV': env
+      }
+    }))
     .on('error', handleError)
     .pipe(minifyHTML())
     .on('error', handleError)
@@ -108,7 +119,8 @@ gulp.task('html', function() {
   buildHTML({
     development: true,
     src: ['./src/html/**/*.html', '!src/html/includes/**/*.html'],
-    dest: './dist'
+    dest: './dist',
+    extension: 'html'
   });
 });
 
@@ -116,9 +128,9 @@ gulp.task('css', function() {
   buildCSS({
     development: true,
     src: './src/less/rdjpalmer.less',
-    dest: './dist',
+    dest: './dist/assets/css/',
     plugins: [
-      autoprefix,
+      autoprefix
       // cleancss
     ]
   });
@@ -130,12 +142,21 @@ gulp.task('javascript', function() {
   buildJS({
     development: true,
     fileList: [
+      filePrefix + '/blog.js'
+    ],
+    dist: 'rdjpalmer-blog.js',
+    dest: './dist/assets/scripts/'
+  });
+
+  buildJS({
+    development: true,
+    fileList: [
       filePrefix + '/position-fixed.js',
       filePrefix + '/jsonp.js',
       filePrefix + '/app.js'
     ],
     dist: 'rdjpalmer.js',
-    dest: './dist'
+    dest: './dist/assets/scripts/'
   });
 });
 
@@ -143,7 +164,69 @@ gulp.task('assets', function() {
   moveStaticAsset({
     development: true,
     src: './src/images/**/*',
-    dest: './dist/images'
+    dest: './dist/assets/images'
+  });
+});
+
+gulp.task('blog', function() {
+  buildHTML({
+    development: true,
+    src: ['./src/blog/**/*.html'],
+    dest: './blog'
+  });
+});
+
+gulp.task('deploy', function() {
+  var jsFilePrefix = './src/javascript';
+
+  buildHTML({
+    development: false,
+    src: ['./src/html/**/*.html', '!src/html/includes/**/*.html'],
+    dest: './dist',
+    extension: 'html'
+  });
+
+  buildHTML({
+    development: false,
+    src: ['./src/blog/**/*.html'],
+    dest: './blog'
+  });
+
+  moveStaticAsset({
+    development: true,
+    src: './src/images/**/*',
+    dest: './dist/assets/images'
+  });
+
+  buildCSS({
+    development: false,
+    src: './src/less/rdjpalmer.less',
+    dest: './dist/assets/css',
+    mapLocation: './',
+    plugins: [
+      autoprefix,
+      cleancss
+    ]
+  });
+
+  buildJS({
+    development: false,
+    fileList: [
+      jsFilePrefix + '/blog.js'
+    ],
+    dist: 'rdjpalmer-blog.js',
+    dest: './dist/assets/scripts'
+  });
+
+  buildJS({
+    development: false,
+    fileList: [
+      jsFilePrefix + '/position-fixed.js',
+      jsFilePrefix + '/jsonp.js',
+      jsFilePrefix + '/app.js'
+    ],
+    dist: 'rdjpalmer.js',
+    dest: './dist/assets/scripts'
   });
 });
 
@@ -157,6 +240,9 @@ gulp.task('watch', function() {
   var htmlWatcher = gulp.watch('./src/html/**/*.html', ['html']);
   htmlWatcher.on('change', logChange);
 
+  var blogWatcher = gulp.watch('./src/blog/**/*.html', ['blog']);
+  blogWatcher.on('change', logChange);
+
   var cssWatcher = gulp.watch('./src/less/**/*.less', ['css']);
   cssWatcher.on('change', logChange);
 
@@ -164,4 +250,4 @@ gulp.task('watch', function() {
   jsWatcher.on('change', logChange);
 });
 
-gulp.task('default', ['html', 'css', 'javascript', 'assets', 'watch']);
+gulp.task('default', ['html', 'css', 'javascript', 'assets', 'blog', 'watch']);

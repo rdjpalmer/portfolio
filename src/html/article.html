@@ -5,27 +5,37 @@
   </head>
   <body id="about" class="cf">
     @include('./includes/header.html')
-    <article role="main">                   
-      <!-- readd link once styles -->       
-      <h1><a href="http://blog.rdjpalmer.com/post/106060299752">Preparing to write&nbsp;CSS</a></h1>
-      
-      <p>Quite recently I’ve been looking at how best to write <a href="https://nudjed.com" target="_blank">Nudjed’s</a> CSS. I’ve looked at everything. Folder structure, CSS pre-processors, style guides and pattern librarys. You name it, I’ve looked at it (… probably). I thought it would be best to share the love, so here’s a bunch of articles I’ve found helpful during this&nbsp;process.</p>
+    <div class="blog" role="main">
+      <article>                        
+        <h1><a href="http://blog.rdjpalmer.com/post/106060299752">Preparing to write&nbsp;CSS</a></h1>
+        
+        <p>Quite recently I’ve been looking at how best to write <a href="https://nudjed.com" target="_blank">Nudjed’s</a> CSS. I’ve looked at everything. Folder structure, CSS pre-processors, style guides and pattern librarys. You name it, I’ve looked at it (… probably). I thought it would be best to share the love, so here’s a bunch of articles I’ve found helpful during this&nbsp;process.</p>
 
-      <blockquote>
-        <p>A style guide is a set of standards for the writing and design of documents, either for general use or for a specific publication, organization, or field. A style guide establishes and enforces style to improve&nbsp;communication. - <cite><a href="http://en.wikipedia.org/wiki/Style_guide" target="_blank">Wikipedia</a></cite></p>
-      </blockquote>
-  
-      <p>So in the context of this article, a style guide is a standard of how to write CSS. A pattern library is a library of components with their relevant mark up, CSS and&nbsp;JavaScript.</p>
+        <blockquote>
+          <p>A style guide is a set of standards for the writing and design of documents, either for general use or for a specific publication, organization, or field. A style guide establishes and enforces style to improve&nbsp;communication. - <cite><a href="http://en.wikipedia.org/wiki/Style_guide" target="_blank">Wikipedia</a></cite></p>
+        </blockquote>
+    
+        <p>So in the context of this article, a style guide is a standard of how to write CSS. A pattern library is a library of components with their relevant mark up, CSS and&nbsp;JavaScript.</p>
 
-      <h2>Lonely Planet</h2>
+        <h2>Lonely Planet</h2>
 
-      <p><a href="http://ianfeather.co.uk" target="_blank">Ian Feather</a> wrote a bunch of articles on <a href="#" target="_blank">Lonely Planet’s</a> frontend, a couple of which were super helpful during my exploration of CSS&nbsp;architecture.</p>
+        <p><a href="http://ianfeather.co.uk" target="_blank">Ian Feather</a> wrote a bunch of articles on <a href="#" target="_blank">Lonely Planet’s</a> frontend, a couple of which were super helpful during my exploration of CSS&nbsp;architecture.</p>
 
-      <ol><li><a href="http://ianfeather.co.uk/css-at-lonely-planet/" target="_blank">Lonely Planet’s CSS</a></li>
-      <li><a href="http://ianfeather.co.uk/a-maintainable-style-guide/" target="_blank">Lonely Planet’s “a maintainable ~~style guide~~ pattern library”</a></li>
-      <li><a href="http://rizzo.lonelyplanet.com/styleguide/ui-components/cards" target="_blank">Lonely Planet’s ~~style guide~~ pattern library</a></li>
-      </ol><p>Note while Ian writes style guide, his articles talk about something much more akin to a pattern library than a style guide. Regardless, you can still get a great insight from&nbsp;them.</p>
-    </article>
+        <ol><li><a href="http://ianfeather.co.uk/css-at-lonely-planet/" target="_blank">Lonely Planet’s CSS</a></li>
+        <li><a href="http://ianfeather.co.uk/a-maintainable-style-guide/" target="_blank">Lonely Planet’s “a maintainable ~~style guide~~ pattern library”</a></li>
+        <li><a href="http://rizzo.lonelyplanet.com/styleguide/ui-components/cards" target="_blank">Lonely Planet’s ~~style guide~~ pattern library</a></li>
+        </ol><p>Note while Ian writes style guide, his articles talk about something much more akin to a pattern library than a style guide. Regardless, you can still get a great insight from&nbsp;them.</p>
+      </article>
+      <div class="pagination">
+        <a class="prev" href="#">Read a newer article</a>
+        <a class="next" href="#">Read an older article</a>
+      </div>
+      <div>
+        <h3 class="js-blogListHeading">Latest writing</h3>
+        <ul class="js-blogList"></ul>
+      </div>
+      <div class="padder"></div>
+    </div>
     @include('./includes/scripts.html')
   </body>
 </html>

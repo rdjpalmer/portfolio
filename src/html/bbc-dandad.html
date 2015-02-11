@@ -1,10 +1,18 @@
-@include('./portfolio/prepend.html')
-<article role="main">
-  <h1>BBC (D&amp;AD)</h1>
-  <p>Concept developer and motion artist</p>
-  <p>BBC Now, a web application concept designed to make the BBC home page dynamic and user focused.</p>
-  <div class="video">
-    <iframe src="http://player.vimeo.com/video/66037745?title=0&amp;byline=0&amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-</article>
-@include('./portfolio/append.html')
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <title>BBC D&amp;AD | Richard D J Palmer's creative portfolio</title>
+    <meta name="description" content="My entry for D&amp;AD's 2013 New Blood competition, for the BBC brief" />
+    @include('./includes/head.html')
+  </head>
+  <body id="about" class="cf">
+    @include('./includes/header.html')
+    <article role="main">
+      <h1>BBC (D&amp;AD)</h1>
+      <p>Concept developer and motion artist</p>
+      <p>BBC Now, a web application concept designed to make the BBC home page dynamic and user focused.</p>
+      <div class="video">
+        <iframe src="http://player.vimeo.com/video/66037745?title=0&amp;byline=0&amp;portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      </div>
+    </article>
+    @include('./portfolio/append.html')

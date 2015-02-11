@@ -23,7 +23,6 @@ html, body {
 html {
   color: #333;
   font-family: 'freight-sans-pro', 'helvetica', 'arial', 'sans-serif';
-  font-size: 1.3rem;
   line-height: @lineHeight;
 }
 
@@ -81,6 +80,7 @@ nav a:link {
   padding-bottom: @spacing/2;
   padding-top: @spacing/2;
   text-align: center;
+  max-height: 62px;
 }
 nav a:hover {
   background-color: @highlight;
@@ -97,6 +97,7 @@ nav a:active {
 
 .logo > svg {
   width: 26px;
+  height: 26px;
   vertical-align: sub;
 }
 
@@ -148,7 +149,7 @@ nav a:active {
   min-height: 100%;
 }
 
-[role="main"] > h1 {
+[role="main"] > h1, article > h1 {
   margin-top: 0;
 }
 
@@ -175,6 +176,12 @@ nav {
 .mc-only {
   display: none !important;
   visibility: hidde !important;
+}
+
+@media(min-width: 37.5em) {
+  html {
+    font-size: 1.3rem;
+  }
 }
 
 @media(min-width: 68.75em) {
@@ -269,6 +276,7 @@ nav {
 
   .logo > svg {
     width: 75px;
+    height: 75px;
     vertical-align: sub;
   }
 
@@ -296,9 +304,15 @@ nav {
     padding-left: @spacing*2;
     padding-right: @spacing*2;
     padding-bottom: @spacing*2;
+  }
 
-    > p, ul, blockquote {
-      max-width: 28rem;
+  [role="main"], article {
+    > p, > ul, > blockquote {
+      max-width: 30rem;
+    }
+
+    > p:first-of-type {
+      max-width: 100%;
     }
   }
 
@@ -341,4 +355,23 @@ nav {
   .padder {
     display: none;
   }
+}
+
+.pagination {
+  // clearfix
+  overflow: hidden;
+  text-align: center;
+}
+
+.pagination a:link {
+  width: 50%;
+  display: block;
+  float: left;
+  background-image: none;
+  margin-top: 0;
+}
+
+// tumblr override
+#cdx {
+  margin-top: 0;
 }

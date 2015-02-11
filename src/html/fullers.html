@@ -1,9 +1,17 @@
-@include('./portfolio/prepend.html')
-<article role="main">                   
-  <h1>Fullers</h1>
-  <p>Art director and user interface designer.</p>
-  <p>An advertising campaign concept, pushing the character of the Fuller's Inns and Hotels.</p>
-  <img src="/images/fullers-insitu.jpg" alt="Fuller's billboard insitu">
-  <img src="/images/fullers-iphone.jpg" alt="Fuller's application">
-</article>
-@include('./portfolio/append.html')
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <title>Fullers | Richard D J Palmer's creative portfolio</title>
+    <meta name="description" content="Advertising campaign concept for Fuller's Inns and Hotels" />
+    @include('./includes/head.html')
+  </head>
+  <body id="about" class="cf">
+    @include('./includes/header.html')
+    <article role="main">                   
+      <h1>Fullers</h1>
+      <p>Art director and user interface designer.</p>
+      <p>An advertising campaign concept, pushing the character of the Fuller's Inns and Hotels.</p>
+      <img src="http://assets.rdjpalmer.com/images/fullers-insitu.jpg" alt="Fuller's billboard insitu">
+      <img src="http://assets.rdjpalmer.com/images/fullers-iphone.jpg" alt="Fuller's application">
+    </article>
+    @include('./portfolio/append.html')

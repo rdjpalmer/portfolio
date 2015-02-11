@@ -1,10 +1,18 @@
-@include('./portfolio/prepend.html')
-<article role="main">
-  <h1>Golden Moscow</h1>
-  <p>Art director and designer</p>
-  <p>A billboard campaign demonstrating the life style benefits of drinking Golden Moscow vodka.</p>
-  <img src="/images/gm-billboard-1.jpg" alt="Golden Moscow Together billboard">
-  <img src="/images/gm-billboard-2.jpg" alt="Golden Moscow Him billboard" />
-  <img src="/images/gm-billboard-3.jpg" alt="Golden Moscow Her billboard" />
-</article>
-@include('./portfolio/append.html')
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <title>Golden Moscow | Richard D J Palmer's creative portfolio</title>
+    <meta name="description" content="Advertising campaign concept for Russian premium vodka brand Golden Moscow" />
+    @include('./includes/head.html')
+  </head>
+  <body id="about" class="cf">
+    @include('./includes/header.html')
+    <article role="main">
+      <h1>Golden Moscow</h1>
+      <p>Art director and designer</p>
+      <p>A billboard campaign demonstrating the life style benefits of drinking Golden Moscow vodka.</p>
+      <img src="http://assets.rdjpalmer.com/images/gm-billboard-1.jpg" alt="Golden Moscow Together billboard">
+      <img src="http://assets.rdjpalmer.com/images/gm-billboard-2.jpg" alt="Golden Moscow Him billboard" />
+      <img src="http://assets.rdjpalmer.com/images/gm-billboard-3.jpg" alt="Golden Moscow Her billboard" />
+    </article>
+    @include('./portfolio/append.html')
