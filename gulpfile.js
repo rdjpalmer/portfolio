@@ -22,6 +22,7 @@ var LessPluginCleanCSS = require("less-plugin-clean-css"),
 
 // js
 var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 var includeConfiguration = {
   prefix: '@',
@@ -93,11 +94,17 @@ function buildCSS(opts) {
 
 function buildJS(opts) {
   // add minification
-  gulp.src(opts.fileList)
+  var js = gulp.src(opts.fileList)
     .pipe(concat(opts.dist))
-    .on('error', handleError)
-    .pipe(gulp.dest(opts.dest))
-    .pipe(livereload());
+    .on('error', handleError);
+
+  if(!opts.development) {
+    js = js.pipe(uglify())
+      .on('error', handleError);
+  }
+
+    js.pipe(gulp.dest(opts.dest))
+      .pipe(livereload());
 }
 
 var moveStaticAsset = function(opts) {
@@ -198,6 +205,12 @@ gulp.task('deploy', function() {
     dest: './dist/assets/images'
   });
 
+  moveStaticAsset({
+    development: true,
+    src: './src/root-assets/**/*',
+    dest: './dist/'
+  });
+
   buildCSS({
     development: false,
     src: './src/less/rdjpalmer.less',
@@ -225,7 +238,7 @@ gulp.task('deploy', function() {
       jsFilePrefix + '/jsonp.js',
       jsFilePrefix + '/app.js'
     ],
-    dist: 'rdjpalmer.js',
+    dist: 'rdjpalmer.min.js',
     dest: './dist/assets/scripts'
   });
 });
