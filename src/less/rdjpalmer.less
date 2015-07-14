@@ -30,6 +30,10 @@ body {
   background-color: rgb(238, 238, 238);
 }
 
+img {
+  max-width: 100%;
+}
+
 @import './typography';
 @import './portfolio';
 
@@ -187,7 +191,7 @@ nav {
 @media(min-width: 68.75em) {
   h1 {
     font-size: 3.75rem;
-    font-size: 700;
+    font-weight: 700;
     line-height: 0.928;
   }
 
@@ -195,10 +199,6 @@ nav {
     font-size: 1.526rem;
     line-height: 0.931;
     font-weight: 700;
-  }
-
-  article > p:first-of-type {
-    font-size: 1.368em;
   }
 
   .sc-only {
@@ -309,10 +309,6 @@ nav {
   [role="main"], article {
     > p, > ul, > blockquote {
       max-width: 30rem;
-    }
-
-    > p:first-of-type {
-      max-width: 100%;
     }
   }
 

@@ -4,16 +4,102 @@
     <title>Kain Owen Strength &amp; Fitness Coaching | Richard D J Palmer's creative portfolio</title>
     <meta name="description" content="Brand identity &amp; Tumblr theme for personal trainer, Kain Owen" />
     @include('./includes/head.html')
+    <!-- @if NODE_ENV='development' -->
+    <link rel="stylesheet" href="assets/css/case-study.css" />
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <link rel="stylesheet" href="assets/css/case-study.css" />
+    <!-- @endif -->
   </head>
-  <body id="about" class="cf">
-    @include('./includes/header.html')
-    <article role="main">
-      <h1>Kain Owen Strength &amp; Fitness Coaching</h1>
-      <p>Designer and Developer</p>
-      <p>Brand identity &amp; Tumblr theme for Cardiff based personal trainer, Kain Owen.</p>
-      <img src="assets/images/kosfc-logo.jpg" alt="Kain Owen Strength &amp; Fitness Coaching logo">
-      <img src="assets/images/kosfc-large.jpg" alt="Kain Owen Strength &amp; Fitness Coaching tumblr theme high res">
-      <img src="assets/images/kosfc-iphone.jpg" alt="Kain Owen Strength &amp; Fitness Coaching tumblr theme low res">
-      <img src="assets/images/kosfc-wild.jpg" alt="Kain Owen Strength &amp; Fitness Coaching branding in the wild">
+  <body class="cf">
+    <nav>
+      <ul>
+        <li><a class="logo" href="/">@include('./includes/logo.html')</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="http://rdjpalmer.tumblr.com/" target="_blank">Writing</a></li>
+      </ul>
+    </nav>
+    <article class="case-study case-study-kosfc" role="main">
+      <header>
+        <h1>Kain Owen Strength &amp; Fitness Coaching</h1>
+        <div class="text">
+          <p>Being new to the block, Kain needed a brand identity and accompanying blog to establish himself as a strength trainer with serious credentials. I created&nbsp;just&nbsp;that.</p>
+        </div>
+      </header>
+      <section class="dark pb0">
+        <div class="text">
+          <h2>Understanding the client’s needs</h2>
+          <p>I worked alongside Kain to explore his ambitions and better understand the requirements of the brand. I began extensive research into similar brands, exploring the aesthetics to match&nbsp;Kain’s&nbsp;ambitions.</p>
+        </div>
+        <div class="centered">
+          <img class="brb0" src="/assets/images/kosfc-cs-niice.jpg" alt="KOSFC Moodboard" />
+        </div>
+      </section>
+      <section class="pb0">
+        <div class="text">
+          <h2>Brand development</h2>
+          <p>With any new brand, trust issues are a concern. I created an identity with a traditional aesthetic to do away with these issues, while conveying exactly what Kain’s work is&nbsp;all&nbsp;about:&nbsp;strength.</p>
+        </div>
+        <div class="grid inner">
+          <div class="half">
+            <img class="brr0" src="/assets/images/kosfc-cs-sketch.jpg" alt="Early brand development work" />
+          </div>
+          <div class="half">
+            <img class="brl0" src="/assets/images/kosfc-cs-logo-development.png" alt="" />
+          </div>
+        </div>
+        <img class="centered" src="/assets/images/kosfc-cs-brand-development.jpg" alt="" />
+        <div class="dark centered inner">
+          <img src="/assets/images/kosfc-cs-logo.png" style="max-height: 700px" alt="" />
+        </div>
+        <img class="max-width" src="/assets/images/kosfc-cs-stationary.jpg" alt="" />
+      </section>
+      <section>
+        <div class="text">
+          <h2>Building a web presence</h2>
+          <p>To showcase his expertise and increase the reach of the brand, I created Kain a blog, taking a <a href="http://alistapart.com/blog/post/content-first-design" title="content first design">content-first approach</a>. While Kain began writing content, I started by creating a <a href="">style guide</a>, with the aim of ironing out the typography and other&nbsp;details&nbsp;early.</p>
+        </div>
+        <figure>
+          <img class="centered" src="/assets/images/kosfc-cs-patlib.png" alt="" />
+          <figcaption>
+            <a href="http://codepen.io/rdjpalmer/pen/RNaQGy/" target="_blank">See the pattern library on codepen</a>
+          </figcaption>
+        </figure>
+        <div class="text">
+          <h2>Developing the blog</h2>
+          <p>I chose Tumblr for it’s simplicity, content focus and already established fitness audience as the blog's platform, and set about developing a fully responsive theme, with a <a href="https://codemyviews.com/blog/mobilefirst">mobile-first approach</a>.</p>
+        </div>
+        <figure class="inner">
+          <img src="/assets/images/kosfc-cs-blog-preview.jpg" alt="" />
+          <figcaption>
+            <a href="kainowensfc.tumblr.com" target="_blank">Visit the blog</a>
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <blockquote>
+          <p>Within the first meeting with Rich he seemed to grasped exactly what I wanted and the image I was trying to create with my business. He promptly set about getting some designs together and pretty much nailed it on the first shot.</p>
+          <p>He was professional when he needed to be but never overly formal. He went out of his way to not only get the final product together on time but also to help me understand areas of branding and marketing that were new to me. Finally he put together a beautiful, professional looking brand that encompassed everything that felt important to me.</p>
+          <footer>
+            <cite class="testimonial-citation">
+              <div class="citation-img">
+                <img class="" src="/assets/images/kosfc-cs-profile.jpg" />
+              </div>
+              <div class="citation-info">
+                <span class="citation-name">Kain Owen</span>
+                <span class="citation-role">Personal Trainer</span>
+              </div>
+            </cite>
+          </footer>
+        </blockquote>
+      </section>
+      <footer class="dark">
+        <div class="text">
+          <h2>Now it's your turn</h2>
+          <p>You’ve got the kick ass business, and I’ll help you take it to the next level.</p>
+          <p><a href="mailto:rich@rdjpalmer.com">Email me now</a> and kick off the conversation.</p>
+        </div>
+      </footer>
     </article>
     @include('./portfolio/append.html')

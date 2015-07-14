@@ -1,53 +1,28 @@
+/**
+ * Typography
+ */
 h1 {
-  border-width: 0;
-  border-bottom-width: 1px;
-  border-style: solid;
-  border-color: #eee;
   font-size: 2.25rem;
-  font-size: 700;
+  font-weight: 700;
   line-height: 0.928;
-  margin-bottom: 0;
-  padding-bottom: @spacing;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'freight-sans-pro', 'helvetica', 'arial', 'sans-serif';
 }
 
 h2 {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 0.931;
+  margin-top: 0;
   margin-bottom: 0;
-  margin-top: @spacing;
-}
-
-article > p:first-of-type {
-  font-size: 1.1em;
-  line-height: 1.5;
+  font-family: 'freight-sans-pro', 'helvetica', 'arial', 'sans-serif';
 }
 
 p {
   line-height: 1.421;
-}
-
-blockquote {
-  border-width: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  padding-left: @spacing;
-  border-style: solid;
-  border-left-width: 3px;
-  color: #111;
-  line-height: 1.421;
-  margin-left: -@spacing;
-}
-
-ol, ul {
-  list-style-position: outside;
-  padding-left: 0;
-}
-
-li + li {
-  margin-top: 0;
+  font-family: 'freight-sans-pro', 'helvetica', 'arial', 'sans-serif';
 }
 
 a:link {
@@ -86,8 +61,34 @@ h1 a:hover {
   color: @highlight--alt;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  border-radius: 2px;
+@media(min-width: 58.75em) {
+  h1 {
+    font-size: 3.75rem;
+  }
+
+  h2 {
+    font-size: 1.526rem;
+  }
+}
+
+blockquote {
+  border-width: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: @spacing*1em;
+  border-style: solid;
+  border-left-width: 3px;
+  color: #111;
+  line-height: 1.421;
+  margin-left: -@spacing*1em;
+}
+
+ol, ul {
+  list-style-position: outside;
+  padding-left: 0;
+}
+
+li + li {
+  margin-top: 0;
 }

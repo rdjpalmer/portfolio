@@ -74,7 +74,7 @@ function buildHTML(opts) {
 
 function buildCSS(opts) {
   var css = gulp.src(opts.src)
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(less({
       'plugins': opts.plugins,
       'paths': [path.join(__dirname, 'less', 'includes')]
@@ -82,9 +82,7 @@ function buildCSS(opts) {
     .on('error', handleError);
 
   if(opts.development) {
-    css = css.pipe(sourcemaps.write())
-      .on('error', handleError)
-      .pipe(livereload());
+    css = css.pipe(livereload());
   } else {
     css = css.pipe(sourcemaps.write(opts.mapLocation));
   }
@@ -137,10 +135,20 @@ gulp.task('css', function() {
     src: './src/less/rdjpalmer.less',
     dest: './dist/assets/css/',
     plugins: [
-      autoprefix
+      // autoprefix
       // cleancss
     ]
   });
+
+  buildCSS({
+    development: true,
+    src: './src/less/case-study.less',
+    dest: './dist/assets/css',
+    plugins: [
+      // autoprefix,
+      // cleancss
+    ]
+  })
 });
 
 gulp.task('javascript', function() {
@@ -244,7 +252,9 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('watch', function() {
-  livereload.listen();
+  livereload.listen({
+    host: '192.168.1.68'
+  });
 
   function logChange(e) {
     console.log('File ' + e.path + ' was ' + e.type + ', running tasks...');
@@ -263,4 +273,9 @@ gulp.task('watch', function() {
   jsWatcher.on('change', logChange);
 });
 
-gulp.task('default', ['html', 'css', 'javascript', 'assets', 'blog', 'watch']);
+gulp.task(
+  'with-blog',
+  ['html', 'css', 'javascript', 'assets', 'blog', 'watch']
+);
+
+gulp.task('default', ['html', 'css', 'javascript', 'assets', 'watch']);

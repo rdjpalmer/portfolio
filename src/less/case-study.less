@@ -1,0 +1,343 @@
+/**
+ * Setup
+ */
+
+@import (less) '../../node_modules/normalize.css/normalize.css';
+@spacing: 1.475;
+@highlight: rgb(192, 31, 46);
+@highlight--alt: rgb(128, 21, 31);
+
+nav {
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid rgb(244, 244, 244);
+  // medium style
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+nav ul {
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+nav ul:first-child {
+  margin-top: 0;
+}
+
+nav li {
+  float: left;
+  text-align: center;
+  width: 33.33333%;
+}
+
+nav li + li {
+  margin-top: 0;
+}
+
+nav {
+  border-bottom-width: 0;
+  border-top: 1px solid rgb(244, 244, 244);
+  // medium style
+  border-top: 1px solid rgba(0,0,0,0.15);
+  bottom: 0;
+  position: fixed;
+  z-index: 2;
+}
+
+nav a:link {
+  background-image: none;
+  cursor: pointer;
+  display: block;
+  padding-bottom: @spacing/2em;
+  padding-top: @spacing/2em;
+  text-align: center;
+  max-height: 62px;
+  cursor: pointer;
+}
+
+nav a:hover {
+  background-color: @highlight;
+  color: #fff;
+}
+nav a:active {
+  background-color: @highlight--alt;
+  color: #fff;
+}
+
+.logo:link {
+  background-image: none;
+}
+
+.logo > svg {
+  width: 26px;
+  height: 26px;
+  vertical-align: sub;
+}
+
+.logo > svg #SVGID_1_ stop:first-child {
+  stop-color: #333;
+}
+.logo > svg #SVGID_1_ stop:last-child {
+  stop-color: #333;
+}
+
+.logo:hover > svg #SVGID_1_ stop:first-child {
+  stop-color: #fff;
+}
+.logo:hover > svg #SVGID_1_ stop:last-child {
+  stop-color: #fff;
+}
+
+.logo:hover {
+  background-color: @highlight;
+}
+
+.case-study {
+  font-size: 1.15rem;
+  text-align: center;
+
+  /**
+   * overrides
+   */
+  &[role="main"] {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    min-height: auto;
+    float: none;
+    width: auto;
+  }
+
+  header {
+    float: none;
+    min-height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    width: auto;
+  }
+  /** end-overrides */
+
+  img {
+    border-radius: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section > .inner {
+    max-width: 1200px;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  > * {
+    padding: @spacing*3em 0;
+    margin-top: 0;
+  }
+
+  .mt0 {
+    margin-top: 0;
+  }
+
+  .ptb3 {
+    padding: @spacing*3em 0;
+  }
+
+  .pb0 {
+    padding-bottom: 0;
+  }
+
+  .br0 {
+    border-radius: 0;
+  }
+
+  .brb0 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .brl0 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .brr0 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  h1 + .text {
+    margin-top: @spacing*1.5em;
+  }
+
+  h2 + p, p + p {
+    margin-top: @spacing*1.5em;
+  }
+
+  .text + img,
+  .text + div,
+  div + div,
+  img + div,
+  div + img,
+  .text + figure,
+  figure + .text {
+    margin-top: @spacing*3em;
+  }
+
+  h1 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: @spacing*0.5em;
+    padding-right: @spacing*0.5em;
+  }
+
+  @media(min-width: 940px) {
+    h1 {
+      max-width: 800px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .text {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: @spacing*1.5em;
+    padding-right: @spacing*1.5em;
+  }
+
+  .text.important {
+    font-size: 1.25em;
+    font-weight: 700;
+    max-width: 800px;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  blockquote {
+    max-width:800px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    padding: 0;
+    padding-left: @spacing*1.5em;
+    padding-right: @spacing*1.5em;
+  }
+
+  blockquote:before {
+    content: "\201C";
+    font-size: 5em;
+    line-height: 0.25em;
+    color: #ccc;
+  }
+
+  cite {
+    display: block;
+    text-align: left;
+  }
+
+  .testimonial-citation {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: @spacing*2em;
+  }
+
+  .citation-img, .citation-info {
+    margin-top: 0;
+  }
+
+  .citation-img + .citation-info {
+    margin-left: @spacing*2em;
+  }
+
+  .citation-img {
+    max-width: 175px;
+  }
+
+  .citation-info {
+    font-size: 0.9em;
+  }
+
+  span.citation-name, span.citation-role {
+    display: block;
+    font-style: normal;
+  }
+
+  span.citation-name {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  span.citation-role {
+    color: #999;
+    margin: 0;
+    font-size: 0.8em;
+  }
+
+  figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  figure figcaption {
+    padding: 0.5em 0;
+    width: 100%;
+    margin-top: 0;
+    font-weight: 700;
+  }
+
+  header .text {
+    max-width: 700px;
+  }
+
+  .grid {
+    // clearfix
+    overflow: hidden;
+
+    > * {
+      float: left;
+    }
+  }
+
+  @media(min-width: 940px) {
+    .half {
+      width: 50%;
+      margin-top: 0;
+    }
+  }
+
+  > footer {
+    padding-bottom: @spacing*4em;
+  }
+}
+
+.case-study-kosfc {
+  header {
+    color: #fff;
+    background-color: RGBA(166, 63, 91, 1);
+  }
+
+  .dark {
+    color: #fff;
+    background-color: RGBA(51, 51, 51, 1);
+  }
+}

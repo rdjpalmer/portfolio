@@ -88,5 +88,9 @@
 
   getTumblrPosts(tumblrURL, tumblrAPIKey, processTumblrPosts);
 
-  document.getElementsByClassName('js-copyrightYear')[0].innerText = new Date().getFullYear();
+  var copyright = document.getElementsByClassName('js-copyrightYear');
+
+  if(copyright.length) {
+    copyright[0].innerText = new Date().getFullYear();
+  }
 })(this);
