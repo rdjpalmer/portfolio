@@ -97,7 +97,13 @@ function buildJS(opts) {
     .on('error', handleError);
 
   if(!opts.development) {
-    js = js.pipe(uglify())
+    js = js.pipe(uglify({
+      mangle: true,
+      compress: {
+        unsafe        : true, // some unsafe optimizations (see below)
+        conditionals  : false,  // optimize if-s and conditional expressions
+      }
+    }))
       .on('error', handleError);
   }
 
@@ -252,9 +258,7 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('watch', function() {
-  livereload.listen({
-    host: '192.168.1.68'
-  });
+  livereload.listen();
 
   function logChange(e) {
     console.log('File ' + e.path + ' was ' + e.type + ', running tasks...');
