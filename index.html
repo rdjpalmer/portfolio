@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
   <head>
     <title>Richard Palmer, Creator of Byozo and HelloTimo</title>
     <meta charset="utf-8" />
@@ -208,6 +208,27 @@
         width: 100%;
       }
 
+      
+      /*
+       * Hidden element for accessibility purposes - providing more context for screen readers
+       * See: https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+       */
+      .screen-readable {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        /*
+         * Ensures whitespace isn't ignored:
+         * https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe#.e3i0smk0t
+         */
+        white-space: nowrap;
+      }
+
       @media(min-width: 40em) {
         body {
           padding-left: 4rem;
@@ -300,6 +321,7 @@
       >
         <input type="hidden" value="1" name="embed"/>
         <div class="input-container">
+          <label class="screen-readable" for="tlemail">Email</label>
           <input placeholder="Email address" class="input" type="email" name="email" id="tlemail" required />
           <button class="button" type="submit">Subscribe</button>
         </div>
