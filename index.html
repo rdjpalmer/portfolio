@@ -48,8 +48,8 @@
       }
 
       html {
-        font-family: "brasley", sans-serif;
-        background-color: #4DF68C;
+        font-family: "brasley";
+        background-color: #fff;
       }
 
       body {
@@ -62,7 +62,7 @@
 
       .container {
         padding-top: 1.5rem;
-        padding-bottom: 1.5rem; 
+        padding-bottom: 1.5rem;
       }
 
       .logo-svg {
@@ -76,11 +76,11 @@
 
       ::selection {
         background: rgba(41, 56, 69, 1); /* WebKit/Blink Browsers */
-        color: #4DF68C;
+        color: #fff;
       }
       ::-moz-selection {
         background: rgba(41, 56, 69, 1); /* Gecko Browsers */
-        color: #4DF68C;
+        color: #fff;
       }
 
       h1 {
@@ -88,7 +88,8 @@
         font-size: 2.25rem;
         line-height: 1.3;
         color: rgba(41, 56, 69, 1);
-        font-family: 'brasley', sans-serif;
+        font-family: "brasley";
+        font-weight: 600;
         margin-top: 2.5rem;
         margin-bottom: 0;
       }
@@ -97,24 +98,27 @@
         font-size: 1.25rem;
         line-height: 1.4;
         color: rgba(41, 56, 69, 0.75);
-        font-family: "brasley", sans-serif;
-        max-width: 48.5rem;
-        font-weight: 500;
+        font-family: "brasley";
+        max-width: 42rem;
+        font-weight: 300;
+        margin-bottom: 0;
       }
 
       p:first-child {
+        margin-top: 4rem;
+      }
+
+      p + p,
+      form + p,
+      p + form {
         margin-top: 2rem;
       }
 
-      p + p {
-        margin-top: 1rem;
-      }
-
       a {
-        font-weight: bold;
+        font-weight: 300;
         text-decoration: underline;
         display: inline-block;
-        color: rgba(41, 56, 69, 1);
+        color: #00E04E;
       }
 
       a:hover {
@@ -129,7 +133,7 @@
         font-size: 1.25rem;
         line-height: 1;
         color: rgb(41, 56, 69);
-        font-family: "brasley", sans-serif;
+        font-family: "brasley";
         font-weight: 500;
 
         padding-top: 1.375rem;
@@ -143,10 +147,9 @@
         vertical-align: middle;
         width: 100%;
 
-        border-width: 3px;
+        border-bottom-width: 3px;
         border-color: rgba(41, 56, 69, 0.75);
         border-style: solid;
-        border-radius: 12px;
       }
 
       input::placeholder {
@@ -174,18 +177,16 @@
         font-size: 1.25rem;
         line-height: 1;
         color: rgba(41, 56, 69, 1);
-        font-family: "brasley", sans-serif;
+        font-family: "brasley";
         font-weight: 500;
         background-color: rgba(41, 56, 69, 0.75);
         border-width: 0;
-        color: #4DF68C;
-        padding-top: 1.375rem;
+        color: #fff;
+        padding-top: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-bottom: 1rem;
-        border-radius: 8px;
         vertical-align: middle;
-        letter-spacing: 0.5px;
         transition: all 200ms, transform 75ms ease-in;
       }
 
@@ -208,7 +209,7 @@
         width: 100%;
       }
 
-      
+
       /*
        * Hidden element for accessibility purposes - providing more context for screen readers
        * See: https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -254,13 +255,11 @@
           margin-top: 4rem;
           line-height: 1.3;
           color: #293845;
-          font-family: 'brasley', sans-serif;
         }
 
         p {
-          font-size: 1.5rem;
+          /* font-size: 1.25rem; */
           line-height: 1.4;
-          font-family: "brasley", sans-serif;
         }
 
         .input-container {
@@ -308,36 +307,19 @@
     <div class="container">
       <h1>Hey, I&apos;m Richard</h1>
 
-      <p>I'm the co-founder of <a href="https://byozo.org">Byozo</a>, a philosophy of how to approach daily life.</p>
-      <p>I'm also the co-creator of time and task manager, <a href="https://hellotimo.co">Timo</a>, filling the gap between work done, work logged and the time sheet.</p>
-      <p>Over the last eight years, I've taken a leading role in engineering and design for the likes of <a href="https://twitter.com/nudjHQ">nudj</a>, <a href="https://appearhere.co.uk">Appear Here</a> and <a href="https://www.pactcoffee.com/">Pact Coffee</a>.</p>
-      <p>Curious to know more? I write about self exploration, my experience creating Byozo and similar topics on a bi-weekly basis. Subscribe:</p>
-
-      <form
-        action="https://tinyletter.com/rdjpalmer"
-        method="post"
-        target="popupwindow"
-        onsubmit="window.open('https://tinyletter.com/rdjpalmer', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
-      >
-        <input type="hidden" value="1" name="embed"/>
-        <div class="input-container">
-          <label class="screen-readable" for="tlemail">Email</label>
-          <input placeholder="Email address" class="input" type="email" name="email" id="tlemail" required />
-          <button class="button" type="submit">Subscribe</button>
-        </div>
-      </form>
+      <p>I'm the co-founder of <a href="https://byozo.org" target="_blank">Byozo</a>, a philosophy of how to approach daily life.</p>
+      <p>I'm also the co-creator of time and task manager, <a href="https://hellotimo.co" target="_blank">Timo</a>, filling the gap between work done, work logged and the time sheet.</p>
+      <p>Over the last eight years, I've taken a leading role in engineering and design for the likes of <a href="https://twitter.com/nudjHQ" target="_blank">nudj</a>, <a href="https://appearhere.co.uk" target="_blank">Appear Here</a> and <a href="https://www.pactcoffee.com/" target="_blank">Pact Coffee</a>.</p>
+      <p>Curious to know more? I write about self exploration, my experience creating Byozo and similar topics on <a href="https://mailchi.mp/rdjpalmer/subscribe" target="_blank">my bi-weekly newsletter</a>.</p>
 
       <p>If you'd prefer something more personal, my <a href="mailto:rich@rdjpalmer.com">inbox is always open</a>, as are my <a href="https://twitter.com/rdjpalmer">twitter DMs</a>.</p>
 
     </div>
   </body>
-  <!-- <script>
-    var logo = document.querySelector(".logo-shape");
+  <script>
     var anchors = [].slice.call(document.querySelectorAll("a"));
-
     var hue = getHue();
 
-    setFill(hue, logo);
     anchors.forEach(function(a) { setColor(hue, a); });
-  </script> -->
+  </script>
 </html>
