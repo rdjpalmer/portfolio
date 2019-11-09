@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  transition: all 200ms;
+}
+
+html,
+body {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+html {
+  font-family: "helvetica";
+  background-color: #fff;
+}
+
+body {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 88.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+::selection {
+  background: rgba(41, 56, 69, 1); /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: rgba(41, 56, 69, 1); /* Gecko Browsers */
+  color: #fff;
+}
+
+/**
+ * Typography
+ */
+h1,
+h2,
+h3 {
+  color: rgba(41, 56, 69, 1);
+  font-family: "helvetica";
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 1.625rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.65;
+}
+
+p,
+time,
+li {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-family: "helvetica";
+  max-width: 36rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+p,
+li {
+  color: rgba(41, 56, 69, 0.9);
+}
+
+time {
+  color: #c0c0c0;
+}
+
+p:first-child {
+  margin-top: 4rem;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.container > * + * {
+  margin-top: 1rem;
+}
+
+.container * + h1,
+.container * + h2,
+.container * + h3,
+.container * + h4 {
+  margin-top: 3rem;
+}
+
+.articles li + li {
+  margin-top: 2rem;
+}
+
+/**
+ * Default links
+ */
+a {
+  font-weight: 300;
+  text-decoration: underline;
+  display: inline-block;
+  color: #00e04e;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+/**
+ * Articles
+ */
+.all-posts {
+  text-decoration: none;
+}
+
+.all-posts > span {
+  text-decoration: underline;
+}
+
+.all-posts:before {
+  content: "← ";
+}
+
+article > time + p {
+  margin-top: 0.5rem;
+}
+
+/*
+ * >= lg
+ */
+@media (min-width: 40em) {
+  body {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 0;
+    line-height: 1.3;
+    color: #293845;
+  }
+
+  p {
+    line-height: 1.4;
+  }
+}
+
+.note {
+  background-color: #fafafa;
+  padding: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  border-radius: 3px;
+  font-size: 1em;
+}

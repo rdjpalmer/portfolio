@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/css/styles.css" rel="stylesheet" />
+    <script>
+      function getHue() {
+        return Math.floor(Math.random() * 360) + 0;
+      }
+
+      function setFill(hue, element) {
+        element.style.fill = "hsl(" + hue + ", 85%, 45%)";
+      }
+
+      function setColor(hue, element) {
+        element.style.color = "hsl(" + hue + ", 85%, 45%)";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <a class="all-posts" href="/"><span>All posts</span></a>
+      <h1>{{ page.title }}</h1>
+      <time datetime="{{ page.date }}">{{ page.date | date: "%d %B %Y" }}</time>
+      {{ content }}
+    </div>
+  </body>
+  <script>
+    var anchors = [].slice.call(document.querySelectorAll("a"));
+    var hue = getHue();
+
+    anchors.forEach(function(a) {
+      setColor(hue, a);
+    });
+  </script>
+</html>
