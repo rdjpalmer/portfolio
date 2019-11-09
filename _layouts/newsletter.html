@@ -6,6 +6,32 @@
     <meta name="description" content="{{ page.description }}">
     <meta name="author" content="{{ site.author }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      property="og:url"
+      content="{{ page.permalink }}"
+      data-react-helmet="true"
+    />
+    <meta property="og:type" content="article" data-react-helmet="true" />
+    <meta
+      property="og:title"
+      content="{{ page.title }} | {{ site.title }}"
+      data-react-helmet="true"
+    />
+    <meta
+      property="og:description"
+      content="{{ page.description }}"
+      data-react-helmet="true"
+    />
+    <meta
+      name="twitter:title"
+      content="{{ page.title }} | {{ site.title }}"
+      data-react-helmet="true"
+    />
+    <meta
+      name="twitter:description"
+      content="{{ page.description }}"
+      data-react-helmet="true"
+    />
 
     <link href="/css/styles.css" rel="stylesheet" />
     <script>
