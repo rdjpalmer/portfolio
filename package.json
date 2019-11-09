@@ -1,0 +1,10 @@
+{
+  "name": "rdjpalmer.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Richard Palmer <rich@rdjpalmer.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^1.19.0"
+  }
+}

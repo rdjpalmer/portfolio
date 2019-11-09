@@ -3,23 +3,26 @@ permalink: /404.html
 layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<h1>404</h1>
 
-<div class="container">
-  <h1>404</h1>
+<p>Looks like the page doesn't exist ☹️</p>
+<p>
+  <a href="/">Head home</a>, or check out some of my
+  writing 👇
+</p>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<h2>Writing</h2>
+
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <article>
+      <h3 class="heading">
+        <a href="{{ post.permalink }}">{{ post.title }}</a>
+      </h3>
+      <time datetime="{{ post.date }}">{{ post.date | date: "%d %B %Y" }}</time>
+      <p>{{ post.excerpt }}</p>
+    </article>
+  </li>
+  {% endfor %}
+</ul>
