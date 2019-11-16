@@ -46,16 +46,26 @@
       function setColor(hue, element) {
         element.style.color = "hsl(" + hue + ", 85%, 45%)";
       }
+
+      function getEstimatedReadingTime(string, wpm) {
+        if (!string) string = '';
+        if (!wpm) wpm = 200;
+
+        var wordCount = string.split(" ").length;
+        var [minutes, decimalSeconds] = (wordCount / wpm).toString().split(".");
+        return [minutes, Math.ceil(decimalSeconds * 0.6)];
+      }
     </script>
   </head>
   <body>
-    <div class="container">
+    <article class="container">
       <a class="all-posts" href="/"><span>All posts</span></a>
       <h1>{{ page.title }}</h1>
       <time datetime="{{ page.date }}">{{ page.date | date: "%d %B %Y" }}</time>
-      <p class="note"><strong>NB: This post has been republished from my now defunkt newsletter. Enjoy 🙏</strong></p>
-      {{ content }}
-    </div>
+      <p class="note"><strong>NB: This post has been republished from my defunkt newsletter. Enjoy 🙏</strong></p>
+      <main class="blog">{{ content }}</main>
+      <div class="reading-time" />
+    </article>
   </body>
   <script>
     var anchors = [].slice.call(document.querySelectorAll("a"));
@@ -64,5 +74,13 @@
     anchors.forEach(function(a) {
       setColor(hue, a);
     });
+
+    var readingTimeElement = document.querySelector('.reading-time');
+    var contentElement = document.querySelector('main.blog');
+
+    if (readingTimeElement) {
+      let readingTime = getEstimatedReadingTime(contentElement.innerText);
+      readingTimeElement.innerHTML = readingTime[0] + ' min read';
+    }
   </script>
 </html>
