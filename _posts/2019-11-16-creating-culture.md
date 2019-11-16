@@ -1,3 +1,12 @@
+---
+layout: blog
+title: "Creating culture"
+date: 2019-11-16
+permalink: "/creating-culture"
+description: >-
+  Be deliberate about the culture you create
+---
+
 # Creating culture
 
 It's commonplace in startups, to define a set of values. Witty remarks of how you, the employee, should act while working for this business. Sometimes, they're turned into murals throughout the office. An ever-present reminder that **this** is what **you** value.
