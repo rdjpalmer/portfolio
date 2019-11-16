@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "Creating culture"
 date: 2019-11-16
 permalink: "/creating-culture"
