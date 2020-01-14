@@ -22,7 +22,7 @@ Feel free to [email me](mailto:{{site.email}}), or
 
 ## Writing
 
-<ul class="articles">
+<ul class="articles list">
   {% for post in site.posts %}
     <li>
       <article>
