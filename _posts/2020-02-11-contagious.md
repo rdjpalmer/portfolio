@@ -37,12 +37,10 @@ What is your Trojan horse? Is your product or idea embedded in a broader narrati
 
 ## Putting it all together, sort of
 
-These also fit into a larger context. Think of Crossing the Chasm. The idea of gaining early adopters, then crossing the chasm to the early majority. In the former case you're looking for customers who feel like they're in on the secret with you. This is *social currency*. They'll be the people who tell their friends. Who will understand your beginnings. Who give you access to even better stories.
+These also fit into a larger context. Think of [Crossing the Chasm](https://wordery.com/contagious-jonah-berger-9781451686586). The idea of gaining early adopters, then crossing the chasm to the early majority. In the former case you're looking for customers who feel like they're in on the secret with you. This is *social currency*. They'll be the people who tell their friends. Who will understand your beginnings. Who give you access to even better stories.
 
-You don't need mass understanding from the outset. If you have it, well, perhaps your idea isn't actually that great. In Mike Maples Jr's podcast with Andy Rachleff, Two Questions Every Entrepreneur Should Answer, they assert that your idea should be "right and non-consensus". That is, you're eventually on the money, but where only a select few believe you'll get there.
+You don't need mass understanding from the outset. If you have it, well, perhaps your idea isn't actually that great. In Mike Maples Jr's podcast with Andy Rachleff, [Two Questions Every Entrepreneur Should Answer](https://tim.blog/2019/11/25/starting-greatness-mike-maples/), they assert that your idea should be "right and non-consensus". That is, your idea eventually works out, but, in the beginning, only a select few believe you'll get there.
 
-In practise, this will mean sticking to the niche you find at the beginning. If you're correct in your findings, they'll come. Even people who aren't in that niche will come. You seek the people most likely to understand, which speaks to anyone thinking the same way.
+In practise, this will mean sticking to the niche your idea originates from. If you're correct in your understanding, they will come. Even people who aren't in that niche will come. You seek the people most likely to understand, which speaks to anyone thinking the same way.
 
-Sticking to the niche you define means you can be deliberate in finding triggers and making it "public". If your audience is designers at agencies, you can make your product *perfect* for their habits and routines.
-
-Learn to apply these concepts intentionally, while you're in control of the faucet. That's the trick.
+Sticking to the niche you define means you can be deliberate in finding *triggers* and making it *public*. If your audience is designers at agencies, you can make your product *perfect* for their habits and routines.
