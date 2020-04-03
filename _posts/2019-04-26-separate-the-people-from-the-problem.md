@@ -24,7 +24,7 @@ feel, and to separate the emotion from logic.
 And this is my advice for today: where you find pressure and stress evokes a
 strong emotional response, be sure to take time out. Spend time with your
 thoughts, and figure out how to separate the people from the problem.
-[Getting to yes](https://www.amazon.co.uk/Getting-Yes-Negotiating-agreement-without/dp/1847940935)
+<a href="https://www.amazon.co.uk/Getting-Yes-Negotiating-agreement-without/dp/1847940935" target="_blank" rel="noopener noreferrer">Getting to yes</a>
 is a fantastic read on this.
 
 Then, when you're more comfortable with your thoughts, it's time to write up an

@@ -28,7 +28,7 @@ tick. It gives you a freedom that you might not otherwise have. To know if
 you're doing the right things, or even applying for the right roles.
 
 Like all lasting endevours, iteration is the key to success. You can apply
-[build-measure-learn](https://www.mindtools.com/pages/article/build-measure-learn.htm)
+<a href="https://www.mindtools.com/pages/article/build-measure-learn.htm" target="_blank" rel="noopener noreferrer">build-measure-learn</a>
 the description of yourself. Doing so is an absolute necessity.
 
 Let's take a look at the introduction I use for a moment:

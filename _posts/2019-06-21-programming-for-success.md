@@ -17,7 +17,7 @@ Let me set the seen:
 
 In recent times, I've started trying to get into better shape. I decided to try
 my hand at CrossFit[1], going to my local gym,
-[The Yard](http://www.theyardpeckham.com/). I've been working at it since the
+<a href="http://www.theyardpeckham.com/" target="_blank" rel="noopener noreferrer">The Yard</a>. I've been working at it since the
 turn of the year and have started to understand the finer details of what it
 takes to succeed.
 

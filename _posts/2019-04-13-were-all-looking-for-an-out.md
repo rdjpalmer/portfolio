@@ -22,7 +22,7 @@ displays behind.
 Think about it: we're here, building apps, websites, discussing "user
 experience" and unlocking a whole new world. A new world, which gives us
 superpowers. Like being able to make almost anything you need appear in your
-hands [in about three hours](https://primenow.amazon.co.uk/). All by tapping a
+hands <a href="https://primenow.amazon.co.uk/" target="_blank" rel="noopener noreferrer">in about three hours</a>. All by tapping a
 few times on a piece of glass.
 
 But also one where we're yet to find the true cost of our spoils. We have no
@@ -30,7 +30,7 @@ idea of the impact we're creating. How it'll affect the planet, the human race,
 you, or I.
 
 It's telling that those running tech behemoths
-[don't want their children using their own creations](https://nypost.com/2017/12/04/facebooks-kid-app-undermines-parental-struggles-to-get-their-kids-off-screens/).
+<a href="https://nypost.com/2017/12/04/facebooks-kid-app-undermines-parental-struggles-to-get-their-kids-off-screens/" target="_blank" rel="noopener noreferrer">don't want their children using their own creations</a>.
 
 The question is, why do we persist?
 
