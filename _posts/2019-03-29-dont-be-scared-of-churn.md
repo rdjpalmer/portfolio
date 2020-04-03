@@ -12,9 +12,9 @@ description: >-
 Hey there,
 
 Unsurprisingly, Revolut have been making headlines again. Not only for
-[turning a blind eye to money laundering and theft](https://www.telegraph.co.uk/technology/2019/02/28/revolut-failed-block-suspicious-transactions/),
+<a href="https://www.telegraph.co.uk/technology/2019/02/28/revolut-failed-block-suspicious-transactions/" target="_blank" rel="noopener noreferrer">turning a blind eye to money laundering and theft</a>,
 but also for
-[how poorly they treat their staff and users](https://www.wired.co.uk/article/revolut-trade-unions-labour-fintech-politics-storonsky).
+<a href="https://www.wired.co.uk/article/revolut-trade-unions-labour-fintech-politics-storonsky" target="_blank" rel="noopener noreferrer">how poorly they treat their staff and users</a>.
 
 I, unfortunately, was a customer of theirs for a little while, but have since
 deleted my account. That experience alone was terrible, forcing me to speak to a
@@ -42,7 +42,7 @@ to their friends if it's a complete shit show too. Give them a good experience,
 even when leaving, and they'll be more likely to return another time.
 
 Kai Forsyth, a Product Designer at Intercom,
-[recently wrote about this very topic](https://www.intercom.com/blog/designing-user-offboarding/),
+<a href="https://www.intercom.com/blog/designing-user-offboarding/" target="_blank" rel="noopener noreferrer">recently wrote about this very topic</a>,
 and goes much deeper than this email. Though I'd caveat this with the fact I
 disagree when it comes to desperately trying to keep the user onboard by showing
 them what they'll be missing out on.

@@ -16,13 +16,13 @@ Hey there,
 I wanted to start with a massive thank you for subscribing to my newsletter. To
 tell you the absolute truth, I started it as I'm a tad insecure with my writing.
 I've tried blogging,
-[as recently as the other day](https://medium.com/@rdjpalmer/get-more-people-to-say-yes-ec8d7590e159),
+<a href="https://medium.com/@rdjpalmer/get-more-people-to-say-yes-ec8d7590e159" target="_blank" rel="noopener noreferrer">as recently as the other day</a>,
 but I've never felt comfortable doing it. I'd find that I'd write one piece I
 was happy with, then fail with the next. I'd struggle to find any consistency
 with it.
 
 My good friend Jamie Syke has written about the
-[importance of sharing your work](https://blog.prototypr.io/please-share-your-fucking-work-12fb72b26e5f).
+<a href="https://blog.prototypr.io/please-share-your-fucking-work-12fb72b26e5f" target="_blank" rel="noopener noreferrer">importance of sharing your work</a>.
 And I agree whole heartedly. But when you're at the beginning of your learning,
 sometimes it isn't all that easy.
 

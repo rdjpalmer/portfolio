@@ -19,7 +19,7 @@ come your way. That's the hard part.
 
 Take my reading list as an example. No longer than two months after I started
 putting one together in Notion, I
-[amassed a list of 53 books](https://www.notion.so/rdjpalmer/b200fe78d5ec45d8aa9289f0a4acbe1c?v=fa637cb4c3da4ababca144a83bc9909d).
+<a href="https://www.notion.so/rdjpalmer/b200fe78d5ec45d8aa9289f0a4acbe1c?v=fa637cb4c3da4ababca144a83bc9909d" target="_blank" rel="noopener noreferrer">amassed a list of 53 books</a>.
 At my current rate, it would be hard to read more than 12 books a year.
 
 Then consider how that extrapolates out even more when it gets serious. Oh, you
@@ -40,7 +40,7 @@ But me continuing to work full time on it could have been a problem. Had I
 continued, it may have been catastrophic.
 
 It's been incredibly hard for me to turn away from Byozo.
-[Sunk cost fallacy](https://youarenotsosmart.com/2011/03/25/the-sunk-cost-fallacy/)
+<a href="https://youarenotsosmart.com/2011/03/25/the-sunk-cost-fallacy/" target="_blank" rel="noopener noreferrer">Sunk cost fallacy</a>
 is hard at work on this one. Being honest with myself has allowed me to find
 peace and own the situation.
 
@@ -51,7 +51,7 @@ frequently. They give you an anchor for progress and reflection. You can
 undestand when what you're doing doesn't fit and act accordingly. Similarly,
 you'll know when you're doing something that works so you can keep going. This
 is close to what I talk about in
-[issue 6](https://mailchi.mp/rdjpalmer/issue-6-speaking-of-me).
+[issue 6](/speaking-of-me).
 
 It's important to spend time on "you" but it's fine to be wrong too. At least
 then you're trying.

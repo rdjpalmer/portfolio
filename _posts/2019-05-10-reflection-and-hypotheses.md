@@ -15,7 +15,7 @@ You may have missed issue four a couple of weeks ago, due to a technical hitch
 with TinyLetter. The subject line was replaced with "Friends, Romans,
 countrymen, lend me your ears". Fortunately, if you're not up for trawling
 through your inbox for it (I understand, we're all busy people), you can
-[find it in the archives](https://tinyletter.com/rdjpalmer/letters/separate-the-people-from-the-problem).
+[find it in the archives](/separate-the-people-from-the-problem).
 
 Now, onto the meat of this issue...
 
@@ -48,9 +48,9 @@ To test this, we could:
 4. The list is endless, but to keep this short...
 
 One of these may prove enough to find the answers we're looking for, to inform
-our decision making. CEO & Founder of [Jupiter](https://tryjupiter.com/), Helen
+our decision making. CEO & Founder of <a href="https://tryjupiter.com/">Jupiter</a>, Helen
 Tran wrote about this in
-[Note-taking and Accountability](http://helentran.com/notetakingandaccountability).
+<a href="http://helentran.com/notetakingandaccountability" target="_blank" rel="noopener noreferrer">Note-taking and Accountability</a>.
 
 To decide whether it's go time with Timo, or another opportunity, the real trick
 is figuring out what to test first. This, I believe, is where ideation and
