@@ -77,6 +77,11 @@ li {
   margin-bottom: 0;
 }
 
+img {
+  max-width: 65rem;
+  width: 100%;
+}
+
 p,
 li,
 .reading-time {
@@ -94,8 +99,19 @@ ul {
   padding-left: 0;
 }
 
+figure  {
+  margin: 0;
+}
+
 .list {
   list-style-type: none;
+}
+
+.codepen-container {
+  max-width: 36rem;
+  width: 100%;
+  height: 25rem;
+  margin-top: 1rem;
 }
 
 .container > * + * {
@@ -103,7 +119,26 @@ ul {
 }
 
 p + p,
-p + ul {
+p + ul,
+p + ol,
+p + figure,
+figure + p,
+figure + ul,
+figure + ol,
+ul + p,
+ul + figure,
+ol + p,
+ol + figure {
+  margin-top: 2rem;
+}
+
+p + .codepen-container,
+ul + .codepen-container,
+ol + .codepen-container,
+.codepen-container + p,
+.codepen-container + ul,
+.codepen-container + ol,
+.codepen-container + .codepen-container {
   margin-top: 2rem;
 }
 
