@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 title: Richard Palmer, Creator of Byozo and HelloTimo
 permalink: /
@@ -10,7 +7,7 @@ permalink: /
 # Hey, I&apos;m Richard
 
 I'm the co-creator of time and task manager, [Timo](https://hellotimo.co),
-filling the gap between work done, work logged and the time sheet.
+filling the gap between work done, work logged and the time sheet. Currently Engineering Team Lead at [TransferWise](https://transferwise.com).
 
 Over the last eight years, I've taken a leading role in engineering and design
 for the likes of [Byozo](https://byozo.org), [nudj](https://twitter.com/nudjHQ),
