@@ -6,5 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "prettier": "^1.19.0"
+  },
+  "scripts": {
+    "start": "bundle exec jekyll serve"
   }
 }

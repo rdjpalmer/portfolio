@@ -7,7 +7,7 @@ description: >-
   Be deliberate about the culture you create
 ---
 
-It's commonplace in startups, to define a set of values. Witty remarks of how you, the employee, should act while working for this business. Sometimes, they're turned into murals throughout the office. An ever-present reminder that **this** is what **you** value.
+It's commonplace in startups, to define a set of values. Witty remarks of how you, the employee, should act while working for this business. Sometimes, they're turned into murals throughout the office. An ever-present reminder that **this is what you value**.
 
 "Teamwork makes the dream work" is one such commonality. Like many others, the problem with it is that it's abstract.
 
