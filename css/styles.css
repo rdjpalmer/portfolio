@@ -257,7 +257,7 @@ article > time + p {
 
 @media (prefers-color-scheme: dark) {
   html {
-    background-color: #000;
+    background-color: #191919;
   }
 
   ::selection {
