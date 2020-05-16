@@ -1,36 +1,4 @@
 (function() {
-  var isDarkMode =
-    getComputedStyle(document.body).backgroundColor === "rgb(24, 26, 27)";
-
-  var Color = {
-    light: ["#008040", "#0000E0", "#DB0A5B", "#E00000"],
-    dark: [
-      "#00FF7F",
-      "#36D7B7",
-      "#FC6399",
-      "#9370DB",
-      "#FFD700",
-      "#F9690E",
-      "#F64747",
-    ],
-  };
-
-  function getColor() {
-    if (isDarkMode) {
-      var limit = Color.dark.length;
-      var index = Math.floor(Math.random() * limit);
-      return Color.dark[index];
-    }
-
-    var limit = Color.light.length;
-    var index = Math.floor(Math.random() * limit);
-    return Color.light[index];
-  }
-
-  function setColor(color, element) {
-    element.style.color = color;
-  }
-
   function getEstimatedReadingTime(string, wordsPerSecond) {
     if (!string) string = "";
     // 200 words per minute
@@ -56,13 +24,6 @@
       }
     }
   }
-
-  var anchors = [].slice.call(document.querySelectorAll("a"));
-  var color = getColor();
-
-  anchors.forEach(function(a) {
-    setColor(color, a);
-  });
 
   var readingTimeElement = document.querySelector(".reading-time");
   var contentElement = document.querySelector("main.blog");
