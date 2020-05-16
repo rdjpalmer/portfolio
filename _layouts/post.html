@@ -34,28 +34,6 @@
     />
 
     <link href="/css/styles.css" rel="stylesheet" />
-    <script>
-      function getHue() {
-        return Math.floor(Math.random() * 360) + 0;
-      }
-
-      function setFill(hue, element) {
-        element.style.fill = "hsl(" + hue + ", 85%, 45%)";
-      }
-
-      function setColor(hue, element) {
-        element.style.color = "hsl(" + hue + ", 85%, 45%)";
-      }
-
-      function getEstimatedReadingTime(string, wpm) {
-        if (!string) string = '';
-        if (!wpm) wpm = 200;
-
-        var wordCount = string.split(" ").length;
-        var [minutes, decimalSeconds] = (wordCount / wpm).toString().split(".");
-        return [minutes, Math.ceil(decimalSeconds * 0.6)];
-      }
-    </script>
   </head>
   <body>
     <article class="container">
@@ -66,33 +44,6 @@
       <div class="reading-time" />
     </article>
   </body>
-  <script>
-    var anchors = [].slice.call(document.querySelectorAll("a"));
-    var hue = getHue();
-
-    anchors.forEach(function(a) {
-      setColor(hue, a);
-    });
-
-    var readingTimeElement = document.querySelector('.reading-time');
-    var contentElement = document.querySelector('main.blog');
-
-    if (readingTimeElement) {
-      let readingTime = getEstimatedReadingTime(contentElement.innerText);
-      readingTimeElement.innerHTML = readingTime[0] + ' min read';
-    }
-  </script>
-  <script>
-    (function(f, a, t, h, o, m){
-    a[h]=a[h]||function(){
-    (a[h].q=a[h].q||[]).push(arguments)
-    };
-    o=f.createElement('script'),
-    m=f.getElementsByTagName('script')[0];
-    o.async=1; o.src=t; o.id='fathom-script';
-    m.parentNode.insertBefore(o,m)
-    })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
-    fathom('set', 'siteId', 'SYLMDFCN');
-    fathom('trackPageview');
-  </script>
+  <script type="application/javascript" src="/scripts/script.js" defer></script>
+  <script src="https://cdn.usefathom.com/script.js" site="SYLMDFCN" honor-dnt="true" defer></script>
 </html>
