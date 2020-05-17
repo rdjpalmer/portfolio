@@ -86,6 +86,10 @@ img {
   width: 100%;
 }
 
+.img--small {
+  max-width: 40rem;
+}
+
 p,
 li,
 .reading-time {
@@ -142,7 +146,8 @@ ol + .codepen-container,
 .codepen-container + p,
 .codepen-container + ul,
 .codepen-container + ol,
-.codepen-container + .codepen-container {
+.codepen-container + .codepen-container,
+* + figure {
   margin-top: 2rem;
 }
 
