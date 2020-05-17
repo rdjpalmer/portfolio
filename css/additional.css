@@ -1,0 +1,9 @@
+code {
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  code {
+    color: white;
+  }
+}
