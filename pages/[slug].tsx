@@ -43,7 +43,7 @@ export default function PostPage(props: PostProps) {
 
 export async function getStaticProps({ ...ctx }) {
   const { slug } = ctx.params;
-  const post = await import(`../_posts/${slug}.md`);
+  const post = await import(`../src/posts/${slug}.md`);
   const date = require("../src/utils/date");
 
   const { data, content } = matter(post.default);

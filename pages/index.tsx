@@ -72,7 +72,7 @@ export async function getStaticProps() {
       });
     return data;
     // @ts-ignore
-  })(require.context("../_posts", true, /\.md$/));
+  })(require.context("../src/posts", true, /\.md$/));
 
   return {
     props: {

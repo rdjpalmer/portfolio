@@ -80,7 +80,7 @@ ErrorPage.getInitialProps = ({ res, err }) => {
       });
     return data;
     // @ts-ignore
-  })(require.context("../_posts", true, /\.md$/));
+  })(require.context("../src/posts", true, /\.md$/));
 
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
 
