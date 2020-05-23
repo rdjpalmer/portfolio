@@ -2,7 +2,7 @@
 layout: newsletter
 title: "Reflection and hypotheses"
 date: 2019-05-10
-permalink: "/reflection-and-hypotheses"
+slug: "/reflection-and-hypotheses"
 description: >-
   Take an idea you have, and turn it into as many hypotheses and null hypotheses
   as possible. Then, prioritise them by what you think will make or break the

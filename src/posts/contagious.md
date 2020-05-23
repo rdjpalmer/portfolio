@@ -2,7 +2,7 @@
 layout: post
 title: "Contagious"
 date: 2020-03-29
-permalink: "/contagious"
+slug: "/contagious"
 description: >-
   Some thoughts on Johan Berger's Contagious
 ---
@@ -37,10 +37,10 @@ What is your Trojan horse? Is your product or idea embedded in a broader narrati
 
 ## Putting it all together, sort of
 
-These also fit into a larger context. Think of <a href="https://wordery.com/crossing-the-chasm-3rd-edition-geoffrey-a-moore-9780062292988" target="_blank">Crossing the Chasm</a>. The idea of gaining early adopters, then crossing the chasm to the early majority. In the former case you're looking for customers who feel like they're in on the secret with you. This is *social currency*. They'll be the people who tell their friends. Who will understand your beginnings. Who give you access to even better stories.
+These also fit into a larger context. Think of <a href="https://wordery.com/crossing-the-chasm-3rd-edition-geoffrey-a-moore-9780062292988" target="_blank">Crossing the Chasm</a>. The idea of gaining early adopters, then crossing the chasm to the early majority. In the former case you're looking for customers who feel like they're in on the secret with you. This is _social currency_. They'll be the people who tell their friends. Who will understand your beginnings. Who give you access to even better stories.
 
 You don't need mass understanding from the outset. If you have it, well, perhaps your idea isn't actually that great. In Mike Maples Jr's podcast with Andy Rachleff, <a href="https://tim.blog/2019/11/25/starting-greatness-mike-maples/" target="_blank">Two Questions Every Entrepreneur Should Answer</a>, they assert that your idea should be "right and non-consensus". That is, your idea eventually works out, but in the beginning only a select few believe you'll get there.
 
 In practise, this will mean sticking to the niche your idea originates from. If you're correct in your understanding, they will come. Even people who aren't in that niche will come. You seek the people most likely to understand, which speaks to anyone thinking the same way.
 
-Sticking to the niche you define means you can be deliberate in finding *triggers* and making it *public*. If your audience is designers at agencies, you can make your product *perfect* for their habits and routines.
+Sticking to the niche you define means you can be deliberate in finding _triggers_ and making it _public_. If your audience is designers at agencies, you can make your product _perfect_ for their habits and routines.

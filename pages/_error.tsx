@@ -1,15 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
 
-interface Post {
-  title: string;
-  date: string;
-  slug: string;
-  sortBy: number;
-}
+import { PostReference } from "../src/types";
 
 interface PageProps {
-  postList: Post[];
+  postList: PostReference[];
   statusCode: string | number;
 }
 
@@ -63,14 +58,16 @@ ErrorPage.getInitialProps = ({ res, err }) => {
 
     const data = keys
       .map(
-        (_, index): Post => {
+        (_, index): PostReference => {
           const value = values[index];
+          // @ts-ignore
           const { data } = matter(value.default);
 
           return {
+            description: data.description,
             title: data.title,
             date: date.parseAndFormat(data.date, "dd MMM yyyy"),
-            slug: data.permalink,
+            slug: data.slug,
             sortBy: date.parseAndFormat(data.date, "T"),
           };
         }
@@ -79,7 +76,6 @@ ErrorPage.getInitialProps = ({ res, err }) => {
         return b.sortBy - a.sortBy;
       });
     return data;
-    // @ts-ignore
   })(require.context("../src/posts", true, /\.md$/));
 
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404;

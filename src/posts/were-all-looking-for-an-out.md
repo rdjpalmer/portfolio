@@ -2,7 +2,7 @@
 layout: newsletter
 title: "We're all looking for an out"
 date: 2019-04-13
-permalink: "/were-all-looking-for-an-out"
+slug: "/were-all-looking-for-an-out"
 description: >-
   People, like you and I, will one day hang up our keyboards in favour of
   switching their careers entirely. That they'll leave the industry, looking to

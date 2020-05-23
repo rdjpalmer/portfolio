@@ -2,16 +2,13 @@
 layout: newsletter
 title: "Dissecting your problems"
 date: 2019-03-15
-permalink: "/dissecting-your-problems"
+slug: "/dissecting-your-problems"
 description: >-
   Sometimes, you'll need to do your learning in a safe environment, away from
   prying eyes. Away from too much judgement. That isn't to say, you should work in
   private either. Rather, it's to look at the situation in a different light; how
   can you get the best of both worlds?
-
----
-
-Hey there,
+---Hey there,
 
 I wanted to start with a massive thank you for subscribing to my newsletter. To
 tell you the absolute truth, I started it as I'm a tad insecure with my writing.

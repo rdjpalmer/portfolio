@@ -2,23 +2,10 @@ import Head from "next/head";
 import Link from "next/link";
 import matter from "gray-matter";
 import Markdown from "react-markdown/with-html";
+import { Post } from "../src/types";
 
-interface Metadata {
-  layout: "newsletter" | "post";
-  title: string;
-  date: string;
-  permalink: string;
-  description: string;
-}
-
-interface PostProps {
-  metadata: Metadata;
-  body: string;
-}
-
-export default function PostPage(props: PostProps) {
-  const { metadata, body } = props;
-  const { title, date } = metadata;
+export default function PostPage(props: Post) {
+  const { body, title, date } = props;
 
   return (
     <>
@@ -41,7 +28,7 @@ export default function PostPage(props: PostProps) {
   );
 }
 
-export async function getStaticProps({ ...ctx }) {
+export async function getStaticProps({ ...ctx }): Promise<{ props: Post }> {
   const { slug } = ctx.params;
   const post = await import(`../src/posts/${slug}.md`);
   const date = require("../src/utils/date");
@@ -50,17 +37,18 @@ export async function getStaticProps({ ...ctx }) {
 
   return {
     props: {
-      metadata: {
-        ...data,
-        date: date.parseAndFormat(data.date, "dd MMM yyyy"),
-      },
+      layout: data.layout,
+      title: data.title,
+      slug: data.slug,
+      description: data.description,
+      date: date.parseAndFormat(data.date, "dd MMM yyyy"),
       body: content,
     },
   };
 }
 
 export async function getStaticPaths() {
-  const glob = require("glob");
+  const glob = await import("glob");
   //get all .md files in the posts dir
   const blogs = glob.sync("_posts/**/*.md");
 

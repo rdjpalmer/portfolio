@@ -2,7 +2,7 @@
 layout: newsletter
 title: "Programming for success"
 date: 2019-06-21
-permalink: "/programming-for-success"
+slug: "/programming-for-success"
 description: >-
   Having now seen the state of the fitness industry and their approach to peak
   performance, it's clear: startup culture is light years behind.

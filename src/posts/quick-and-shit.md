@@ -2,7 +2,7 @@
 layout: newsletter
 title: "Quick and shit"
 date: 2019-06-21
-permalink: "/quick-and-shit"
+slug: "/quick-and-shit"
 description: >-
   A process for working creatively and efficiently
 ---

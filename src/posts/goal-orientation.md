@@ -2,7 +2,7 @@
 layout: newsletter
 title: "Goal orientation"
 date: 2019-06-11
-permalink: "/goal-orientation"
+slug: "/goal-orientation"
 description: >-
   Spend time figuring out your goals and be sure to bring yourself back to them
   frequently. They give you an anchor for progress and reflection.

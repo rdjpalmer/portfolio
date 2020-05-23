@@ -2,16 +2,11 @@ import Head from "next/head";
 import Link from "next/link";
 import Markdown from "react-markdown/with-html";
 
-interface Post {
-  title: string;
-  date: string;
-  slug: string;
-  sortBy: number;
-}
+import { PostReference } from "../src/types";
 
 interface PageProps {
+  postList: PostReference[];
   body: string;
-  postList: Post[];
 }
 
 export default function HomePage(props: PageProps) {
@@ -43,7 +38,6 @@ export default function HomePage(props: PageProps) {
 }
 
 export async function getStaticProps() {
-  // @ts-ignore
   const page = await import("../src/pages/index.md");
   const matter = require("gray-matter");
   const { content } = matter(page.default);
@@ -55,14 +49,16 @@ export async function getStaticProps() {
 
     const data = keys
       .map(
-        (_, index): Post => {
+        (_, index): PostReference => {
           const value = values[index];
+          // @ts-ignore
           const { data } = matter(value.default);
 
           return {
+            description: data.description,
             title: data.title,
             date: date.parseAndFormat(data.date, "dd MMM yyyy"),
-            slug: data.permalink,
+            slug: data.slug,
             sortBy: date.parseAndFormat(data.date, "T"),
           };
         }
@@ -71,7 +67,6 @@ export async function getStaticProps() {
         return b.sortBy - a.sortBy;
       });
     return data;
-    // @ts-ignore
   })(require.context("../src/posts", true, /\.md$/));
 
   return {

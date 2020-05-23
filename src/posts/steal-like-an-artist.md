@@ -2,7 +2,7 @@
 layout: post
 title: "Steal like an artist"
 date: 2020-04-03
-permalink: "/steal-like-an-artist"
+slug: "/steal-like-an-artist"
 description: Go on, read it.
 ---
 

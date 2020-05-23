@@ -2,7 +2,7 @@
 layout: newsletter
 title: "Separate the people from the problem"
 date: 2019-04-26
-permalink: "/separate-the-people-from-the-problem"
+slug: "/separate-the-people-from-the-problem"
 description: >-
   Where you find pressure and stress evokes a strong emotional response, be sure
   to take time out. Spend time with your thoughts, and figure out how to

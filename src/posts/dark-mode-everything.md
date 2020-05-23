@@ -2,7 +2,7 @@
 layout: post
 title: "Dark mode everything"
 date: 2020-05-17
-permalink: "/dark-mode-everything"
+slug: "/dark-mode-everything"
 description: Quickly switch between light and dark mode on MacOS
 ---
 

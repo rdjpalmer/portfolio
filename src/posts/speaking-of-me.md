@@ -2,7 +2,7 @@
 layout: newsletter
 title: "Speaking of me..."
 date: 2019-06-04
-permalink: "/speaking-of-me"
+slug: "/speaking-of-me"
 description: >-
   I've noticed that lots of people find it hard to talk about themselves. To
   talk about where their interests lie, what they want from the world, what

@@ -2,7 +2,7 @@
 layout: post
 title: "Pairing metrics"
 date: 2020-01-13
-permalink: "/pairing-metrics"
+slug: "/pairing-metrics"
 description: >-
   Don't be misled by your data
 ---

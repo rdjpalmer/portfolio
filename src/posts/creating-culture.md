@@ -2,7 +2,7 @@
 layout: post
 title: "Creating culture"
 date: 2019-11-16
-permalink: "/creating-culture"
+slug: "/creating-culture"
 description: >-
   Be deliberate about the culture you create
 ---

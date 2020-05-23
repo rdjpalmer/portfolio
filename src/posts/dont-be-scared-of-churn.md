@@ -2,7 +2,7 @@
 layout: newsletter
 title: "Don't be scared of churn"
 date: 2019-03-29
-permalink: "/dont-be-scared-of-churn"
+slug: "/dont-be-scared-of-churn"
 description: >-
   Customers should have every right to cancel their account with you at any
   moment. In fact, at a time when it can take you 10 seconds to open a bank

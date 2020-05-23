@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Richard Palmer, Creator of Byozo and HelloTimo
-permalink: /
+slug: /
 ---
 
 # Hey, I&apos;m Richard
