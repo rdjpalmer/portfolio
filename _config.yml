@@ -1,9 +1,0 @@
-title: Richard Palmer, Creator of Byozo and HelloTimo
-author: Richard Palmer
-email: rich@rdjpalmer.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Creator of Timo, Byozo. Tech lead at TransferWise
-
-# Build settings
-plugins:
-  - jekyll-feed

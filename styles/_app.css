@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  transition: all 200ms;
+}
+
+html,
+body {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+html {
+  font-family: "helvetica";
+  background-color: #fff;
+}
+
+body {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 68.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  padding-top: 12rem;
+  padding-bottom: 4rem;
+}
+
+::selection {
+  background: rgba(41, 56, 69, 1); /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: rgba(41, 56, 69, 1); /* Gecko Browsers */
+  color: #fff;
+}
+
+/**
+ * Typography
+ */
+h1,
+h2,
+h3 {
+  color: rgba(41, 56, 69, 1);
+  font-family: "helvetica";
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+p,
+time,
+li {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-family: "helvetica";
+  max-width: 40rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+img {
+  max-width: 65rem;
+  width: 100%;
+}
+
+.img--small {
+  max-width: 40rem;
+}
+
+p,
+li,
+.reading-time {
+  color: rgba(41, 56, 69, 1);
+}
+
+time {
+  font-size: 1.125rem;
+  color: rgba(41, 56, 69, 0.75);
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.codepen-container {
+  max-width: 36rem;
+  width: 100%;
+  height: 25rem;
+  margin-top: 1rem;
+}
+
+.container > * + * {
+  margin-top: 1rem;
+}
+
+p + p,
+p + ul,
+p + ol,
+p + figure,
+figure + p,
+figure + ul,
+figure + ol,
+ul + p,
+ul + figure,
+ol + p,
+ol + figure {
+  margin-top: 2rem;
+}
+
+p + .codepen-container,
+ul + .codepen-container,
+ol + .codepen-container,
+.codepen-container + p,
+.codepen-container + ul,
+.codepen-container + ol,
+.codepen-container + .codepen-container,
+* + figure {
+  margin-top: 2rem;
+}
+
+.container * + h1 {
+  margin-top: 0;
+}
+
+.container * + h2,
+.container * + h3,
+.container * + h4 {
+  margin-top: 3rem;
+}
+
+.articles li + li {
+  margin-top: 2rem;
+}
+
+/**
+ * Default links
+ */
+a {
+  position: relative;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+a[href*="//"]:not([href*="rdjpalmer.com"]) {
+  padding-right: 0.3rem;
+}
+
+a[href*="//"]:not([href*="rdjpalmer.com"]):after {
+  position: absolute;
+  content: "↝";
+  font-size: 0.75em;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+/**
+ * Articles
+ */
+.all-posts {
+  position: absolute;
+  top: 5rem;
+  text-decoration: none;
+}
+
+.all-posts > span {
+  text-decoration: underline;
+}
+
+.all-posts:before {
+  content: "← ";
+}
+
+article > time + p {
+  margin-top: 0.5rem;
+}
+
+.note {
+  background-color: #fafafa;
+  padding: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+.reading-time {
+  display: none;
+  position: fixed;
+  top: auto;
+  bottom: 1rem;
+  right: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  background-color: #fafafa;
+}
+
+.blog {
+  margin-top: 3rem;
+}
+
+/*
+ * >= lg
+ */
+@media (min-width: 40em) {
+  body {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    margin-bottom: auto;
+  }
+
+  p {
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 48rem) {
+  .reading-time {
+    display: block;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #191919;
+  }
+
+  ::selection {
+    background: #fff; /* WebKit/Blink Browsers */
+    color: rgba(41, 56, 69, 1);
+  }
+  ::-moz-selection {
+    background: #fff; /* Gecko Browsers */
+    color: rgba(41, 56, 69, 1);
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #fafafa;
+  }
+
+  p,
+  li,
+  .reading-time {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  time {
+    color: #b1b1b1;
+  }
+
+  .note,
+  .reading-time {
+    background-color: #191919;
+  }
+}
