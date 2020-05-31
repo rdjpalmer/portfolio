@@ -5,12 +5,13 @@ import Markdown from "react-markdown/with-html";
 import { Post } from "../src/types";
 
 export default function PostPage(props: Post) {
-  const { body, title, date } = props;
+  const { body, title, date, slug } = props;
 
   return (
     <>
       <Head>
         <title>{title} | Richard Palmer, Creator of Byozo and HelloTimo</title>
+        <link rel="canonical" href={`https://rdjpalmer.com/${slug}`} />
       </Head>
       <div>
         <Link href="/">
