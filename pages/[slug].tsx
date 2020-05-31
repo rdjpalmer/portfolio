@@ -38,7 +38,7 @@ export async function getStaticProps({ ...ctx }): Promise<{ props: Post }> {
 
   return {
     props: {
-      layout: data.layout,
+      // layout: data.layout,
       title: data.title,
       slug: data.slug,
       description: data.description,
@@ -49,21 +49,19 @@ export async function getStaticProps({ ...ctx }): Promise<{ props: Post }> {
 }
 
 export async function getStaticPaths() {
+  const path = await import("path");
   const glob = await import("glob");
+
   //get all .md files in the posts dir
-  const blogs = glob.sync("../src/posts/**/*.md");
+  const blogs = glob.sync(path.resolve("./src/posts/**/*.md"));
 
   //remove path and extension to leave filename only
-  const blogSlugs = blogs.map((file) =>
-    file
-      .split("/")[1]
-      .replace(/ /g, "-")
-      .slice(0, -3)
-      .trim()
-  );
-
-  // create paths with `slug` param
-  const paths = blogSlugs.map((slug) => `/${slug}`);
+  const paths = blogs.map((path) => {
+    const segments = path.split("/");
+    const filename = segments[segments.length - 1];
+    const slug = filename.split(".")[0];
+    return `/${slug}`;
+  });
 
   return {
     paths,
