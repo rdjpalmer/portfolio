@@ -16,6 +16,7 @@ function getEstimatedReadingTime(
   const wordCount = string.split(" ").length;
   const seconds = wordCount / wordsPerSecond;
   const timestamp = seconds * 1000;
+
   const [minutes, decimalSeconds] = (seconds / 60)
     .toString()
     .split(".")
@@ -37,7 +38,7 @@ function handleIntersection(entries, observer) {
 
 export default function PostPage(props: Post) {
   const { body, title, date, slug } = props;
-  const [minutes] = getEstimatedReadingTime(body, 200);
+  const [minutes] = getEstimatedReadingTime(body);
   const mainRef = useRef(null);
 
   useEffect(() => {
@@ -73,7 +74,9 @@ export default function PostPage(props: Post) {
         <main ref={mainRef} className="blog">
           <Markdown source={body} escapeHtml={false} />
         </main>
-        <div className="reading-time">{minutes}mins</div>
+        <div className="reading-time">
+          {minutes} min{minutes !== 1 && "s"} to read
+        </div>
       </div>
     </>
   );
