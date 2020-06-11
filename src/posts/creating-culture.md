@@ -4,7 +4,7 @@ title: "Creating culture"
 date: 2019-11-16
 slug: "/creating-culture"
 description: >-
-  Be deliberate about the culture you create
+  Culture is not a set of values. It is the actions your take. Be deliberate in these actions means being deliberate in creating culture.
 ---
 
 It's commonplace in startups, to define a set of values. Witty remarks of how you, the employee, should act while working for this business. Sometimes, they're turned into murals throughout the office. An ever-present reminder that **this is what you value**.
@@ -17,11 +17,11 @@ To paraphrase Ben Horowitz: culture is not the values you hold. It's the actions
 
 When you take Ben's understanding and apply it, you take these abstract concepts and give them meaning. Teamwork? Is that cross-team collaboration? Pair programming? Building lasting friendships with the rest of the team?
 
-When you discuss the actions you believe people should be taking, it forces you to think in realistic terms, rather than the abstract.
+When you discuss the actions you believe people should be taking, it forces you to think in real terms, rather than the abstract.
 
-You might say that it's impossible to avoid the abstract when your company has grown beyond a handful of people. But this is not the case. Culture the actions of the people at the top, even when there's a flat hierarchy.
+You might say that it's impossible to avoid the abstract when your company has grown beyond a handful of people. But this is not the case. The opposite is true. Culture is formed by the actions of the people at the top. Even when there's a flat hierarchy.
 
-A micromanaging CEO will lead to micromanaging VPs, which will lead to micromanaging team leads. A respectful CEO who always arrives to meetings on time creates a culture which values each others time.
+A micromanaging CEO will lead to micromanaging VPs, which will lead to micromanaging team leads. A respectful CEO who always arrives to meetings on time. This creates a culture which values each other's time.
 
 You might also say that the abstract is necessary to convey the ideas to everyone across the business. That you can't dictate people's behaviour. They won't listen, or you'll miss vital edge cases. But true enough, this is not the case. Defining culture in this way is not about prescribing behaviours. It's about understanding what behaviours make up the culture and then putting them into practice.
 
