@@ -37,7 +37,7 @@ function handleIntersection(entries, observer) {
 }
 
 export default function PostPage(props: Post) {
-  const { body, title, date, slug } = props;
+  const { body, title, description, date, slug } = props;
   const [minutes] = getEstimatedReadingTime(body);
   const mainRef = useRef(null);
 
@@ -59,8 +59,10 @@ export default function PostPage(props: Post) {
   return (
     <>
       <Head>
-        <title>{title} | Richard Palmer, Creator of Byozo and HelloTimo</title>
+        <title>{title} | Richard Palmer, Creator of Timo and Byozo</title>
         {/* TODO: Meta tags */}
+        <meta name="description" content={description} />
+        <meta name="author" content="Richard Palmer" />
         <link rel="canonical" href={`https://rdjpalmer.com${slug}`} />
       </Head>
       <div>
