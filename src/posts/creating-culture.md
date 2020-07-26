@@ -4,7 +4,7 @@ title: "Creating culture"
 date: 2019-11-16
 slug: "/creating-culture"
 description: >-
-  Culture is not a set of values. It is the actions your take. Be deliberate in these actions means being deliberate in creating culture.
+  Culture is not your values. It is the actions you take. Be deliberate in the actions you take to create the culture you wish.
 ---
 
 It's commonplace in startups, to define a set of values. Witty remarks of how you, the employee, should act while working for this business. Sometimes, they're turned into murals throughout the office. An ever-present reminder that **this is what you value**.
