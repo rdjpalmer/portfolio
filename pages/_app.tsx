@@ -83,6 +83,7 @@ export default function App({ Component, pageProps }) {
           content="@rdjpalmer"
           key="twitterCreator"
         />
+        <meta property="og:image" content="/mstile-310x310.png" key="ogImage" />
         <style>
           {`
             a { color: ${lightColor}; }
