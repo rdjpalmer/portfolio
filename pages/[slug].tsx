@@ -59,24 +59,47 @@ export default function PostPage(props: Post) {
   return (
     <>
       <Head>
-        <title>{title} | Richard Palmer, Creator of Timo and Byozo</title>
-        <meta name="description" content={description} />
-        <meta name="author" content="Richard Palmer" />
-        <link rel="canonical" href={`https://rdjpalmer.com${slug}`} />
-        <meta property="og:title" content={title} />
-        <meta property="og:site_name" content="rdjpalmer.com" />
-        <meta property="og:url" content={`https://rdjpalmer.com${slug}`} />
-        <meta property="og:description" content={description} />
-        <meta property="og:type" content="article" />
+        <title key="title">
+          {title} | Richard Palmer, Creator of Timo and Byozo
+        </title>
+        <meta name="description" content={description} key="description" />
+        <meta name="author" content="Richard Palmer" key="author" />
+        <link
+          rel="canonical"
+          href={`https://rdjpalmer.com${slug}`}
+          key="canoncial"
+        />
+        <meta property="og:title" content={title} key="ogTitle" />
+        <meta property="og:site_name" content="rdjpalmer.com" key="ogUrl" />
+        <meta
+          property="og:url"
+          content={`https://rdjpalmer.com${slug}`}
+          key="ogUrl"
+        />
+        <meta
+          property="og:description"
+          content={description}
+          key="ogDescription"
+        />
+        <meta property="og:type" content="article" key="ogType" />
         <meta
           property="og:image"
           content={`https://og.rdjpalmer.com/${encodeURIComponent(
             title
           )}.png?theme=light&md=0`}
+          key="ogImage"
         />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@rdjpalmer" />
-        <meta name="twitter:creator" content="@rdjpalmer" />
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+          key="twitterCard"
+        />
+        <meta name="twitter:site" content="@rdjpalmer" key="twitterSite" />
+        <meta
+          name="twitter:creator"
+          content="@rdjpalmer"
+          key="twitterCreator"
+        />
       </Head>
       <div>
         <Link href="/">

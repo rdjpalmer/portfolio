@@ -55,23 +55,34 @@ export default function App({ Component, pageProps }) {
         <meta
           name="description"
           content="Creator of Timo & Byozo. Product focused engineer."
+          key="description"
         />
-        <meta name="author" content="Richard Palmer" />
-        <link rel="canonical" href="https://rdjpalmer.com" />
+        <meta name="author" content="Richard Palmer" key="author" />
+        <link rel="canonical" href="https://rdjpalmer.com" key="canonical" />
         <meta
           property="og:title"
           content="Richard Palmer, Creator of Timo and Byozo"
+          key="ogTitle"
         />
-        <meta property="og:site_name" content="rdjpalmer.com" />
-        <meta property="og:url" content="https://rdjpalmer.com" />
+        <meta
+          property="og:site_name"
+          content="rdjpalmer.com"
+          key="ogSiteName"
+        />
+        <meta property="og:url" content="https://rdjpalmer.com" key="ogUrl" />
         <meta
           property="og:description"
           content="Creator of Timo & Byozo. Product focused engineer."
+          key="ogDescription"
         />
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@rdjpalmer" />
-        <meta name="twitter:creator" content="@rdjpalmer" />
+        <meta property="og:type" content="article" key="ogType" />
+        <meta name="twitter:card" content="summary" key="twitterCard" />
+        <meta name="twitter:site" content="@rdjpalmer" key="twitterSite" />
+        <meta
+          name="twitter:creator"
+          content="@rdjpalmer"
+          key="twitterCreator"
+        />
         <style>
           {`
             a { color: ${lightColor}; }
