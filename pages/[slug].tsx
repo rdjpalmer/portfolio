@@ -16,6 +16,7 @@ function getEstimatedReadingTime(
   const wordCount = string.split(" ").length;
   const seconds = wordCount / wordsPerSecond;
   const timestamp = seconds * 1000;
+
   const [minutes, decimalSeconds] = (seconds / 60)
     .toString()
     .split(".")
@@ -36,8 +37,8 @@ function handleIntersection(entries, observer) {
 }
 
 export default function PostPage(props: Post) {
-  const { body, title, date, slug } = props;
-  const [minutes] = getEstimatedReadingTime(body, 200);
+  const { body, title, description, date, slug } = props;
+  const [minutes] = getEstimatedReadingTime(body);
   const mainRef = useRef(null);
 
   useEffect(() => {
@@ -58,9 +59,47 @@ export default function PostPage(props: Post) {
   return (
     <>
       <Head>
-        <title>{title} | Richard Palmer, Creator of Byozo and HelloTimo</title>
-        {/* TODO: Meta tags */}
-        <link rel="canonical" href={`https://rdjpalmer.com${slug}`} />
+        <title key="title">
+          {title} | Richard Palmer, Creator of Timo and Byozo
+        </title>
+        <meta name="description" content={description} key="description" />
+        <meta name="author" content="Richard Palmer" key="author" />
+        <link
+          rel="canonical"
+          href={`https://rdjpalmer.com${slug}`}
+          key="canoncial"
+        />
+        <meta property="og:title" content={title} key="ogTitle" />
+        <meta property="og:site_name" content="rdjpalmer.com" key="ogUrl" />
+        <meta
+          property="og:url"
+          content={`https://rdjpalmer.com${slug}`}
+          key="ogUrl"
+        />
+        <meta
+          property="og:description"
+          content={description}
+          key="ogDescription"
+        />
+        <meta property="og:type" content="article" key="ogType" />
+        <meta
+          property="og:image"
+          content={`https://og.rdjpalmer.com/${encodeURIComponent(
+            title
+          )}.png?theme=light&md=0`}
+          key="ogImage"
+        />
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+          key="twitterCard"
+        />
+        <meta name="twitter:site" content="@rdjpalmer" key="twitterSite" />
+        <meta
+          name="twitter:creator"
+          content="@rdjpalmer"
+          key="twitterCreator"
+        />
       </Head>
       <div>
         <Link href="/">
@@ -73,7 +112,9 @@ export default function PostPage(props: Post) {
         <main ref={mainRef} className="blog">
           <Markdown source={body} escapeHtml={false} />
         </main>
-        <div className="reading-time">{minutes}mins</div>
+        <div className="reading-time">
+          {minutes} min{minutes !== 1 && "s"} to read
+        </div>
       </div>
     </>
   );
