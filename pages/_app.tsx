@@ -57,6 +57,21 @@ export default function App({ Component, pageProps }) {
           content="Creator of Timo & Byozo. Product focused engineer."
         />
         <meta name="author" content="Richard Palmer" />
+        <link rel="canonical" href="https://rdjpalmer.com" />
+        <meta
+          property="og:title"
+          content="Richard Palmer, Creator of Timo and Byozo"
+        />
+        <meta property="og:site_name" content="rdjpalmer.com" />
+        <meta property="og:url" content="https://rdjpalmer.com" />
+        <meta
+          property="og:description"
+          content="Creator of Timo & Byozo. Product focused engineer."
+        />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@rdjpalmer" />
+        <meta name="twitter:creator" content="@rdjpalmer" />
         <style>
           {`
             a { color: ${lightColor}; }

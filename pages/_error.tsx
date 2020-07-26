@@ -15,10 +15,15 @@ export default function ErrorPage(props: PageProps) {
     <>
       <Head>
         <title>
-          {statusCode} | Richard Palmer, Creator of Byozo and HelloTimo
+          Something went wrong | Richard Palmer, Creator of Byozo and HelloTimo
         </title>
       </Head>
-      <h1>{statusCode}</h1>
+      <h1>
+        Something went wrong{" "}
+        <span role="img" aria-label="sad emoji">
+          😟
+        </span>
+      </h1>
       <p>
         <Link href="/">
           <a>Head home</a>

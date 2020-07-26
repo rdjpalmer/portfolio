@@ -60,10 +60,23 @@ export default function PostPage(props: Post) {
     <>
       <Head>
         <title>{title} | Richard Palmer, Creator of Timo and Byozo</title>
-        {/* TODO: Meta tags */}
         <meta name="description" content={description} />
         <meta name="author" content="Richard Palmer" />
         <link rel="canonical" href={`https://rdjpalmer.com${slug}`} />
+        <meta property="og:title" content={title} />
+        <meta property="og:site_name" content="rdjpalmer.com" />
+        <meta property="og:url" content={`https://rdjpalmer.com${slug}`} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:image"
+          content={`https://og.rdjpalmer.com/${encodeURIComponent(
+            title
+          )}.png?theme=light&md=0`}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@rdjpalmer" />
+        <meta name="twitter:creator" content="@rdjpalmer" />
       </Head>
       <div>
         <Link href="/">
