@@ -28,4 +28,4 @@ Now you feel a little thirsty. Well, very thirsty. Your throat is dry. You're co
 
 You glance at your clock, and a few seconds have past since you sat down to write your masterpiece. You take a deep breathe and type some words:
 
-"Sitting at a blank screen"...
+"Sitting at a blank screen"…
