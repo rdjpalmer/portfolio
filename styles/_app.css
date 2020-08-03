@@ -180,8 +180,9 @@ a[href*="//"]:not([href*="rdjpalmer.com"]) {
 
 a[href*="//"]:not([href*="rdjpalmer.com"]):after {
   position: absolute;
-  content: "↝";
+  content: "↑";
   font-size: 0.75em;
+  transform: rotate(45deg);
 }
 
 a:hover {
