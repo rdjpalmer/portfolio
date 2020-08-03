@@ -14,5 +14,5 @@ for the likes of [Byozo](https://byozo.org), [nudj](https://twitter.com/nudjHQ),
 [Appear Here](https://appearhere.co.uk) and
 [Pact Coffee](https://www.pactcoffee.com/).
 
-Feel free to [email me](mailto:{{site.email}}), or
+Feel free to [email me](mailto:rich@rdjpalmer.com), or
 [DM me on twitter](https://twitter.com/rdjpalmer).
