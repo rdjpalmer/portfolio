@@ -7,10 +7,10 @@ slug: /
 # Hey, I&apos;m Richard
 
 I'm the co-creator of time and task manager, [Timo](https://hellotimo.co),
-filling the gap between work done, work logged and the time sheet. Currently leading the Conversion (think people, not money) team at [TransferWise](https://transferwise.com).
+filling the gap between work done, work logged and the time sheet. Currently leading the Conversion team (think people, not money) at [TransferWise](https://transferwise.com).
 
 Over the last eight years, I've taken a leading role in engineering and design
-for the likes of [Byozo](https://byozo.org), [nudj](https://twitter.com/nudjHQ),
+for the likes of Byozo, [nudj](https://twitter.com/nudjHQ),
 [Appear Here](https://appearhere.co.uk) and
 [Pact Coffee](https://www.pactcoffee.com/).
 
