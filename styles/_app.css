@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  transition: all 200ms;
+  transition: color 200ms, background-color 200ms;
 }
 
 html,
@@ -83,7 +83,8 @@ strong {
 
 img {
   max-width: 65rem;
-  width: 100%;
+  width: calc(100% + 1rem);
+  margin-left: -0.5rem;
 }
 
 .img--small {
@@ -257,6 +258,11 @@ article > time + p {
 @media (min-width: 48rem) {
   .reading-time {
     display: block;
+  }
+
+  img {
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
   }
 }
 
