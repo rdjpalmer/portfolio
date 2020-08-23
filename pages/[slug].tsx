@@ -37,7 +37,7 @@ function handleIntersection(entries, observer) {
 }
 
 export default function PostPage(props: Post) {
-  const { body, title, description, date, slug } = props;
+  const { body, title, description, date, slug, hasTweetEmbed } = props;
   const [minutes] = getEstimatedReadingTime(body);
   const mainRef = useRef(null);
 
@@ -100,6 +100,9 @@ export default function PostPage(props: Post) {
           content="@rdjpalmer"
           key="twitterCreator"
         />
+        {hasTweetEmbed && (
+          <script async src="https://platform.twitter.com/widgets.js" />
+        )}
       </Head>
       <div>
         <Link href="/">
@@ -135,6 +138,7 @@ export async function getStaticProps({ ...ctx }): Promise<{ props: Post }> {
       description: data.description,
       date: date.parseAndFormat(data.date, "dd MMM yyyy"),
       body: content,
+      hasTweetEmbed: data.hasTweetEmbed || false,
     },
   };
 }
