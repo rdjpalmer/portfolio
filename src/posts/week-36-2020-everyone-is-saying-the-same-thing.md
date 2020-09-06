@@ -18,9 +18,9 @@ In <a href="https://www.amazon.co.uk/Invest-Your-Time-Achieve-Master-ebook/dp/B0
 
 Julia Cameron has you doing <a href="https://juliacameronlive.com/basic-tools/morning-pages/" target="_blank" rel="noopener noreferrer">Morning Pages</a>, and dates with yourself in order to promote creativity. <a href="https://stephenking.com" target="_blank" rel="noopener noreferrer">Stephen King</a> puts it bluntly on how to become a writer: “read a lot and write a lot”.
 
-To make this succinct, you’ve at least five people, with different takes on the same message. They’re all trying to make different points. In reality, it’s the same message in different packaging.
+To make this succinct, you’ve at least five people, with their own worlds views. They’re all trying to make their own points. In reality, it's the same message in different packaging.
 
-It appears that the same message is this:
+It appears that the message is this:
 
 To be deliberate with your time, is to live your life to its fullest. To take control of the precious minutes you have is how you can live your life without regret.
 
