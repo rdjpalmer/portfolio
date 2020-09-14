@@ -189,7 +189,7 @@ a {
 }
 
 a[href*="//"]:not([href*="rdjpalmer.com"]) {
-  padding-right: 0.3rem;
+  padding-right: 0.5em;
 }
 
 a[href*="//"]:not([href*="rdjpalmer.com"]):after {
