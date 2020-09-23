@@ -19,13 +19,13 @@ I don’t always have to publish what I write. It would be great if everything w
 
 ## On goal setting
 
-Over the last couple of weeks I’ve been talking about goals with various people. Member of my team at TransferWise, people I’m close with. People who are unsure of what they want from the future, or how to get there.
+Over the last couple of weeks I’ve been talking about goals with various people. Members of my team at TransferWise, people I’m close with. People who are unsure of what they want from the future, or how to get there.
 
-Goal setting should be easy. The hard part should be achieving them. Goals needn’t be complicated. At best, they’re a simple tool to get you moving in the right direction.
+Goal setting should be easy. They're a tool to get you moving in the right direction. That hard part, should be achieving them.
 
-To understand how to use them as a tool, first you must start at the end. Interviews love the question “where do you see yourself in five years”? It’s not much of an interview question because it’s too easy to game. But it is a great opportunity for self reflection.
+To understand how to use them as a tool, first you must start at the end. Interviewers love the question “where do you see yourself in five years”? It’s not much of an interview question because it’s too easy to game. It is however, a great opportunity for self reflection.
 
-By starting with a question like this (I call them seed questions) you can start to understand how to see your future self. By having a vision of your future, you can work backwards to what you need to do now to make it happen.
+By starting with a question like this (I call them seed questions) you can start to understand how you see your future self. By having a vision of your future, you can work backwards to what you need to do now to make it happen.
 
 Let’s say you want to own a house. In the UK, you’ll need either a 5% or 10% deposit to secure a mortgage. By knowing these facts, you can set a saving goal. A saving goal enables you to evaluate your finances. Evaluating your finances allows you to make adjustments so you can reach the saving goal in good time.
 
@@ -41,7 +41,7 @@ Committing to something now doesn’t mean you can’t change your mind later. C
 
 ### How to set goals
 
-I didn't want to cover the actual process of setting goals. There are far more qualified people out there who can help you there. Here's some of my fav articles on the subject:
+I didn't want to cover the actual process of setting goals. There are far more qualified people out there who can help you. Here's some of my fav articles on the subject:
 
 1. <a href="https://nesslabs.com/actionable-goals" target="_blank" rel="noopener noreferrer">How to set actionable goals</a> 
 2. <a href="https://nesslabs.com/smart-goals-pact" target="_blank" rel="noopener noreferrer">SMART goals are not so smart: make a PACT instead</a>
