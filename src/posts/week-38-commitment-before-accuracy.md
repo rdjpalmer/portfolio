@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Week 38, 2020: Commitment before accuracy"
-date: 2020-09-13
+date: 2020-09-23
 slug: "/week-38-2020-commitment-before-accuracy"
 description: >-
   Consider committing a direction before worrying about the accuracy of it. You can always changes paths later.
