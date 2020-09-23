@@ -21,7 +21,7 @@ I don’t always have to publish what I write. It would be great if everything w
 
 Over the last couple of weeks I’ve been talking about goals with various people. Members of my team at TransferWise, people I’m close with. People who are unsure of what they want from the future, or how to get there.
 
-Goal setting should be easy. They're a tool to get you moving in the right direction. That hard part, should be achieving them.
+Goal setting should be easy. They're a tool to get you moving in the right direction. The hard part, should be achieving them.
 
 To understand how to use them as a tool, first you must start at the end. Interviewers love the question “where do you see yourself in five years”? It’s not much of an interview question because it’s too easy to game. It is however, a great opportunity for self reflection.
 
