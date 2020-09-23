@@ -29,15 +29,17 @@ By starting with a question like this (I call them seed questions) you can start
 
 Let’s say you want to own a house. In the UK, you’ll need either a 5% or 10% deposit to secure a mortgage. By knowing these facts, you can set a saving goal. A saving goal enables you to evaluate your finances. Evaluating your finances allows you to make adjustments so you can reach the saving goal in good time.
 
-It’s easy to say that you don’t know what you want from the next five years. But I’d bet you have a better idea of that than you think. I’d be surprised if you’ve never come out with “I’d need a holiday” or “wouldn’t it be amazing to live in New York”. That’s a starting point.
+It’s easy to say that you don’t know what you want from the next five years. But I’d bet you have a better idea of that than you think. I’d be surprised if you’ve never come out with “I need a holiday” or “wouldn’t it be amazing to live in New York”. That’s a starting point.
 
 If you’re unsure, break the question down into smaller questions. Where will you live? What sort of people are you friends with? What job do you have? How much money do you earn? You can at least answer these.
 
 What you say might sound unrealistic. But as Rolf Potts proves in Vagabonding, things tend to be a lot more accessible than you think. It’s the ambiguity that makes it seem hard.
 
-Perhaps you’re unsure of your answers. Maybe you question whether they’re the right goals for you. That’s sort of the secret. A goal is better than no goal. No goal is a goal in itself: to maintain the status quo.
+Perhaps you’re unsure of your answers. Maybe you question whether they’re the right goals for you. That’s the secret. A goal is better than no goal. No goal is a goal in itself: to maintain the status quo.
 
-Committing to something now doesn’t mean you can’t change your mind later. Committing to something is the fastest way to learn whether it’s right or wrong.
+Committing to them is the fastest way to learn whether they're right or wrong.
+
+Committing to them now doesn’t mean you can’t change your mind later. 
 
 ### How to set goals
 
