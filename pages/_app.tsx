@@ -87,8 +87,10 @@ export default function App({ Component, pageProps }) {
         <style>
           {`
             a { color: ${lightColor}; }
+            input:focus { outline-color: ${lightColor}; }
             @media (prefers-color-scheme: dark) {
               a { color: ${darkColor}; }
+              input:focus { outline-color: ${darkColor}; }
             }
           `}
         </style>

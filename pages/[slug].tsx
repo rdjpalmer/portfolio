@@ -3,7 +3,10 @@ import Head from "next/head";
 import Link from "next/link";
 import matter from "gray-matter";
 import Markdown from "react-markdown/with-html";
+
 import { Post } from "../src/types";
+import Input from "../src/components/Input/Input";
+import Button from "../src/components/Button/Button";
 
 /**
  * @param string
@@ -110,11 +113,55 @@ export default function PostPage(props: Post) {
             <span>All posts</span>
           </a>
         </Link>
-        <h1>{title}</h1>
-        <time dateTime={date}>{date}</time>
-        <main ref={mainRef} className="blog">
-          <Markdown source={body} escapeHtml={false} />
-        </main>
+        <article>
+          <h1>{title}</h1>
+          <time dateTime={date}>{date}</time>
+          <main ref={mainRef} className="blog">
+            <Markdown source={body} escapeHtml={false} />
+          </main>
+        </article>
+        <footer className="newsletter-footer">
+          <form
+            action="https://rdjpalmer.us20.list-manage.com/subscribe/post?u=0cb4f80ca9869534161bfc334&amp;id=5e488d017e"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            target="_blank"
+          >
+            <h2>Enjoyed what you've read so far?</h2>
+            <p>
+              Maybe you'll enjoy the next one too.
+              <br /> 👉 Sign up to get it straight&nbsp;to&nbsp;your&nbsp;inbox.
+            </p>
+            <div className="input-group">
+              <Input
+                name="EMAIL"
+                placeholder="youso@nice.co"
+                aria-label="Your email"
+              />
+              <Button>Sign up</Button>
+            </div>
+            <div
+              style={{ position: "absolute", left: "-5000px" }}
+              aria-hidden="true"
+            >
+              <input
+                type="text"
+                name="b_0cb4f80ca9869534161bfc334_5e488d017e"
+                tabIndex={-1}
+                value=""
+              />
+            </div>
+            <p className="small">
+              <small>
+                You can unsubscribe at any time, by hitting the unsubscribe link
+                at the bottom of the emails you'll receive. I use MailChimp to
+                send the emails, so by signing up, your email address will be
+                sent to them.
+              </small>
+            </p>
+          </form>
+        </footer>
         <div className="reading-time">
           {minutes} min{minutes !== 1 && "s"} to read
         </div>
