@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  transition: color 200ms, background-color 200ms;
+  transition: opacity 200ms;
 }
 
 html,
@@ -77,6 +77,11 @@ li {
   margin-bottom: 0;
 }
 
+p.small {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
 strong {
   font-weight: 500;
 }
@@ -93,7 +98,8 @@ img {
 
 p,
 li,
-.reading-time {
+.reading-time,
+button {
   color: rgba(41, 56, 69, 1);
 }
 
@@ -281,6 +287,111 @@ blockquote > p:first-child {
   margin-top: 3rem;
 }
 
+.newsletter-footer {
+  background-color: #fafafa;
+  max-width: 42rem;
+  border-radius: 3px;
+  margin-top: 3rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.input-group {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: min-content min-content;
+  justify-content: start;
+  align-items: stretch;
+  /* remove */
+  margin-top: 1rem;
+}
+
+.input {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  font-family: "helvetica";
+  width: 240px;
+  font-weight: 300;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.input:focus {
+  outline: 0;
+}
+
+.button {
+  position: relative;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.85);
+  background-color: white;
+  white-space: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  clip-path: inset(0 round 3px);
+  cursor: pointer;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.125);
+}
+
+.button:hover,
+.button:focus {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.85);
+  transform: translateY(-1px);
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:before {
+  content: "";
+  display: block;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg width='343' height='322' viewBox='0 0 343 322' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_f)'%3E%3Cpath d='M159.62 262C184.118 262 203.977 242.141 203.977 217.643C203.977 193.145 184.118 173.286 159.62 173.286C135.123 173.286 115.263 193.145 115.263 217.643C115.263 242.141 135.123 262 159.62 262Z' fill='%23FF0A0A'/%3E%3C/g%3E%3Cg filter='url(%23filter1_f)'%3E%3Cpath d='M104.357 183.948C128.855 183.948 148.714 164.089 148.714 139.591C148.714 115.093 128.855 95.234 104.357 95.234C79.8594 95.234 60.0001 115.093 60.0001 139.591C60.0001 164.089 79.8594 183.948 104.357 183.948Z' fill='%2301944A'/%3E%3C/g%3E%3Cg opacity='0.6' filter='url(%23filter2_f)'%3E%3Cpath opacity='0.6' d='M208.591 148.714C233.089 148.714 252.948 128.855 252.948 104.357C252.948 79.8594 233.089 60 208.591 60C184.093 60 164.234 79.8594 164.234 104.357C164.234 128.855 184.093 148.714 208.591 148.714Z' fill='white'/%3E%3C/g%3E%3Cg opacity='0.6' filter='url(%23filter3_f)'%3E%3Cpath opacity='0.6' d='M150.916 242.042C175.414 242.042 195.274 222.183 195.274 197.685C195.274 173.188 175.414 153.328 150.916 153.328C126.419 153.328 106.559 173.188 106.559 197.685C106.559 222.183 126.419 242.042 150.916 242.042Z' fill='white'/%3E%3C/g%3E%3Cg filter='url(%23filter4_f)'%3E%3Cpath d='M244.507 170.106C265.617 170.106 282.729 152.993 282.729 131.884C282.729 110.774 265.617 93.6611 244.507 93.6611C223.397 93.6611 206.284 110.774 206.284 131.884C206.284 152.993 223.397 170.106 244.507 170.106Z' fill='%23001AFF'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f' x='55.2631' y='113.286' width='208.714' height='208.714' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='30' result='effect1_foregroundBlur'/%3E%3C/filter%3E%3Cfilter id='filter1_f' x='6.10352e-05' y='35.234' width='208.714' height='208.714' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='30' result='effect1_foregroundBlur'/%3E%3C/filter%3E%3Cfilter id='filter2_f' x='104.234' y='0' width='208.714' height='208.714' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='30' result='effect1_foregroundBlur'/%3E%3C/filter%3E%3Cfilter id='filter3_f' x='46.5593' y='93.3282' width='208.714' height='208.714' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='30' result='effect1_foregroundBlur'/%3E%3C/filter%3E%3Cfilter id='filter4_f' x='146.284' y='33.6611' width='196.445' height='196.445' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='30' result='effect1_foregroundBlur'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-size: 100%;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: hard-light;
+  transform: scale(3);
+  pointer-events: none;
+  transition: transform 200ms;
+}
+
+.button:hover:before,
+.button:focus:before {
+  transform: scale(8);
+}
+
+.button:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.button:active:before {
+  transform: scale(2.5);
+}
+
 /*
  * >= lg
  */
@@ -334,7 +445,8 @@ blockquote > p:first-child {
 
   p,
   li,
-  .reading-time {
+  .reading-time,
+  .button {
     color: rgba(255, 255, 255, 0.9);
   }
 
@@ -344,6 +456,50 @@ blockquote > p:first-child {
 
   .note,
   .reading-time {
+    background-color: #292929;
+  }
+
+  .newsletter-footer {
+    background-color: #292929;
+  }
+
+  .input {
     background-color: #191919;
+    border: 1px solid #191919;
+    color: white;
+  }
+
+  .input:hover,
+  .input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .button {
+    color: rgba(255, 255, 255, 0.85);
+    background-color: #191919;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.125);
+  }
+
+  .button:before {
+    mix-blend-mode: hard-light;
+    transform: scale(3);
+    background-image: url("data:image/svg+xml,%3Csvg width='343' height='322' viewBox='0 0 343 322' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cg filter='url(%23filter0_f)'%3E%3Cpath d='M183.62 235C208.118 235 227.977 215.141 227.977 190.643C227.977 166.145 208.118 146.286 183.62 146.286C159.123 146.286 139.263 166.145 139.263 190.643C139.263 215.141 159.123 235 183.62 235Z' fill='%239370DB'/%3E%3C/g%3E%3Cg filter='url(%23filter1_f)'%3E%3Cpath d='M128.357 156.948C152.855 156.948 172.714 137.089 172.714 112.591C172.714 88.0934 152.855 68.234 128.357 68.234C103.859 68.234 84.0001 88.0934 84.0001 112.591C84.0001 137.089 103.859 156.948 128.357 156.948Z' fill='%2336D7B7'/%3E%3C/g%3E%3Cg opacity='0.6' filter='url(%23filter2_f)'%3E%3Cpath opacity='0.6' d='M232.591 121.714C257.089 121.714 276.948 101.855 276.948 77.3571C276.948 52.8594 257.089 33 232.591 33C208.093 33 188.234 52.8594 188.234 77.3571C188.234 101.855 208.093 121.714 232.591 121.714Z' fill='white'/%3E%3C/g%3E%3Cg opacity='0.6' filter='url(%23filter3_f)'%3E%3Cpath opacity='0.6' d='M174.916 215.042C199.414 215.042 219.274 195.183 219.274 170.685C219.274 146.188 199.414 126.328 174.916 126.328C150.419 126.328 130.559 146.188 130.559 170.685C130.559 195.183 150.419 215.042 174.916 215.042Z' fill='white'/%3E%3C/g%3E%3Cg filter='url(%23filter4_f)'%3E%3Cpath d='M212.507 143.106C233.617 143.106 250.729 125.993 250.729 104.884C250.729 83.7739 233.617 66.6611 212.507 66.6611C191.397 66.6611 174.284 83.7739 174.284 104.884C174.284 125.993 191.397 143.106 212.507 143.106Z' fill='%23FC6399'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f' x='79.2631' y='86.2858' width='208.714' height='208.714' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='30' result='effect1_foregroundBlur'/%3E%3C/filter%3E%3Cfilter id='filter1_f' x='24.0001' y='8.23401' width='208.714' height='208.714' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='30' result='effect1_foregroundBlur'/%3E%3C/filter%3E%3Cfilter id='filter2_f' x='128.234' y='-27' width='208.714' height='208.714' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='30' result='effect1_foregroundBlur'/%3E%3C/filter%3E%3Cfilter id='filter3_f' x='70.5593' y='66.3282' width='208.714' height='208.714' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='30' result='effect1_foregroundBlur'/%3E%3C/filter%3E%3Cfilter id='filter4_f' x='114.284' y='6.66107' width='196.445' height='196.445' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='30' result='effect1_foregroundBlur'/%3E%3C/filter%3E%3CclipPath id='clip0'%3E%3Crect width='343' height='322' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  }
+
+  .button:hover,
+  .button:focus {
+    background-color: #191919;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .button:hover:before,
+  .button:focus:before {
+    transform: translateY(30px) scale(7);
+    filter: saturate(150%);
+  }
+
+  .button:active {
+    box-shadow: 0;
   }
 }
