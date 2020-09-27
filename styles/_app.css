@@ -112,6 +112,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style-type: "￫ ";
 }
 
 figure {
@@ -130,6 +131,17 @@ figure {
 }
 
 .container > * + * {
+  margin-top: 1rem;
+}
+
+h2 + p,
+h3 + p,
+h4 + p,
+h2 + ul,
+h3 + ul,
+h4 + ul,
+.container h2 + h3,
+.container h3 + h4 {
   margin-top: 1rem;
 }
 
@@ -292,22 +304,27 @@ blockquote > p:first-child {
   max-width: 42rem;
   border-radius: 3px;
   margin-top: 3rem;
-  margin-left: -2rem;
-  margin-right: -2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
 }
 
 .input-group {
   display: grid;
   grid-gap: 0.5rem;
-  grid-template-columns: min-content min-content;
+  grid-template-columns: minmax(140px, 220px) min-content;
   justify-content: start;
   align-items: stretch;
   /* remove */
   margin-top: 1rem;
+
+  /* hack away the horizontal scroll issue */
+  padding-top: 1px;
+  overflow: hidden;
 }
 
 .input {
@@ -318,7 +335,6 @@ blockquote > p:first-child {
   font-size: 0.85rem;
   line-height: 1.4;
   font-family: "helvetica";
-  width: 240px;
   font-weight: 300;
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.25);
@@ -331,6 +347,10 @@ blockquote > p:first-child {
 
 .input:focus {
   outline: 0;
+}
+
+.button-container {
+  display: flex;
 }
 
 .button {
@@ -409,6 +429,19 @@ blockquote > p:first-child {
 
   p {
     line-height: 1.4;
+  }
+
+  .newsletter-footer {
+    background-color: #fafafa;
+    max-width: 42rem;
+    border-radius: 3px;
+    margin-top: 3rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 

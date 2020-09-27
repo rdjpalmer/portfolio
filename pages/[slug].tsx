@@ -150,6 +150,7 @@ export default function PostPage(props: Post) {
                 name="b_0cb4f80ca9869534161bfc334_5e488d017e"
                 tabIndex={-1}
                 value=""
+                readOnly
               />
             </div>
             <p className="small">
