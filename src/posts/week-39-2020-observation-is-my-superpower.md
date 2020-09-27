@@ -4,7 +4,7 @@ title: "Week 39, 2020: Observation is my superpower"
 date: 2020-09-27
 slug: "/week-39-2020-observation-is-my-superpower"
 description: >-
-  Consider committing a direction before worrying about the accuracy of it. You can always changes paths later.
+  Reflection on the past year, and the effects observation can have on your life
 hasTweetEmbed: true
 ---
 
