@@ -112,6 +112,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style-type: "￫ ";
 }
 
 figure {
@@ -130,6 +131,17 @@ figure {
 }
 
 .container > * + * {
+  margin-top: 1rem;
+}
+
+h2 + p,
+h3 + p,
+h4 + p,
+h2 + ul,
+h3 + ul,
+h4 + ul,
+.container h2 + h3,
+.container h3 + h4 {
   margin-top: 1rem;
 }
 
