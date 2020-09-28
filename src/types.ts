@@ -9,5 +9,7 @@ export interface PostReference {
 export interface Post extends PostReference {
   // layout: "post" | "newsletter";
   body: string;
+  created: string;
+  updated: string;
   hasTweetEmbed: boolean;
 }

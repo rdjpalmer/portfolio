@@ -84,6 +84,12 @@ export default function App({ Component, pageProps }) {
           key="twitterCreator"
         />
         <meta property="og:image" content="/mstile-310x310.png" key="ogImage" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="RSS Feed for rdjpalmer.com"
+          href="/rss.xml"
+        />
         <style>
           {`
             a { color: ${lightColor}; }
