@@ -25,7 +25,13 @@ const rssDefaultValues = {
 };
 
 async function generateMetaData() {
-  const sitemapJson = [];
+  const sitemapJson = [
+    {
+      loc: "https://rdjpalmer.com/",
+      changefreq: "weekly",
+      priority: "1",
+    },
+  ];
   const feed = new RSS({
     title: "Richard Palmer, Creator of Timo and Byozo",
     description: "Creator of Timo & Byozo. Product focused engineer.",
@@ -37,32 +43,34 @@ async function generateMetaData() {
     const segments = routeConfig.dataRoute.split("/");
     const jsonFileName = segments[segments.length - 1];
     const pageConfigPath = path.resolve(`./.next/server/pages/${jsonFileName}`);
-    const pageConfig = require(pageConfigPath);
+    if (slug !== "/") {
+      const pageConfig = require(path.resolve(pageConfigPath));
 
-    const pageSitemapConfig =
-      sitemapConfiguration[slug] || sitemapConfiguration.fallback;
+      const pageSitemapConfig =
+        sitemapConfiguration[slug] || sitemapConfiguration.fallback;
 
-    const location = `https://rdjpalmer.com${slug}`;
+      const location = `https://rdjpalmer.com${slug}`;
 
-    sitemapJson.push({
-      url: omitBy(
-        {
-          loc: location,
-          lastmod: pageConfig.pageProps.updated || null,
-          ...pageSitemapConfig,
-        },
-        (value) => value == null
-      ),
-    });
+      sitemapJson.push({
+        url: omitBy(
+          {
+            loc: location,
+            lastmod: pageConfig.pageProps.updated || null,
+            ...pageSitemapConfig,
+          },
+          (value) => value == null
+        ),
+      });
 
-    feed.item({
-      ...rssDefaultValues,
-      title: pageConfig.pageProps.title,
-      guid: pageConfig.pageProps.slug,
-      url: location,
-      date: pageConfig.pageProps.updated,
-      description: pageConfig.pageProps.description,
-    });
+      feed.item({
+        ...rssDefaultValues,
+        title: pageConfig.pageProps.title,
+        guid: pageConfig.pageProps.slug,
+        url: location,
+        date: pageConfig.pageProps.updated,
+        description: pageConfig.pageProps.description,
+      });
+    }
   });
 
   const sitemapXml = dedent`
