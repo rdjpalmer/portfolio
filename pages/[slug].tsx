@@ -185,6 +185,8 @@ export async function getStaticProps({ ...ctx }): Promise<{ props: Post }> {
       slug: data.slug,
       description: data.description,
       date: date.parseAndFormat(data.date, "dd MMM yyyy"),
+      created: date.parseAndFormat(data.created || data.date, "yyyy-MM-dd"),
+      updated: date.parseAndFormat(data.updated || data.date, "yyyy-MM-dd"),
       body: content,
       hasTweetEmbed: data.hasTweetEmbed || false,
     },
