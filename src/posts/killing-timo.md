@@ -4,8 +4,7 @@ title: "Killing Timo: Our approach to validating our side project"
 date: 2020-10-08
 slug: "/killing-timo"
 description: >-
-  We’ve been working hard at killing our side project, Timo. Yes, you read that right. Killing our side project.
-I suspect you’re asking the question, “Why?”. Here is the answer.
+  We’ve been working hard at killing our side project, Timo. Yes, you read that right. Killing our side project. I suspect you’re asking the question, “Why?”. Here is the answer.
 hasTweetEmbed: true
 ---
 
