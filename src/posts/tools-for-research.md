@@ -31,7 +31,7 @@ When you're done with that session, write them up in Roam to reference later.
 
 If you’ve neat enough handwriting, you can skip the write up by using Google Lens. Take a picture of it, let Google Lens pick up on all the words, and copy it straight to your computer. Magic ✨
 
-## Hypothes.is -> ReadWise -> Roam
+## Hypothes.is ￫ ReadWise ￫ Roam
 
 The digital equivalent of the index card, <a href="https://web.hypothes.is/" target="_blank" rel="noopener noreferrer">Hypothes.is</a> let's you annotate and highlight almost any page on the web.
 
@@ -43,7 +43,7 @@ ReadWise resurfaces your notes to you in a handy summary email every so often. U
 
 And the new Roam integration really levels the whole system up. Instead of keeping the notes to itself, ReadWise now puts your notes where they should be: in your note taking app.
 
-## Instapaper -> ReadWise -> Roam
+## Instapaper ￫ ReadWise ￫ Roam
 
 Hypothes.is is great for when you're already reading something. But there's always times where you perhaps don't have the time, or aren't ready to read the entire piece. <a href="https://www.instapaper.com/" target="_blank" rel="noopener noreferrer">Instapaper</a> solves this by saving the whole article for later.
 
