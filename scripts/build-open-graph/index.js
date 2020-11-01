@@ -24,53 +24,61 @@ function encodeTitle(title) {
 async function buildOpenGraphImages() {
   const stopRenderer = await initialiseRenderer();
 
-  await Promise.all(
-    Object.entries(prerenderManifest.routes)
-      .map(([slug, routeConfig]) => {
-        const segments = routeConfig.dataRoute.split("/");
-        const jsonFileName = segments[segments.length - 1];
-        const pageConfigPath = path.resolve(`${pagePath}${jsonFileName}`);
-        const pageConfig = require(path.resolve(pageConfigPath));
+  await Object.entries(prerenderManifest.routes)
+    .map(([slug, routeConfig]) => {
+      const segments = routeConfig.dataRoute.split("/");
+      const jsonFileName = segments[segments.length - 1];
+      const pageConfigPath = path.resolve(`${pagePath}${jsonFileName}`);
+      const pageConfig = require(path.resolve(pageConfigPath));
 
-        return {
-          slug,
-          page: pageConfig,
-          route: routeConfig,
-        };
-      })
-      .filter(({ page }) => typeof page.pageProps.title !== "undefined")
-      .sort((a, b) => {
-        const aDate = parse(a.page.pageProps.updated, "yyyy-MM-dd", new Date());
-        const bDate = parse(b.page.pageProps.updated, "yyyy-MM-dd", new Date());
+      return {
+        slug,
+        page: pageConfig,
+        route: routeConfig,
+      };
+    })
+    .filter(({ page }) => typeof page.pageProps.title !== "undefined")
+    .sort((a, b) => {
+      const aDate = parse(a.page.pageProps.updated, "yyyy-MM-dd", new Date());
+      const bDate = parse(b.page.pageProps.updated, "yyyy-MM-dd", new Date());
 
-        return bDate - aDate;
-      })
-      .map(async ({ page }) => {
-        const { title } = page.pageProps;
-        const imagePath = path.resolve(
-          `./public/open-graph/${encodeTitle(title)}.png`
+      return bDate - aDate;
+    })
+    .map(({ page }) => async () => {
+      const { title } = page.pageProps;
+      const imagePath = path.resolve(
+        `./public/open-graph/${encodeTitle(title)}.png`
+      );
+
+      if (!fs.existsSync(imagePath)) {
+        console.log(
+          `buildOpenGraphImages(): No cache found for ${title}. Generating image`
         );
-
-        if (!fs.existsSync(imagePath)) {
-          console.log(
-            `buildOpenGraphImages(): No cache found for ${title}. Generating image`
-          );
-          if (title) {
+        if (title) {
+          try {
             const image = await fetch(
               `http://localhost:3000/${title}.png`
             ).then((response) => response.buffer());
 
-            await writeFile(imagePath, image, "binary");
-          }
-        } else {
-          console.log(
-            `buildOpenGraphImages(): Cache found for ${title}. Skipping`
-          );
-        }
+            console.log(
+              `buildOpenGraphImages(): Image created for ${title}. Writing to /public/open-graph`
+            );
 
-        return true;
-      })
-  );
+            await writeFile(imagePath, image, "binary");
+            return true;
+          } catch (error) {
+            console.error(
+              `buildOpenGraphImages(): failed to fetch image for ${title}. Skipping`
+            );
+          }
+        }
+      } else {
+        console.log(
+          `buildOpenGraphImages(): Cache found for ${title}. Skipping`
+        );
+      }
+    })
+    .reduce((p, x) => p.then((_) => x()), Promise.resolve());
 
   await stopRenderer();
   process.exit();

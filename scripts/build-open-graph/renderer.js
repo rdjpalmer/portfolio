@@ -16,17 +16,12 @@ function parseUrl(url) {
   return [decodeURIComponent(text), fileType];
 }
 
-let driver;
+module.exports = async function initialiseRenderer() {
+  const driver = await getDriver(isDev);
 
-module.exports = function initialiseRenderer() {
   server.get("/*", async (request, reply) => {
     const [text, fileType] = parseUrl(request.url);
     const html = getHtml(text);
-
-    if (!driver) {
-      // Cached driver, for performance yo
-      driver = await getDriver(isDev);
-    }
 
     if (isHtmlDebug) {
       reply.header("Content-Type", "text/html");
@@ -34,7 +29,12 @@ module.exports = function initialiseRenderer() {
       return;
     }
 
+    console.log("\n\n📷\n\n");
+
     const screenshot = await getScreenshot(driver, html, fileType, isDev);
+
+    console.log("\n\n📸\n\n");
+
     reply.header("Content-Type", `image/${fileType}`);
     reply.send(screenshot);
   });

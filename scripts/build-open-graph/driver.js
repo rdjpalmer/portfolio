@@ -8,11 +8,9 @@ const exePath =
     : "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 
 module.exports = async function getDriver(isDev) {
-  const browser = await chromium.puppeteer.launch({
+  return chromium.puppeteer.launch({
     args: chromium.args,
     executablePath: isDev ? exePath : await chromium.executablePath,
     headless: isDev ? true : chromium.headless,
   });
-
-  return browser.newPage();
 };
