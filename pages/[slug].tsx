@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { createElement, useEffect, useRef } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import matter from "gray-matter";
@@ -38,6 +38,30 @@ function handleIntersection(entries, observer) {
     }
   });
 }
+
+function getTextContent(props): string[] {
+  if (Array.isArray(props.children)) {
+    return props.children.map((child) => getTextContent(child.props));
+  } else if (typeof props.children === "string") {
+    return [props.children];
+  }
+}
+
+function Heading(props) {
+  const text = getTextContent(props)
+    .flat()
+    .join(" ");
+  const slug = text
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z-]/g, "");
+
+  return createElement(`h${props.level}`, { id: slug }, props.children);
+}
+
+const renderers = {
+  heading: Heading,
+};
 
 export default function PostPage(props: Post) {
   const { body, title, description, date, slug, hasTweetEmbed } = props;
@@ -117,7 +141,7 @@ export default function PostPage(props: Post) {
           <h1>{title}</h1>
           <time dateTime={date}>{date}</time>
           <main ref={mainRef} className="blog">
-            <Markdown source={body} escapeHtml={false} />
+            <Markdown source={body} escapeHtml={false} renderers={renderers} />
           </main>
         </article>
         <footer className="newsletter-footer">
