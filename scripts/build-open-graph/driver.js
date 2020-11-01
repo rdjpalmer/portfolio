@@ -29,8 +29,6 @@ async function getOptions(isDev) {
     };
   }
 
-  console.log({ options });
-
   return options;
 }
 

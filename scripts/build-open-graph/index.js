@@ -61,11 +61,12 @@ async function buildOpenGraphImages() {
                 `http://localhost:3000/${title}.png`
               ).then((response) => response.buffer());
 
+              await writeFile(imagePath, image, "binary");
+
               console.log(
-                `buildOpenGraphImages(): Image created for ${title}. Writing to /public/open-graph`
+                `buildOpenGraphImages(): Image written to ${imagePath}`
               );
 
-              await writeFile(imagePath, image, "binary");
               return true;
             } catch (error) {
               console.error(

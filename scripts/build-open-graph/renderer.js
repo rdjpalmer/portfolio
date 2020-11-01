@@ -7,9 +7,7 @@ const isDev = process.env.NOW_REGION === "dev1";
 
 const isHtmlDebug = process.env.OG_HTML_DEBUG === "1";
 
-const server = fastify({
-  logger: true,
-});
+const server = fastify();
 
 function parseUrl(url) {
   const [text, fileType] = url.split("/")[1].split(".");
@@ -30,11 +28,7 @@ module.exports = async function initialiseRenderer() {
         return;
       }
 
-      console.log("\n\n📷\n\n");
-
       const screenshot = await getScreenshot(driver, html, fileType, isDev);
-
-      console.log("\n\n📸\n\n");
 
       reply.header("Content-Type", `image/${fileType}`);
       reply.send(screenshot);
