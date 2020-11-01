@@ -7,7 +7,7 @@ const RSS = require("rss");
 const omitBy = require("lodash.omitby");
 const parse = require("date-fns/parse");
 
-const prerenderManifest = require("./.next/prerender-manifest.json");
+const prerenderManifest = require("../.next/prerender-manifest.json");
 
 const writeFile = util.promisify(fs.writeFile);
 
@@ -32,7 +32,7 @@ const pagePath = VERCEL_URL
   ? "./.next/serverless/pages/"
   : "./.next/server/pages/";
 
-async function generateMetaData() {
+async function buildRssFeedAndSiteMap() {
   try {
     const sitemapJson = [
       {
@@ -113,4 +113,4 @@ async function generateMetaData() {
   }
 }
 
-generateMetaData();
+buildRssFeedAndSiteMap();

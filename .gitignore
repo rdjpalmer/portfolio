@@ -5,3 +5,4 @@ node_modules
 .vercel
 public/rss.xml
 public/sitemap.xml
+public/open-graph/*.png

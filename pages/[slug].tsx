@@ -63,6 +63,13 @@ const renderers = {
   heading: Heading,
 };
 
+function encodeTitle(title) {
+  return title
+    .replace(/[^a-z0-9_-]/gi, "-")
+    .replace(/-{2,}/g, "-")
+    .toLowerCase();
+}
+
 export default function PostPage(props: Post) {
   const { body, title, description, date, slug, hasTweetEmbed } = props;
   const [minutes] = getEstimatedReadingTime(body);
@@ -111,9 +118,7 @@ export default function PostPage(props: Post) {
         <meta property="og:type" content="article" key="ogType" />
         <meta
           property="og:image"
-          content={`https://og.rdjpalmer.com/${encodeURIComponent(
-            title
-          )}.png?theme=light&md=0`}
+          content={`https://rdjpalmer.com/open-graph/${encodeTitle(title)}.png`}
           key="ogImage"
         />
         <meta
