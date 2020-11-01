@@ -20,23 +20,29 @@ module.exports = async function initialiseRenderer() {
   const driver = await getDriver(isDev);
 
   server.get("/*", async (request, reply) => {
-    const [text, fileType] = parseUrl(request.url);
-    const html = getHtml(text);
+    try {
+      const [text, fileType] = parseUrl(request.url);
+      const html = getHtml(text);
 
-    if (isHtmlDebug) {
-      reply.header("Content-Type", "text/html");
-      reply.send(html);
-      return;
+      if (isHtmlDebug) {
+        reply.header("Content-Type", "text/html");
+        reply.send(html);
+        return;
+      }
+
+      console.log("\n\n📷\n\n");
+
+      const screenshot = await getScreenshot(driver, html, fileType, isDev);
+
+      console.log("\n\n📸\n\n");
+
+      reply.header("Content-Type", `image/${fileType}`);
+      reply.send(screenshot);
+    } catch (error) {
+      console.error(error);
+      reply.code(500);
+      reply.send(error);
     }
-
-    console.log("\n\n📷\n\n");
-
-    const screenshot = await getScreenshot(driver, html, fileType, isDev);
-
-    console.log("\n\n📸\n\n");
-
-    reply.header("Content-Type", `image/${fileType}`);
-    reply.send(screenshot);
   });
 
   return new Promise((resolve, reject) => {

@@ -15,19 +15,17 @@ async function getOptions(isDev) {
   if (isDev) {
     options = {
       args: [],
-      args: chromium.args,
-      // defaultViewport: chromium.defaultViewport,
-      executablePath: path.resolve(
-        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-      ),
+      executablePath: exePath,
       headless: true,
       ignoreHTTPSErrors: true,
+      product: "chrome",
     };
   } else {
     options = {
       args: chromium.args,
       executablePath: await chromium.executablePath,
       headless: chromium.headless,
+      product: "chrome",
     };
   }
 
@@ -35,5 +33,5 @@ async function getOptions(isDev) {
 }
 
 module.exports = async function getDriver(isDev) {
-  return chromium.puppeteer.launch(getOptions(isDev));
+  return chromium.puppeteer.launch(await getOptions(isDev));
 };
