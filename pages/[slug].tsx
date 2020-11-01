@@ -39,11 +39,11 @@ function handleIntersection(entries, observer) {
   });
 }
 
-function getTextContent(props) {
+function getTextContent(props): string[] {
   if (Array.isArray(props.children)) {
     return props.children.map((child) => getTextContent(child.props));
   } else if (typeof props.children === "string") {
-    return props.children;
+    return [props.children];
   }
 }
 
