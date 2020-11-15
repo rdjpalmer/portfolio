@@ -5,12 +5,23 @@ date: 2020-11-15
 slug: "/a-human-measure"
 description: >-
   "The right dimensions are those that are sufficient with minimum effort. The measure of our objects should therefore be a human measure" - Mart Stam.
+hasTweetEmbed: true
 ---
 
-"The right dimensions are those that are sufficient with minimum effort. The measure of our objects should therefore be a human measure" - Mart Stam.
+“The right dimensions are those that are sufficient with minimum effort. The measure of our objects should therefore be a human measure” - Mart Stam.
 
-A reminder that, while we're creating, we're creating for humans. And it's those needs which we should be catering for first. That perhaps, while we measure the success of our projects in the number of people using it, or the revenue it generates that these are merely a proxy for what we should measuring.
+A reminder that, while we’re building anything, we’re building it for people. And it’s those people’s needs we should be addressing.
 
-Rather, we should measure the impact our creations have on individuals. Something which has a profound impact of a few is just as valid as one which impacts the many to a lesser extent.
+Most businesses measure their success by the number of people using it, or the revenue it generates. They’re great indicators. In reality they’re proxies for the impact they’ve had on people’s lives. Which is what really matters.
 
-It's why making things intentionally smaller than they could be, is not necessarily a bad idea. <a href="https://twitter.com/thesephist/status/1327643453182914560" target="_blank" rel="noopener noreferrer">Linus and Sarv make this assertion about communities</a> while I'm having frequent conversations with other indie makers about how staying small can be the most rewarding.
+To say this in another way, something which has a profound impact on a few is just as valid, if not more so, than something which has a wider reach but a lesser effect.
+
+Linus and Sarvasv make this point about communities. That the most valuable ones, are the smaller, tight knit communities as they give more back to each person.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Why does this work? Humans are finely tuned to work in small tribes of people -- we don&#39;t know how to be in a room with 5000 other people on the Internet.<br><br>So, to build up a nation, assemble small villages. Build cellular communities. ✨<a href="https://t.co/xAPoZLWNHX">https://t.co/xAPoZLWNHX</a> <a href="https://t.co/0CIHRQ6dpK">https://t.co/0CIHRQ6dpK</a></p>&mdash; Linus (@thesephist) <a href="https://twitter.com/thesephist/status/1327643453182914560?ref_src=twsrc%5Etfw">November 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Making any project deliberately smaller could well be the smart choice. As with it, you can bring it more care and attention. In return, you get more freedom to do as you please.
+
+Though I haven’t read it yet, I’ve heard good things (and some mixed reviews) about <a href="https://www.amazon.co.uk/Company-One-Staying-Small-Business/dp/0241380227/ref=sr_1_2?dchild=1&qid=1605461593&refinements=p_27%3APaul+Jarvis&s=books&sr=1-2" target="_blank" rel="noopener noreferrer">Company of One</a>, Paul Jarvis’s book about this very topic.
+
+I’m firmly in the camp of keeping things intentionally small, and I’d love to hear your thoughts on the topic. <a href="https://twitter.com/rdjpalmer" target="_blank" rel="noopener noreferrer">Hit me up on twitter</a>, or hit reply to my newsletter.
