@@ -27,6 +27,6 @@ Perhaps you're a Starter too? Where you're best suited to kicking off projects a
 
 Maybe you’re a Closer, like Harvey Specter? You could be something else entirely.
 
-While I’d make bets that being at one end of the scale is more lucrative than the rest, remember that everyone has their place. Those at the start need those who’re good in the end game. And they need people to get them there in the first place.
+Remember that everyone has their place. Those at the start need those who do best in the end game to finish things off. And they need the starters, so they have a role to play at all.
 
 Knowing which you are means you’ll be able to play to your strengths. You’ll be able to work on the things that suit and excite you the most.
