@@ -535,4 +535,8 @@ blockquote > p:first-child {
   .button:active {
     box-shadow: 0;
   }
+  
+  pre code {
+    color: white;
+  }
 }
