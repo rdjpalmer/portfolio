@@ -46,4 +46,4 @@ As a junior, you’re afforded the opportunity to make more mistakes than everyo
 
 When you’re early in your career, bring all of your enthusiasm. That’s enthusiasm to learn, get your hands dirty and be fearless.
 
-I can’t think of anything I’d hope for more than to work with someone with unbounding energy for the ride ahead, even if that means a tonne of questions and a few mistakes.
+I can’t think of anything I’d hope for more than to work with someone with a relentless energy for the ride ahead. Even if that means a ton of questions and a few mistakes.
