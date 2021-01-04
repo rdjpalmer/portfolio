@@ -4,7 +4,7 @@ title: "Expectations of a junior engineer"
 date: 2021-01-04
 slug: "/expectations-of-a-junior-engineer"
 description: >-
-  "The right dimensions are those that are sufficient with minimum effort. The measure of our objects should therefore be a human measure" - Mart Stam.
+  Be inquisitive and curious. Challenge, participate and take responsibility. 
 hasTweetEmbed: false
 ---
 
