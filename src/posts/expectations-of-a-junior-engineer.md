@@ -40,7 +40,7 @@ You may not have the conviction of what you should do or how you should do it. B
 
 It’s easy for everyone to shy away from responsibility and difficult tasks. Remember, they’re only difficult while they’re new. You’ll learn faster when you’re forced to learn. When a daunting new opportunity presents itself, say yes.
 
-As a junior, you’re afforded the opportunity to make more mistakes than everyone else. But that also means taking responsibility for those mistakes, and learning from them. It’s when you continue to make the same mistakes, that they can become a problem.
+As a junior, you’re afforded the opportunity to make more mistakes than everyone else. But that also means taking responsibility for those mistakes, and learning from them. They're only a problem if the same mistakes keeps cropping up.
 
 ## Final thoughts
 
