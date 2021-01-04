@@ -14,7 +14,7 @@ No question should go unasked. Getting stuck is fine, for as long as you don’t
 
 ## To be curious.
 
-Try to understand why things are the way they are. It’s with this understanding that you can change things for the better. Frustration is born out of a misalignment with your understanding and your world view.
+Try to understand why things are the way they are. It’s with this understanding that you can change things for the better. Frustration is born out of misalignment between your understanding and your world view.
 
 Gaining this understanding gives you the context required to suggest new ways of thinking without undoing the work that has come before.
 
