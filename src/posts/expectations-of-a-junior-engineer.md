@@ -8,14 +8,6 @@ description: >-
 hasTweetEmbed: false
 ---
 
-At the end of 2019, I moved into a lead position at TransferWise. It meant being able to support the juniors in my team in a far more formal way.
-
-I spoke to some fellows leads about what they thought was important, and found consistency.
-
-Honestly, it applies well beyond engineering, so will be useful for anyone at the start of their career, or someone in my position now, leading a team.
-
-If you’re a junior, read it as is. If you’re also in a managerial position, imagine yourself reading it to someone on your team. Here we go!
-
 ## To be inquisitive.
 
 No question should go unasked. Getting stuck is fine, for as long as you don’t spend too much time going down the rabbit hole by yourself. Lean on the people around you. They’re there to help you succeed.
