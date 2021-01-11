@@ -28,4 +28,4 @@ The numbers afterwards are low. But they're not disappointing.
 
 Timo is a niche product. More niche than other task lists, and other time trackers. It solves a specific problem, and we talk about it in a specific way.
 
-The insight for us is that we have a conversion rate of ~16.6% from visitor to user. A rate of ~38% from visitor to mailing list sign up. That's **awesome**. And keeping conversion rate that high in the future would be something special.
+The insight for us is that we have a conversion rate of ~16.6% from visitor to user, and a rate of ~38% from visitor to mailing list sign up. That is **__awesome__**. And keeping conversion rate that high in the future would be something special.
