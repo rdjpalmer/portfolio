@@ -24,8 +24,8 @@ To put this into perspective. The introduction tweet had 21 likes and 14 retweet
 
 This means a whole bunch of people have now seen Timo. That's more than any day since the <a href="https://medium.com/@rdjpalmer/why-i-started-doing-side-projects-a1400ea3e48b#f868" target="_blank" rel="noopener noreferrer">the v1 launch</a>.
 
-The numbers afterwards are low. But they're not disappointing.
+The numbers afterwards are low. But they're far from disappointing.
 
 Timo is a niche product. More niche than other task lists, and other time trackers. It solves a specific problem, and we talk about it in a specific way.
 
-The insight for us is that we have a conversion rate of ~16.6% from visitor to user, and a rate of ~38% from visitor to mailing list sign up. That is **__awesome__**. And keeping conversion rate that high in the future would be something special.
+We have a conversion rate of ~16% from visitor to user, and a conversion rate of ~38% from visitor to mailing list sign up. That is **__awesome__**. And keeping our conversion rate that high would be something special.
