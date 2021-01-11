@@ -7,7 +7,7 @@ description: >-
   In preparation for launch day, it's time to up our marketing game. Let's examine our first twitter experiment
 ---
 
-Yesterday, we did a little experiment to "pre-announce" Timo to the world. I mean, we've been live for over two years. We've been tweeting about our progress for the last 12 months. We've been hitting that thing with screenshots as we go. But never from the official account, and never in a thought out manner.
+We did a little experiment to "pre-announce" Timo to the world. I mean, we've been live for over two years. We've been tweeting about our progress for the last 12 months. We've been hitting that thing with screenshots as we go. But never from the official account, and never in a thought out manner.
 
 We wanted to get a glimpse of what will happen when we launch. Given we started sending beta invites to our mailing list last week too, we thought it time to show Timo off a little more.
 
