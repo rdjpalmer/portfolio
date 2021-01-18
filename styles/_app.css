@@ -115,6 +115,10 @@ ul {
   list-style-type: "￫ ";
 }
 
+li > ul {
+  padding-left: 1.5rem;
+}
+
 figure {
   margin: 0;
 }
@@ -191,6 +195,11 @@ ol + .codepen-container,
 .container * + h3,
 .container * + h4 {
   margin-top: 3rem;
+}
+
+li + li,
+li > ul {
+  margin-top: 0.25rem;
 }
 
 .articles li + li {
@@ -535,7 +544,7 @@ blockquote > p:first-child {
   .button:active {
     box-shadow: 0;
   }
-  
+
   pre code {
     color: white;
   }
