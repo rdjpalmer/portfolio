@@ -46,19 +46,26 @@ async function buildOpenGraphImages() {
         return bDate - aDate;
       })
       .map(({ page }) => async () => {
-        const { title } = page.pageProps;
+        const { title, shortTitle } = page.pageProps;
+        const text = shortTitle || title;
+
         const imagePath = path.resolve(
-          `./public/open-graph/${encodeTitle(title)}.png`
+          `./public/open-graph/${encodeTitle(text)}.png`
         );
 
         if (!fs.existsSync(imagePath)) {
           console.log(
-            `buildOpenGraphImages(): No cache found for ${title}. Generating image`
+            `buildOpenGraphImages(): No cache found for ${text}. Generating image`
           );
-          if (title) {
+
+          if (shortTitle) {
+            console.log(`buildOpenGraphImages(): Using short title`);
+          }
+
+          if (text) {
             try {
               const image = await fetch(
-                `http://localhost:3000/${title}.png`
+                `http://localhost:3000/${text}.png`
               ).then((response) => response.buffer());
 
               await writeFile(imagePath, image, "binary");
@@ -70,13 +77,13 @@ async function buildOpenGraphImages() {
               return true;
             } catch (error) {
               console.error(
-                `buildOpenGraphImages(): failed to fetch image for ${title}. Skipping`
+                `buildOpenGraphImages(): failed to fetch image for ${text}. Skipping`
               );
             }
           }
         } else {
           console.log(
-            `buildOpenGraphImages(): Cache found for ${title}. Skipping`
+            `buildOpenGraphImages(): Cache found for ${text}. Skipping`
           );
         }
       })

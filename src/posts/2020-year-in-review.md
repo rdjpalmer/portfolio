@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "2020 Year in review: Sustainability without subsidisation"
+shortTitle: "Sustainability without subsidisation"
 date: 2021-01-17
 slug: "/2020-year-in-review"
-description: Quickly switch between light and dark mode on MacOS
+description: What 2020 taught me, my mission for the future and the steps I'm going to take in 2021 to get there
 ---
 
 ## 2020 review

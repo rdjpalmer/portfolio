@@ -71,7 +71,15 @@ function encodeTitle(title) {
 }
 
 export default function PostPage(props: Post) {
-  const { body, title, description, date, slug, hasTweetEmbed } = props;
+  const {
+    body,
+    title,
+    description,
+    date,
+    slug,
+    hasTweetEmbed,
+    shortTitle,
+  } = props;
   const [minutes] = getEstimatedReadingTime(body);
   const mainRef = useRef(null);
 
@@ -89,6 +97,8 @@ export default function PostPage(props: Post) {
       }
     }
   }, []);
+
+  const ogImageFileName = shortTitle || title;
 
   return (
     <>
@@ -118,7 +128,9 @@ export default function PostPage(props: Post) {
         <meta property="og:type" content="article" key="ogType" />
         <meta
           property="og:image"
-          content={`https://rdjpalmer.com/open-graph/${encodeTitle(title)}.png`}
+          content={`https://rdjpalmer.com/open-graph/${encodeTitle(
+            ogImageFileName
+          )}.png`}
           key="ogImage"
         />
         <meta
@@ -209,7 +221,6 @@ export async function getStaticProps({ ...ctx }): Promise<{ props: Post }> {
 
   return {
     props: {
-      // layout: data.layout,
       title: data.title,
       slug: data.slug,
       description: data.description,
@@ -218,6 +229,7 @@ export async function getStaticProps({ ...ctx }): Promise<{ props: Post }> {
       updated: date.parseAndFormat(data.updated || data.date, "yyyy-MM-dd"),
       body: content,
       hasTweetEmbed: data.hasTweetEmbed || false,
+      shortTitle: data.shortTitle || "",
     },
   };
 }
