@@ -65,7 +65,7 @@ async function buildOpenGraphImages() {
           if (text) {
             try {
               const image = await fetch(
-                `http://localhost:3000/${tetxt}.png`
+                `http://localhost:3000/${text}.png`
               ).then((response) => response.buffer());
 
               await writeFile(imagePath, image, "binary");
