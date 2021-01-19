@@ -209,7 +209,6 @@ export async function getStaticProps({ ...ctx }): Promise<{ props: Post }> {
 
   return {
     props: {
-      // layout: data.layout,
       title: data.title,
       slug: data.slug,
       description: data.description,
@@ -218,6 +217,7 @@ export async function getStaticProps({ ...ctx }): Promise<{ props: Post }> {
       updated: date.parseAndFormat(data.updated || data.date, "yyyy-MM-dd"),
       body: content,
       hasTweetEmbed: data.hasTweetEmbed || false,
+      shortTitle: data.shortTitle || "",
     },
   };
 }

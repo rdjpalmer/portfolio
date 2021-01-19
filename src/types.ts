@@ -4,6 +4,7 @@ export interface PostReference {
   slug: string;
   description: string;
   sortBy?: number;
+  shortTitle?: string;
 }
 
 export interface Post extends PostReference {
