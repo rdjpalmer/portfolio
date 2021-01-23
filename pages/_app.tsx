@@ -100,6 +100,13 @@ export default function App({ Component, pageProps }) {
             }
           `}
         </style>
+        <link
+          rel="stylesheet"
+          href="https://use.typekit.net/xdh4erl.css"
+          media="none"
+          // @ts-ignore
+          onload="if(media!='all')media='all'"
+        ></link>
       </Head>
       <div className="container">
         <Component {...pageProps} />

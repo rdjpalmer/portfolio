@@ -22,14 +22,10 @@ export default function HomePage(props: PageProps) {
       <ul className="articles list">
         {postList.map((post) => (
           <li key={post.slug}>
-            <article>
-              <h3 className="heading">
-                <Link href="/[slug]" as={post.slug}>
-                  <a href={post.slug}>{post.title}</a>
-                </Link>
-              </h3>
-              <time dateTime={post.date}>{post.date}</time>
-            </article>
+            <Link href="/[slug]" as={post.slug}>
+              <a href={post.slug}>{post.title}</a>
+            </Link>{" "}
+            <time dateTime={post.date}>{post.date}</time>
           </li>
         ))}
       </ul>

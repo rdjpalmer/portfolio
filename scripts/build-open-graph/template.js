@@ -11,13 +11,6 @@ function getCss(rotation) {
   let foreground = "black";
 
   return `
-    @font-face {
-        font-family: 'Helvetica';
-        font-style:  normal;
-        font-weight: bold;
-        src: url(data:font/woff2;charset=utf-8;base64,${helveticaBold}) format('woff2');
-    }
-
     * {
         box-sizing: border-box;
     }
@@ -56,7 +49,7 @@ function getCss(rotation) {
     }
 
     .heading {
-        font-family: 'Helvetica', sans-serif;
+        font-family: adobe-caslon-pro, serif;
         font-size: 180px;
         font-size: min(12.5vw, 25vh);
         font-style: normal;
@@ -94,6 +87,10 @@ module.exports = function getHtml(text) {
     <meta charset="utf-8">
     <title>Generated Image</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        rel="stylesheet"
+        href="https://use.typekit.net/xdh4erl.css"
+    ></link>
     <style>
         ${getCss(hash)}
     </style>
