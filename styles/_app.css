@@ -11,7 +11,7 @@ body {
 }
 
 html {
-  font-family: adobe-caslon-pro, serif;
+  font-family: adobe-caslon-pro, Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-style: normal;
   background-color: #fff;
@@ -47,7 +47,7 @@ h1,
 h2,
 h3 {
   color: #000;
-  font-family: adobe-caslon-pro, serif;
+  font-family: adobe-caslon-pro, Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   font-style: normal;
   margin-top: 0;
@@ -74,8 +74,8 @@ p,
 time,
 li {
   font-size: 1.1875rem;
-  line-height: 1.32;
-  font-family: adobe-caslon-pro, serif;
+  line-height: 1.6;
+  font-family: adobe-caslon-pro, Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   max-width: 46.875rem;
   font-weight: 400;
@@ -105,14 +105,23 @@ img {
 p,
 li,
 .reading-time,
-button {
+button,
+label {
   color: #000;
 }
 
 time {
-  margin-left: 0.5rem;
+  display: block;
   font-size: 1.125rem;
   color: rgba(41, 56, 69, 0.75);
+  white-space: nowrap;
+}
+
+@media (min-width: 50rem) {
+  time {
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
 }
 
 ul {
@@ -212,8 +221,17 @@ li > ul {
   margin-top: 0.25rem;
 }
 
-.articles li + li {
+/* ul.articles {
   margin-top: 2rem;
+}
+
+.articles li {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}*/
+
+.articles li + li {
+  margin-top: 0.75rem;
 }
 
 /**
@@ -222,26 +240,34 @@ li > ul {
 a {
   position: relative;
   font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+a:hover {
   text-decoration: underline;
+  text-decoration-style: double;
 }
 
 a[href*="//"]:not([href*="rdjpalmer.com"]) {
-  padding-right: 0.25em;
+  padding-left: 0.1em;
+  padding-right: 0.6em;
 }
 
 a[href*="//"]:not([href*="rdjpalmer.com"]):after {
   position: absolute;
   content: "↑";
-  font-size: 0.5em;
+  font-size: 0.75em;
   transform: rotate(45deg);
 }
 
-a:hover {
-  color: #fff;
-  background-color: #000;
+a[href*="/subscribe"]:after {
+  position: absolute;
+  content: "";
+  font-size: 0.75em;
 }
 
-a.subscribe {
+/* a.subscribe {
   font-weight: 600;
   background-color: #11d2924b;
   color: black;
@@ -251,7 +277,7 @@ a.subscribe {
 a.subscribe:hover {
   color: #fff;
   background-color: #000;
-}
+} */
 
 /**
  * Articles
@@ -262,17 +288,27 @@ a.subscribe:hover {
   text-decoration: none;
 }
 
-.all-posts > span {
+/* .all-posts > span {
   text-decoration: underline;
-}
+} */
 
 .all-posts:before {
   content: "← ";
 }
 
+article > time {
+  margin-left: 0;
+}
+
 article > time + p {
   margin-top: 0.5rem;
 }
+
+/* p:first-of-type::first-letter {
+  font-size: 2.5rem;
+  margin-top: -0.75rem;
+  float: left;
+} */
 
 blockquote {
   padding: 2rem;
@@ -333,7 +369,7 @@ blockquote > p:first-child {
 
 .newsletter-footer {
   background-color: #fafafa;
-  max-width: 42rem;
+  max-width: 62rem;
   border-radius: 3px;
   margin-top: 3rem;
   margin-left: 0;
@@ -464,12 +500,12 @@ label {
   }
 
   p {
-    line-height: 1.4;
+    line-height: 1.6;
   }
 
   .newsletter-footer {
     background-color: #fafafa;
-    max-width: 42rem;
+    width: 100%;
     border-radius: 3px;
     margin-top: 3rem;
     margin-left: -2rem;
@@ -514,6 +550,7 @@ label {
 
   p,
   li,
+  label,
   .reading-time,
   .button {
     color: rgba(255, 255, 255, 0.9);
@@ -574,10 +611,5 @@ label {
 
   pre code {
     color: white;
-  }
-
-  a:hover {
-    color: #000;
-    background-color: #fff;
   }
 }

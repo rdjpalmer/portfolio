@@ -23,7 +23,7 @@ export default function HomePage(props: PageProps) {
       <Markdown source={body} escapeHtml={false} />
 
       <p>
-        If you like what you read,{" "}
+        If you like what you've read,{" "}
         <Link href="/subscribe" as="/subscribe">
           <a className="subscribe" href="/subscribe">
             subscribe to my newsletter
@@ -32,7 +32,7 @@ export default function HomePage(props: PageProps) {
         . You'll get every post, plus some extra goodies, direct to your inbox.
       </p>
 
-      <h1>Richard Palmer's Writing</h1>
+      <h2>My Writing</h2>
       <ul className="articles list">
         {postList.map((post) => (
           <li key={post.slug}>
