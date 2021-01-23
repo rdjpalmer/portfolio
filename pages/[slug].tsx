@@ -162,6 +162,17 @@ export default function PostPage(props: Post) {
           </main>
         </article>
         <footer className="newsletter-footer">
+          <h2>Enjoyed what you've read so far?</h2>
+          <p>
+            Subscribe to get every blog post, plus extra goodies, straight to
+            your inbox.
+          </p>
+          <p>
+            What are the extra goodies? Links, references, ideas that I've
+            collected over the two week period in between each post. It's the
+            things that inspire the posts and provoke new ways of thinking.
+          </p>
+
           <form
             action="https://rdjpalmer.us20.list-manage.com/subscribe/post?u=0cb4f80ca9869534161bfc334&amp;id=5e488d017e"
             method="post"
@@ -169,18 +180,16 @@ export default function PostPage(props: Post) {
             name="mc-embedded-subscribe-form"
             target="_blank"
           >
-            <h2>Enjoyed what you've read so far?</h2>
-            <p>
-              Maybe you'll enjoy the next one too.
-              <br /> 👉 Sign up to get it straight&nbsp;to&nbsp;your&nbsp;inbox.
-            </p>
-            <div className="input-group">
+            <div className="subscribe-form">
               <Input
-                name="EMAIL"
-                placeholder="youso@nice.co"
-                aria-label="Your email"
+                label="Name"
+                placeholder=""
+                type="text"
+                name="FNAME"
+                required
               />
-              <Button>Sign up</Button>
+              <Input name="EMAIL" label="Email" required />
+              <Button>Subscribe</Button>
             </div>
             <div
               style={{ position: "absolute", left: "-5000px" }}
