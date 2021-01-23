@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import matter from "gray-matter";
 import Markdown from "react-markdown/with-html";
+import * as Fathom from "fathom-client";
 
 import { Post } from "../src/types";
 import Input from "../src/components/Input/Input";
@@ -31,9 +32,7 @@ function getEstimatedReadingTime(
 function handleIntersection(entries, observer) {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
-      if (typeof window.fathom !== "undefined") {
-        window.fathom.trackGoal("YICYPV5X", 0);
-      }
+      Fathom.trackGoal("YICYPV5X", 0);
       observer.unobserve(entry.target);
     }
   });
@@ -179,6 +178,9 @@ export default function PostPage(props: Post) {
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
             target="_blank"
+            onSubmit={() => {
+              Fathom.trackGoal("GVICDJHG", 0);
+            }}
           >
             <div className="subscribe-form">
               <Input
