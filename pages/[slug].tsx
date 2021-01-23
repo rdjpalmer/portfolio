@@ -163,13 +163,8 @@ export default function PostPage(props: Post) {
         <footer className="newsletter-footer">
           <h2>Enjoyed what you've read so far?</h2>
           <p>
-            Subscribe to get every blog post, plus extra goodies, straight to
-            your inbox.
-          </p>
-          <p>
-            What are the extra goodies? Links, references, ideas that I've
-            collected over the two week period in between each post. It's the
-            things that inspire the posts and provoke new ways of thinking.
+            Subscribe to get each blog post, plus a tonne of thought provoking
+            or useful articles, direct to your inbox.
           </p>
 
           <form
@@ -208,9 +203,8 @@ export default function PostPage(props: Post) {
             <p className="small">
               <small>
                 You can unsubscribe at any time, by hitting the unsubscribe link
-                at the bottom of the emails you'll receive. I use MailChimp to
-                send the emails, so by signing up, your email address will be
-                sent to them.
+                at the bottom of the emails you'll receive. I use Mailchimp, so
+                by signing up, I will share your data with them.
               </small>
             </p>
           </form>

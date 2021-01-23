@@ -515,6 +515,10 @@ label {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .newsletter-footer p {
+    max-width: 30rem;
+  }
 }
 
 @media (min-width: 48rem) {
