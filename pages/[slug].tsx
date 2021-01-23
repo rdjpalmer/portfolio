@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import matter from "gray-matter";
 import Markdown from "react-markdown/with-html";
+import * as Fathom from "fathom-client";
 
 import { Post } from "../src/types";
 import Input from "../src/components/Input/Input";
@@ -31,9 +32,7 @@ function getEstimatedReadingTime(
 function handleIntersection(entries, observer) {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
-      if (typeof window.fathom !== "undefined") {
-        window.fathom.trackGoal("YICYPV5X", 0);
-      }
+      Fathom.trackGoal("YICYPV5X", 0);
       observer.unobserve(entry.target);
     }
   });
@@ -162,25 +161,32 @@ export default function PostPage(props: Post) {
           </main>
         </article>
         <footer className="newsletter-footer">
+          <h2>Enjoyed what you've read so far?</h2>
+          <p>
+            Subscribe to get each blog post, plus a tonne of thought provoking
+            or useful articles, direct to your inbox.
+          </p>
+
           <form
             action="https://rdjpalmer.us20.list-manage.com/subscribe/post?u=0cb4f80ca9869534161bfc334&amp;id=5e488d017e"
             method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
             target="_blank"
+            onSubmit={() => {
+              Fathom.trackGoal("GVICDJHG", 0);
+            }}
           >
-            <h2>Enjoyed what you've read so far?</h2>
-            <p>
-              Maybe you'll enjoy the next one too.
-              <br /> 👉 Sign up to get it straight&nbsp;to&nbsp;your&nbsp;inbox.
-            </p>
-            <div className="input-group">
+            <div className="subscribe-form">
               <Input
-                name="EMAIL"
-                placeholder="youso@nice.co"
-                aria-label="Your email"
+                label="Name"
+                placeholder=""
+                type="text"
+                name="FNAME"
+                required
               />
-              <Button>Sign up</Button>
+              <Input name="EMAIL" label="Email" required />
+              <Button>Subscribe</Button>
             </div>
             <div
               style={{ position: "absolute", left: "-5000px" }}
@@ -197,9 +203,8 @@ export default function PostPage(props: Post) {
             <p className="small">
               <small>
                 You can unsubscribe at any time, by hitting the unsubscribe link
-                at the bottom of the emails you'll receive. I use MailChimp to
-                send the emails, so by signing up, your email address will be
-                sent to them.
+                at the bottom of the emails you'll receive. I use Mailchimp, so
+                by signing up, I will share your data with them.
               </small>
             </p>
           </form>

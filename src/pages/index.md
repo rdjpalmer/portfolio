@@ -1,18 +1,15 @@
 ---
 layout: home
-title: Richard Palmer, Creator of Byozo and HelloTimo
+title: Richard Palmer, Timo
 slug: /
 ---
 
-# Hey, I&apos;m Richard
+# Hey, I'm Richard
 
-I'm the co-creator of time and task manager, [Timo](https://hellotimo.co),
-filling the gap between work done, work logged and the time sheet. Currently leading the Conversion team (think people, not money) at [TransferWise](https://transferwise.com).
+Co-maker of [Timo](https://hellotimo.co) (putting your tasks and time tracking in one place) and tech lead of [TransferWise's](https://transferwise.com) Conversion team (thats converting people, not money).
 
-Over the last eight years, I've taken a leading role in engineering and design
-for the likes of Byozo, [nudj](https://twitter.com/nudjHQ),
-[Appear Here](https://appearhere.co.uk) and
+Previously I started Byozo (a defunct productivity methodology with supporting app), having worked at various
+start ups including [Appear Here](https://appearhere.co.uk) and
 [Pact Coffee](https://www.pactcoffee.com/).
 
-Feel free to [email me](mailto:rich@rdjpalmer.com), or
-[DM me on twitter](https://twitter.com/rdjpalmer).
+This is home to my writings on business, technology, life and communication.

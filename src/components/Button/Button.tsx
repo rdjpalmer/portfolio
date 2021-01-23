@@ -2,13 +2,13 @@ import cx from "classnames";
 
 type ClassNameProp = string | string[] | { [x: string]: boolean };
 
-interface InputProps {
+interface ButtonProps {
   type?: "button" | "submit" | "reset";
   className?: ClassNameProp;
   children: React.ReactNode;
 }
 
-export default function Input(props: InputProps) {
+export default function Button(props: ButtonProps) {
   const { type, className, children } = props;
 
   return (

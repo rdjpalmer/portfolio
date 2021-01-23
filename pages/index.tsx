@@ -3,6 +3,8 @@ import Link from "next/link";
 import Markdown from "react-markdown/with-html";
 
 import { PostReference } from "../src/types";
+import Input from "../src/components/Input/Input";
+import Button from "../src/components/Button/Button";
 
 interface PageProps {
   postList: PostReference[];
@@ -15,21 +17,29 @@ export default function HomePage(props: PageProps) {
   return (
     <>
       <Head>
-        <title>Richard Palmer, Creator of Byozo and HelloTimo</title>
+        <title>Richard Palmer, Creator of Timo</title>
       </Head>
+
       <Markdown source={body} escapeHtml={false} />
-      <h2>Writing</h2>
+
+      <p>
+        If you like what you've read,{" "}
+        <Link href="/subscribe" as="/subscribe">
+          <a className="subscribe" href="/subscribe">
+            subscribe to my newsletter
+          </a>
+        </Link>
+        . You'll get every post, plus some extra goodies, direct to your inbox.
+      </p>
+
+      <h2>My Writing</h2>
       <ul className="articles list">
         {postList.map((post) => (
           <li key={post.slug}>
-            <article>
-              <h3 className="heading">
-                <Link href="/[slug]" as={post.slug}>
-                  <a href={post.slug}>{post.title}</a>
-                </Link>
-              </h3>
-              <time dateTime={post.date}>{post.date}</time>
-            </article>
+            <Link href="/[slug]" as={post.slug}>
+              <a href={post.slug}>{post.title}</a>
+            </Link>{" "}
+            <time dateTime={post.date}>{post.date}</time>
           </li>
         ))}
       </ul>

@@ -21,6 +21,7 @@
     "classnames": "^2.2.6",
     "date-fns": "^2.13.0",
     "dedent": "^0.7.0",
+    "fathom-client": "^3.0.0",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
     "jsontoxml": "^1.0.1",
