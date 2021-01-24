@@ -1,4 +1,3 @@
-const chromium = require("chrome-aws-lambda");
 const path = require("path");
 
 const exePath =
@@ -10,7 +9,7 @@ const exePath =
         "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
       );
 
-async function getOptions(isDev) {
+async function getOptions({ isDev, chromium }) {
   let options;
   if (isDev) {
     options = {
@@ -33,5 +32,14 @@ async function getOptions(isDev) {
 }
 
 module.exports = async function getDriver(isDev) {
-  return chromium.puppeteer.launch(await getOptions(isDev));
+  let chromium, puppeteer;
+
+  if (isDev) {
+    puppeteer = require("puppeteer");
+  } else {
+    chromium = require("chrome-aws-lambda");
+    puppeteer = chromium.puppeteer;
+  }
+
+  return puppeteer.launch(await getOptions({ isDev, chromium }));
 };
