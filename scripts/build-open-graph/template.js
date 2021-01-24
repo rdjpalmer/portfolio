@@ -51,18 +51,19 @@ function getCss(rotation) {
     .heading {
         font-family: adobe-caslon-pro, serif;
         font-size: 180px;
-        font-size: min(12.5vw, 25vh);
+        font-size: min(9vw, 18vh);
         font-style: normal;
         color: ${foreground};
         line-height: 1.1;
-        font-weight: 700;
+        font-weight: 600;
         margin: 0;
         padding: 0;
         position: relative;
         width: 90vw;
-        text-align: center;
+        text-align: left;
         widows: 2;
         orphans: 2;
+        margin-top: 3rem;
     }
 
     .overlay {

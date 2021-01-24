@@ -3,7 +3,8 @@ const getHtml = require("./template");
 const getScreenshot = require("./screenshot");
 const getDriver = require("./driver");
 
-const isDev = process.env.NOW_REGION === "dev1";
+const isCI = process.env.CI === "1";
+const isDev = !isCI;
 
 const isHtmlDebug = process.env.OG_HTML_DEBUG === "1";
 
