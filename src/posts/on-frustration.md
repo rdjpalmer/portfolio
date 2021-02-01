@@ -8,12 +8,18 @@ description: Frustration is actually a good sign. Not only does it give you a si
 ---
 
 You’re busy having a great time. You’re learning something new. It’s going well, until… bam, you’re stuck. Frustration boils over. You’re close to quitting. Hopefully, your motivation outweighs the frustration. Hopefully, you persist.
+
 By its very definition, frustration is a negative emotion.
 
 > the feeling of being upset or annoyed as a result of being unable to achieve something
 
 But while frustration feels bad, it’s actually a good sign. Not only does it give you a signal of intent (after overcoming frustration, just how motivated are you?) but it also gives you a signal to change. Let’s talk about the latter.
+
 <a href="https://www.marcdalessio.com/" target="_blank" rel="noopener noreferrer">Marc Dalessio</a> summarises the source of frustration in this graph.
+
+<figure>
+  <img class="img--small" src="/images/improvement-in-painting.jpg" alt="Improvement in painting: a graph depicting that when your ability to see outruns your actual ability, and when your perception of this is out of sync, you will find periods of frustration" />
+</figure>
 
 The graph shows an example of perceived vs actual technical skill while learning to paint. In my opinion, it’s applicable to the act of learning anything.
 Your actual technical skill is your objective ability to execute a task. Based on your practice, it’s the sign posts that say “you are capable of delivering on X”. X could be anything. MMR, piano grades, executing a certain trick.
