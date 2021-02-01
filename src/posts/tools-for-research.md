@@ -15,7 +15,7 @@ I’ve still plenty to work on, but I’ve made some progress. Here’s some of 
 
 Chris Sacca—one of the most successful venture capitalists ever—insists that <a href="https://twitter.com/sacca/status/1134128910004772869?s=20" target="_blank" rel="noopener noreferrer">note taking is a foundational skill of every successful person he knows</a>.
 
-I can attest to the fact that since forming my own note taking and journaling habits, I'm far more confident in tackling complex subjects, and learn at a much faster rate. Note taking is one of the most important forms of <a href="https://rdjpalmer.com/week-39-2020-observation-is-my-superpower" target="_blank" rel="noopener noreferrer">observation</a>, which is a transformative skill in its own right.
+I can attest to the fact that since forming my own note taking and journaling habits, I'm far more confident in tackling complex subjects, and learn at a much faster rate. Note taking is one of the most important forms of <a href="https://rdjpalmer.com/week-39-2020-observation-is-my-superpower">observation</a>, which is a transformative skill in its own right.
 
 <a href="https://roamresearch.com/" target="_blank" rel="noopener noreferrer">Roam Research</a> helps you build on this through bi-directional linking, and an interface which gets out of your way and focuses you on exploring your thoughts. Don’t let my simple description fool you though, there’s way more to Roam than one novel feature.
 
@@ -23,7 +23,7 @@ It’s not to everyone’s tastes. It’s a little ugly and rough round the edge
 
 ## Index cards as bookmarks
 
-<a href="https://rdjpalmer.com/week-33-2020" target="_blank" rel="noopener noreferrer">Index cards and post-it notes</a> have turned into one of my go to weapons on a daily basis. From taking notes to deciding immediate priorities, just getting something down on paper is far more useful than trying to keep it in your head.
+<a href="https://rdjpalmer.com/week-33-2020">Index cards and post-it notes</a> have turned into one of my go to weapons on a daily basis. From taking notes to deciding immediate priorities, just getting something down on paper is far more useful than trying to keep it in your head.
 
 Next time you’re reading a physical book, replace your bookmark with an index card. As you make your way through, highlight passages in the book and mark down the page numbers on the card. Add commentary as you go.
 
@@ -59,7 +59,7 @@ Recommended by Monica Lent in <a href="https://bloggingfordevs.com/" target="_bl
 
 You can plug in terms you want to know more about, and it'll give you the search volume, cost-per-click and pay-per-click rates, along with a rough score with how competitive it thinks the term is.
 
-It’s expensive as experiments go, at $17/month. But, KeySearch (and Monica's course) has been the gateway to me starting to understand SEO.
+It’s expensive as experiments go, at \$17/month. But, KeySearch (and Monica's course) has been the gateway to me starting to understand SEO.
 
 ## AnswerThePublic
 
