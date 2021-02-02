@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "On frustration: Percieved vs actual ability"
-shortTitle: "Percieved vs actual ability"
+title: "On frustration: Perceived vs actual ability"
+shortTitle: "Perceived vs actual ability"
 date: 2021-02-01
 slug: "/on-frustration"
 description: Frustration is actually a good sign. Not only does it give you a signal of intent but it also gives you a signal to change.
