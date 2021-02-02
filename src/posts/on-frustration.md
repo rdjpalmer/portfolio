@@ -23,7 +23,7 @@ But while frustration feels bad, it’s actually a good sign. Not only does it g
 
 The graph shows an example of perceived vs actual technical skill while learning to paint. In my opinion, it’s applicable to the act of learning anything.
 
-Your actual technical skill is your objective ability to execute a task. Based on your practice, it’s the sign posts that say “you are capable of delivering on X”. X could be anything. MMR, piano grades, executing a certain trick.
+Your actual technical skill is your objective ability to execute a task. Based on your practice, it’s the sign posts that say “you are capable of delivering on X”. X could be anything. MRR, piano grades, executing a certain trick.
 
 There’s a tonne of ambiguity here, as it’s difficult to make anything absolute. There’s a reliance on these sorts of milestones to guide us along the way.
 
