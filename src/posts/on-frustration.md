@@ -22,6 +22,7 @@ But while frustration feels bad, it’s actually a good sign. Not only does it g
 </figure>
 
 The graph shows an example of perceived vs actual technical skill while learning to paint. In my opinion, it’s applicable to the act of learning anything.
+
 Your actual technical skill is your objective ability to execute a task. Based on your practice, it’s the sign posts that say “you are capable of delivering on X”. X could be anything. MMR, piano grades, executing a certain trick.
 
 There’s a tonne of ambiguity here, as it’s difficult to make anything absolute. There’s a reliance on these sorts of milestones to guide us along the way.
@@ -34,9 +35,11 @@ Some of this complexity is captured in your “ability to see”. I view this as
 
 Your actual ability, and ability to see are rarely in sync with each other. Imagine a cover band who nail every single note of every single song, but struggle to write their own songs. Or the writer, who knows the message they’re trying to convey, but doesn’t know which words to choose. As David Bayles and Ted Orland put it in Art & Fear, “vision is always ahead of execution”.
 
-Perception complicated things further. <a href="https://www.ukessays.com/essays/psychology/why-is-perception-an-important-aspect-of-survival-psychology-essay.php" target="_blank" rel="noopener noreferrer">Perception has played a key role in human survival</a>. It’s the entry point to fight or flight mode. How we can see dangers before they arise. What it also means though is that our view of the world is ours, and ours alone.
+Perception complicates things further. <a href="https://www.ukessays.com/essays/psychology/why-is-perception-an-important-aspect-of-survival-psychology-essay.php" target="_blank" rel="noopener noreferrer">Perception has played a key role in human survival</a>. It’s the entry point to fight or flight mode. How we can see dangers before they arise. What it also means though is that our view of the world is ours, and ours alone.
 
-Your perceived skill is just that. It’s a function of your current state which influences your understanding of your ability. It fluctuates as you practice, inline with your emotional response and your conditioning to respond to the events that unfold. When you’re doing well, you’ll be welcomed by reward chemicals such as dopamine. <a href="https://jov.arvojournals.org/article.aspx?articleid=2191587" target="_blank" rel="noopener noreferrer">Maybe that results in a state of overconfidence</a>. Your perception starts to outrun your actual ability.
+Your perceived skill is just that. It’s a function of your current state which influences your understanding of your ability. It fluctuates as you practice, inline with your emotional response and your conditioning to respond to the events that unfold.
+
+When you’re doing well, you’ll be welcomed by reward chemicals such as dopamine. <a href="https://jov.arvojournals.org/article.aspx?articleid=2191587" target="_blank" rel="noopener noreferrer">Maybe that results in a state of overconfidence</a>. Your perception starts to outrun your actual ability.
 
 Make a mistake, and your perception drops. Make too many, and it’ll drop well below your actual. Confidence is perception, and without it, you may perform consistently below expectations.
 
