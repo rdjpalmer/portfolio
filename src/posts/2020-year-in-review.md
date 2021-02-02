@@ -11,17 +11,17 @@ description: What 2020 taught me, my mission for the future and the steps I'm go
 
 From publishing 17 blog posts (one every three weeks) to launching the beta of my side project, 2020 has been a year of hard graft.
 
-In my post on <a href="https://rdjpalmer.com/steal-like-an-artist" target="_blank" rel="noopener noreferrer">Steal like an Artist</a>, I assert that both Austin Kleon and Julia Cameron (The Artist’s Way) have the same advice. To learn and be creative, your first battle is to show up. And it is showing up with persistence that is key.
+In my post on <a href="https://rdjpalmer.com/steal-like-an-artist">Steal like an Artist</a>, I assert that both Austin Kleon and Julia Cameron (The Artist’s Way) have the same advice. To learn and be creative, your first battle is to show up. And it is showing up with persistence that is key.
 
 <a href="https://twitter.com/search?q=reps%20from%3Avisakanv&src=recent_search_click" target="_blank" rel="noopener noreferrer">Visakan Veerasamy</a> frames it differently, but has the same message: do one hundred reps. It’s the exact principle shown in the <a href="https://excellentjourney.net/2015/03/04/art-fear-the-ceramics-class-and-quantity-before-quality/" target="_blank" rel="noopener noreferrer">story of the ceramics teacher</a>.
 
-For me, 2020 was the year of putting that into practice. Showing up and working on Timo for at least 30 minutes most days. And in that time, taking it from a mere toy to something we suspect people will pay for. This of course, is still the <a href="https://rdjpalmer.com/killing-timo" target="_blank" rel="noopener noreferrer">burning question</a>.
+For me, 2020 was the year of putting that into practice. Showing up and working on Timo for at least 30 minutes most days. And in that time, taking it from a mere toy to something we suspect people will pay for. This of course, is still the <a href="https://rdjpalmer.com/killing-timo">burning question</a>.
 
 So too, with my writing practice. While there were many hiccups throughout the year, I still managed to publish 17 pieces. And there’s more buried in <a href="https://roamresearch.com/" target="_blank" rel="noopener noreferrer">Roam Research</a>.
 
-I learned strategies for <a href="https://rdjpalmer.com/sitting-at-a-blank-screen#overcoming-writers-block" target="_blank" rel="noopener noreferrer">overcoming writer’s block</a>, what is <a href="https://rdjpalmer.com/week-33-2020#on-writing" target="_blank" rel="noopener noreferrer">preventing me from going deeper</a> and <a href="https://rdjpalmer.com/tools-for-research" target="_blank" rel="noopener noreferrer">levelled up my tooling</a> to enable this deeper thought. I’ve learned that editing is by far the most important part of the process. To <a href="https://rdjpalmer.com/week-37-2020-weeds-in-your-reading-list" target="_blank" rel="noopener noreferrer">remove the cruft</a>. To focus my writing, my reading, and my research.
+I learned strategies for <a href="https://rdjpalmer.com/sitting-at-a-blank-screen#overcoming-writers-block">overcoming writer’s block</a>, what is <a href="https://rdjpalmer.com/week-33-2020#on-writing">preventing me from going deeper</a> and <a href="https://rdjpalmer.com/tools-for-research">levelled up my tooling</a> to enable this deeper thought. I’ve learned that editing is by far the most important part of the process. To <a href="https://rdjpalmer.com/week-37-2020-weeds-in-your-reading-list">remove the cruft</a>. To focus my writing, my reading, and my research.
 
-I now know that <a href="https://rdjpalmer.com/week-39-2020-observation-is-my-superpower#applying-my-observations" target="_blank" rel="noopener noreferrer">reading one book</a> is enough to change your life for good. That doing so gives you a base-level knowledge that so many others don’t have. Which means there’s plenty of love to share.
+I now know that <a href="https://rdjpalmer.com/week-39-2020-observation-is-my-superpower#applying-my-observations">reading one book</a> is enough to change your life for good. That doing so gives you a base-level knowledge that so many others don’t have. Which means there’s plenty of love to share.
 
 ## Future thinking
 

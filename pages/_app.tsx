@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import { useRouter } from "next/router";
 import * as Fathom from "fathom-client";
+import loadTypekit from "../util/load-typekit";
 
 import "../styles/_app.css";
 
@@ -50,6 +51,10 @@ export default function App({ Component, pageProps }) {
     return () => {
       router.events.off("routeChangeComplete", onRouteChangeComplete);
     };
+  }, []);
+
+  React.useEffect(() => {
+    loadTypekit("xdh4erl");
   }, []);
 
   const lightColor = getColor(false);
@@ -111,13 +116,6 @@ export default function App({ Component, pageProps }) {
             }
           `}
         </style>
-        <link
-          rel="stylesheet"
-          href="https://use.typekit.net/xdh4erl.css"
-          media="none"
-          // @ts-ignore
-          onload="if(media!='all')media='all'"
-        ></link>
       </Head>
       <div className="container">
         <Component {...pageProps} />
