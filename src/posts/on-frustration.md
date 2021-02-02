@@ -13,7 +13,7 @@ By its very definition, frustration is a negative emotion.
 
 > the feeling of being upset or annoyed as a result of being unable to achieve something
 
-But while frustration feels bad, it’s actually a good sign. Not only does it give you a signal of intent (after overcoming frustration, just how motivated are you?) but it also gives you a signal to change. Let’s talk about the latter.
+But while frustration feels bad, it’s actually a good sign. Not only does it give you a signal of intent (how motivated are you to overcome the hurdle causing the frustration) but it also gives you a signal to change. Let’s talk about the latter.
 
 <a href="https://www.marcdalessio.com/" target="_blank" rel="noopener noreferrer">Marc Dalessio</a> summarises the source of frustration in this graph.
 
