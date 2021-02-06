@@ -41,13 +41,16 @@ export default function App({ Component, pageProps }) {
       honorDNT: true,
     });
 
-    function onRouteChangeComplete() {
-      Fathom.trackPageview();
+    function onRouteChangeComplete(url) {
+      Fathom.trackPageview({ url: window.location.href });
     }
     // Record a pageview when route changes
     router.events.on("routeChangeComplete", onRouteChangeComplete);
 
-    Fathom.trackPageview();
+    Fathom.trackPageview({
+      url: window.location.href,
+      referrer: document.referrer,
+    });
 
     // Unassign event listener
     return () => {
