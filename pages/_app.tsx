@@ -36,10 +36,7 @@ export default function App({ Component, pageProps }) {
 
   React.useEffect(() => {
     Fathom.load("SYLMDFCN", {
-      includedDomains: [
-        "https://rdjpalmer.com",
-        "https://website-i7jxgd69s.vercel.app/",
-      ],
+      includedDomains: ["rdjpalmer.com", "website-i7jxgd69s.vercel.app/"],
       url: "https://llama.rdjpalmer.com/script.js",
       honorDNT: true,
     });
