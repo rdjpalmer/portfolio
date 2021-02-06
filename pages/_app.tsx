@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }) {
 
   React.useEffect(() => {
     Fathom.load("SYLMDFCN", {
-      includedDomains: ["https://rdjpalmer.com"],
+      includedDomains: ["rdjpalmer.com"],
       url: "https://llama.rdjpalmer.com/script.js",
       honorDNT: true,
     });
@@ -46,6 +46,8 @@ export default function App({ Component, pageProps }) {
     }
     // Record a pageview when route changes
     router.events.on("routeChangeComplete", onRouteChangeComplete);
+
+    Fathom.trackPageview();
 
     // Unassign event listener
     return () => {
