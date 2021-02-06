@@ -47,6 +47,8 @@ export default function App({ Component, pageProps }) {
     // Record a pageview when route changes
     router.events.on("routeChangeComplete", onRouteChangeComplete);
 
+    Fathom.trackPageview();
+
     // Unassign event listener
     return () => {
       router.events.off("routeChangeComplete", onRouteChangeComplete);
