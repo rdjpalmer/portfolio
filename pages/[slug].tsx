@@ -3,7 +3,6 @@ import Head from "next/head";
 import Link from "next/link";
 import matter from "gray-matter";
 import Markdown from "react-markdown/with-html";
-import * as Fathom from "fathom-client";
 
 import { Post } from "../src/types";
 import Input from "../src/components/Input/Input";
@@ -27,15 +26,6 @@ function getEstimatedReadingTime(
     .map((i) => parseInt(i, 10));
 
   return [minutes, Math.ceil(decimalSeconds * 0.6), timestamp];
-}
-
-function handleIntersection(entries, observer) {
-  entries.forEach((entry) => {
-    if (entry.intersectionRatio > 0) {
-      Fathom.trackGoal("YICYPV5X", 0);
-      observer.unobserve(entry.target);
-    }
-  });
 }
 
 function getTextContent(props): string[] {
@@ -81,21 +71,6 @@ export default function PostPage(props: Post) {
   } = props;
   const [minutes] = getEstimatedReadingTime(body);
   const mainRef = useRef(null);
-
-  useEffect(() => {
-    if (process.env.ANALYTICS === "true") {
-      if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver(handleIntersection);
-        const last =
-          mainRef.current.children.length > 0 &&
-          mainRef.current.children[mainRef.current.children.length - 1];
-
-        if (last) {
-          observer.observe(last);
-        }
-      }
-    }
-  }, []);
 
   const ogImageFileName = shortTitle || title;
 
@@ -173,9 +148,6 @@ export default function PostPage(props: Post) {
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
             target="_blank"
-            onSubmit={() => {
-              Fathom.trackGoal("GVICDJHG", 0);
-            }}
           >
             <div className="subscribe-form">
               <Input
