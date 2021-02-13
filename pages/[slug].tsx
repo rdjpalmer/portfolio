@@ -259,3 +259,5 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+
+export const config = { unstable_runtimeJS: false };
