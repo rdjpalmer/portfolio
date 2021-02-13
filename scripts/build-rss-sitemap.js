@@ -36,9 +36,11 @@ async function buildRssFeedAndSiteMap() {
   try {
     const sitemapJson = [
       {
-        loc: siteUrl,
-        changefreq: "weekly",
-        priority: "1",
+        url: {
+          loc: siteUrl,
+          changefreq: "weekly",
+          priority: "1",
+        },
       },
     ];
 
