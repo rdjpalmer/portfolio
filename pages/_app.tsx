@@ -107,10 +107,12 @@ export default function App({ Component, pageProps }) {
       <script
         dangerouslySetInnerHTML={{
           __html: `
-        var form = document.querySelector('#mc-embedded-subscribe-form');
-        form && form.addEventListener("submit", () => {
-          fathom && fathom.trackGoal('GVICDJHG', 0);
-        }, { once: true });
+          document.addEventListener("DOMContentLoaded", function() {
+            var form = document.querySelector('#mc-embedded-subscribe-form');
+            form && form.addEventListener("submit", function() {
+              window.fathom && window.fathom.trackGoal('GVICDJHG', 0);
+            }, { once: true });
+          });
       `,
         }}
         defer
