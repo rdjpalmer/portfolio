@@ -1,7 +1,5 @@
 import Head from "next/head";
 import React from "react";
-import { useRouter } from "next/router";
-import * as Fathom from "fathom-client";
 
 import "../styles/_app.css";
 
@@ -31,32 +29,6 @@ function getColor(isDarkMode) {
 }
 
 export default function App({ Component, pageProps }) {
-  const router = useRouter();
-
-  React.useEffect(() => {
-    Fathom.load("SYLMDFCN", {
-      includedDomains: ["rdjpalmer.com"],
-      url: "https://llama.rdjpalmer.com/script.js",
-      honorDNT: true,
-    });
-
-    function onRouteChangeComplete(url) {
-      Fathom.trackPageview({ url: window.location.href });
-    }
-    // Record a pageview when route changes
-    router.events.on("routeChangeComplete", onRouteChangeComplete);
-
-    Fathom.trackPageview({
-      url: window.location.href,
-      referrer: document.referrer,
-    });
-
-    // Unassign event listener
-    return () => {
-      router.events.off("routeChangeComplete", onRouteChangeComplete);
-    };
-  }, []);
-
   const lightColor = getColor(false);
   const darkColor = getColor(true);
 
@@ -125,6 +97,11 @@ export default function App({ Component, pageProps }) {
       <div className="container">
         <Component {...pageProps} />
       </div>
+      <script
+        src="https://llama.rdjpalmer.com/script.js"
+        data-site="SYLMDFCN"
+        defer
+      ></script>
     </>
   );
 }
