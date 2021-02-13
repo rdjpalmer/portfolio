@@ -100,6 +100,19 @@ export default function App({ Component, pageProps }) {
       <script
         src="https://llama.rdjpalmer.com/script.js"
         data-site="SYLMDFCN"
+        data-honor-dnt="true"
+        data-included-domains="rdjpalmer.com"
+        defer
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+        var form = document.querySelector('#mc-embedded-subscribe-form');
+        form && form.addEventListener("submit", () => {
+          fathom && fathom.trackGoal('GVICDJHG', 0);
+        }, { once: true });
+      `,
+        }}
         defer
       ></script>
     </>

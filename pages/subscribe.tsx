@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import * as Fathom from "fathom-client";
 
 import Input from "../src/components/Input/Input";
 import Button from "../src/components/Button/Button";
@@ -34,9 +33,6 @@ export default function SubscribePage() {
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
           target="_blank"
-          onSubmit={() => {
-            Fathom.trackGoal("GVICDJHG", 0);
-          }}
         >
           <div className="subscribe-form">
             <Input
