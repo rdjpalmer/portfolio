@@ -2,7 +2,6 @@ import Head from "next/head";
 import React from "react";
 import { useRouter } from "next/router";
 import * as Fathom from "fathom-client";
-import loadTypekit from "../util/load-typekit";
 
 import "../styles/_app.css";
 
@@ -58,10 +57,6 @@ export default function App({ Component, pageProps }) {
     };
   }, []);
 
-  React.useEffect(() => {
-    loadTypekit("xdh4erl");
-  }, []);
-
   const lightColor = getColor(false);
   const darkColor = getColor(true);
 
@@ -105,6 +100,11 @@ export default function App({ Component, pageProps }) {
           key="twitterCreator"
         />
         <meta property="og:image" content="/mstile-310x310.png" key="ogImage" />
+        <link
+          key="fonts"
+          rel="stylesheet"
+          href="https://use.typekit.net/xdh4erl.css"
+        />
         <link
           rel="alternate"
           type="application/rss+xml"
