@@ -73,3 +73,5 @@ export default function SubscribePage() {
     </>
   );
 }
+
+export const config = { unstable_runtimeJS: false };
