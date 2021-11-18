@@ -53,39 +53,39 @@ async function buildOpenGraphImages() {
           `./public/open-graph/${encodeTitle(text)}.png`
         );
 
-        if (!fs.existsSync(imagePath)) {
-          console.log(
-            `buildOpenGraphImages(): No cache found for ${text}. Generating image`
-          );
+        // if (!fs.existsSync(imagePath)) {
+        console.log(
+          `buildOpenGraphImages(): No cache found for ${text}. Generating image`
+        );
 
-          if (shortTitle) {
-            console.log(`buildOpenGraphImages(): Using short title`);
-          }
-
-          if (text) {
-            try {
-              const image = await fetch(
-                `http://localhost:3000/${text}.png`
-              ).then((response) => response.buffer());
-
-              await writeFile(imagePath, image, "binary");
-
-              console.log(
-                `buildOpenGraphImages(): Image written to ${imagePath}`
-              );
-
-              return true;
-            } catch (error) {
-              console.error(
-                `buildOpenGraphImages(): failed to fetch image for ${text}. Skipping`
-              );
-            }
-          }
-        } else {
-          console.log(
-            `buildOpenGraphImages(): Cache found for ${text}. Skipping`
-          );
+        if (shortTitle) {
+          console.log(`buildOpenGraphImages(): Using short title`);
         }
+
+        if (text) {
+          try {
+            const image = await fetch(
+              `http://localhost:3000/${text}.png`
+            ).then((response) => response.buffer());
+
+            await writeFile(imagePath, image, "binary");
+
+            console.log(
+              `buildOpenGraphImages(): Image written to ${imagePath}`
+            );
+
+            return true;
+          } catch (error) {
+            console.error(
+              `buildOpenGraphImages(): failed to fetch image for ${text}. Skipping`
+            );
+          }
+        }
+        // } else {
+        //   console.log(
+        //     `buildOpenGraphImages(): Cache found for ${text}. Skipping`
+        //   );
+        // }
       })
       .reduce((p, x) => p.then((_) => x()), Promise.resolve());
 

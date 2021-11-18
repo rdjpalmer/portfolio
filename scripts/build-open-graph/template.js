@@ -1,11 +1,3 @@
-const { readFileSync } = require("fs");
-
-console.log(__dirname);
-
-const helveticaBold = readFileSync(
-  `${__dirname}/fonts/Helvetica-Bold.woff2`
-).toString("base64");
-
 function getCss(rotation) {
   let background = "white";
   let foreground = "black";
@@ -31,8 +23,12 @@ function getCss(rotation) {
 
     .body {
         height: 100vh;
-        display: flex;
+        display: grid;
+        grid-template-rows: min-content min-content;
         text-align: center;
+        gap: 1rem;
+        align-content: center;
+        justify-items: center;
         align-items: center;
         justify-content: center;
     }
@@ -49,9 +45,9 @@ function getCss(rotation) {
     }
 
     .heading {
-        font-family: adobe-caslon-pro, serif;
-        font-size: 180px;
-        font-size: min(9vw, 18vh);
+        font-family: "Inter";
+        font-size: 100px;
+        font-size: min(4vw, 9vh);
         font-style: normal;
         color: ${foreground};
         line-height: 1.1;
@@ -63,7 +59,23 @@ function getCss(rotation) {
         text-align: left;
         widows: 2;
         orphans: 2;
-        margin-top: 3rem;
+    }
+
+    .byline {
+        font-family: "Inter";
+        font-size: 32px;
+        font-size: min(32px, 4vh);
+        font-style: normal;
+        color: ${foreground};
+        line-height: 1.1;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 90vw;
+        text-align: left;
+        widows: 2;
+        orphans: 2;
     }
 
     .overlay {
@@ -90,7 +102,7 @@ module.exports = function getHtml(text) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link
         rel="stylesheet"
-        href="https://use.typekit.net/xdh4erl.css"
+        href="https://rsms.me/inter/inter.css"
     ></link>
     <style>
         ${getCss(hash)}
@@ -98,8 +110,9 @@ module.exports = function getHtml(text) {
     <body>
         <div class="body">
             <div class="heading">
-                ${text}
+            ${text}
             </div>
+            <div class="byline">rdjpalmer.com</div>
             </div>
             <svg class="overlay" width="2124" height="1926" viewBox="0 0 2124 1926" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
