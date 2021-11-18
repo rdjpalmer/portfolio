@@ -1,37 +1,9 @@
 import Head from "next/head";
-import React from "react";
+import * as React from "react";
 
 import "../styles/_app.css";
 
-const Color = {
-  light: ["#008040", "#0000E0", "#DB0A5B", "#E00000"],
-  dark: [
-    "#00FF7F",
-    "#36D7B7",
-    "#FC6399",
-    "#9370DB",
-    "#FFD700",
-    "#F9690E",
-    "#F64747",
-  ],
-};
-
-function getColor(isDarkMode) {
-  if (isDarkMode) {
-    const limit = Color.dark.length;
-    const index = Math.floor(Math.random() * limit);
-    return Color.dark[index];
-  }
-
-  const limit = Color.light.length;
-  const index = Math.floor(Math.random() * limit);
-  return Color.light[index];
-}
-
 export default function App({ Component, pageProps }) {
-  const lightColor = getColor(false);
-  const darkColor = getColor(true);
-
   return (
     <>
       <Head>
@@ -75,7 +47,7 @@ export default function App({ Component, pageProps }) {
         <link
           key="fonts"
           rel="stylesheet"
-          href="https://use.typekit.net/xdh4erl.css"
+          href="https://rsms.me/inter/inter.css"
         />
         <link
           rel="alternate"
@@ -83,16 +55,6 @@ export default function App({ Component, pageProps }) {
           title="RSS Feed for rdjpalmer.com"
           href="/rss.xml"
         />
-        <style>
-          {`
-            a { color: ${lightColor}; }
-            input:focus { outline-color: ${lightColor}; }
-            @media (prefers-color-scheme: dark) {
-              a { color: ${darkColor}; }
-              input:focus { outline-color: ${darkColor}; }
-            }
-          `}
-        </style>
       </Head>
       <div className="container">
         <Component {...pageProps} />
