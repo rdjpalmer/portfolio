@@ -23,16 +23,26 @@ export default function HomePage(props: PageProps) {
       <Markdown source={body} escapeHtml={false} />
 
       <p>
-        If you like what you've read,{" "}
+        <Link href="/projects" as="/projects">
+          <a href="/projects">Here's what I'm working on now.</a>
+        </Link>
+      </p>
+
+      <p>
+        If you like what you see,{" "}
         <Link href="/subscribe" as="/subscribe">
           <a className="subscribe" href="/subscribe">
             subscribe to my newsletter
           </a>
         </Link>
-        . You'll get every post, plus some extra goodies, direct to your inbox.
+        .{" "}
+        <span className="strike">
+          You'll get every post, plus some extra goodies, direct to your inbox.
+        </span>{" "}
+        Currently on pause.
       </p>
 
-      <h2>My Writing</h2>
+      <h2>Writing</h2>
       <ul className="articles list">
         {postList.map((post) => (
           <li key={post.slug}>

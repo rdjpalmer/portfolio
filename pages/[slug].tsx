@@ -135,7 +135,7 @@ export default function PostPage(props: Post) {
             <Markdown source={body} escapeHtml={false} renderers={renderers} />
           </main>
         </article>
-        <footer className="newsletter-footer">
+        {/* <footer className="newsletter-footer">
           <h2>Enjoyed what you've read so far?</h2>
           <p>
             Subscribe to get each blog post, plus a tonne of thought provoking
@@ -180,7 +180,7 @@ export default function PostPage(props: Post) {
               </small>
             </p>
           </form>
-        </footer>
+        </footer> */}
         <div className="reading-time">
           {minutes} min{minutes !== 1 && "s"} to read
         </div>
