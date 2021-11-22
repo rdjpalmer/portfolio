@@ -11,6 +11,11 @@ export default function SubscribePage() {
         <title>
           Subscribe to Rich's newsletter | Richard Palmer, Creator of Timo
         </title>
+        <link
+          rel="canonical"
+          href="https://rdjpalmer.com/subscribe"
+          key="canonical"
+        />
       </Head>
 
       <Link href="/">

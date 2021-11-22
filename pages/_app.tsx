@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import * as React from "react";
 
 import "../styles/_app.css";

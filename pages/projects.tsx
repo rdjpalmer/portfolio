@@ -6,6 +6,11 @@ export default function ProjectPage() {
     <>
       <Head>
         <title>Projects | Richard Palmer, Creator of Timo</title>
+        <link
+          rel="canonical"
+          href="https://rdjpalmer.com/projects"
+          key="canonical"
+        />
       </Head>
 
       <Link href="/">
