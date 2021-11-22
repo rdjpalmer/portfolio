@@ -60,7 +60,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </div>
       <script
-        src="https://llama.rdjpalmer.com/script.js"
+        src="https://adventure-truthful.rdjpalmer.com/script.js"
         data-site="SYLMDFCN"
         data-honor-dnt="true"
         data-included-domains="rdjpalmer.com"
