@@ -80,6 +80,11 @@ export default function PostPage(props: Post) {
         <title key="title">
           {title} | Richard Palmer, Creator of Timo and Byozo
         </title>
+        <link
+          rel="canonical"
+          href={`https://rdjpalmer.com${slug}`}
+          key="canonical"
+        />
         <meta name="description" content={description} key="description" />
         <meta name="author" content="Richard Palmer" key="author" />
         <link

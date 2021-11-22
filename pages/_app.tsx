@@ -5,10 +5,6 @@ import * as React from "react";
 import "../styles/_app.css";
 
 export default function App({ Component, pageProps }) {
-  const router = useRouter();
-  const url = "https://rdjpalmer.com";
-  const canonicalURL = url + router.asPath;
-
   return (
     <>
       <Head>
@@ -23,7 +19,7 @@ export default function App({ Component, pageProps }) {
           key="description"
         />
         <meta name="author" content="Richard Palmer" key="author" />
-        <link rel="canonical" href={canonicalURL} key="canonical" />
+        <link rel="canonical" href="https://rdjpalmer.com" key="canonical" />
         <meta
           property="og:title"
           content="Richard Palmer, Creator of Timo and Byozo"
@@ -34,7 +30,7 @@ export default function App({ Component, pageProps }) {
           content="rdjpalmer.com"
           key="ogSiteName"
         />
-        <meta property="og:url" content={canonicalURL} key="ogUrl" />
+        <meta property="og:url" content="https://rdjpalmer.com" key="ogUrl" />
         <meta
           property="og:description"
           content="Creator of Timo & Byozo. Product focused engineer."
