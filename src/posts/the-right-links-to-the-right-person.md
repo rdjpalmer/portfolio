@@ -2,7 +2,7 @@
 layout: post
 title: "The right links to the right person"
 date: 2021-11-03
-slug: "/the-right-links-to-the-right-people"
+slug: "/the-right-links-to-the-right-person"
 description: Go on, read it.
 hasTweetEmbed: true
 ---
