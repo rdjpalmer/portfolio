@@ -23,7 +23,7 @@ The real challenge is finding the cream of the crop, and serving that dessert to
 
 When this information is as abundant as it is, we need help filtering that information to what is good, and helpful to specific people. If I can do that work for people and help expose them to information they wouldn't otherwise have had, then I undoubtedly should.
 
-In the days of RSS<a href="#1"><sup>1</sup></a>, we had fantastic apps to help us do the filtering for us. Google Reader is still held in fond memory to this day.
+In the days of RSS<a href="#rssfeed"><sup>1</sup></a>, we had fantastic apps to help us do the filtering for us. Google Reader is still held in fond memory to this day.
 
 We've now replaced them with an infinite number of newsletters, which pile up alongside your amazon recipients, delivery notifications and all the other email you've got. And while we have applications like Big Mail and Hey (no thanks, Basecamp) trying to provide order to this, it's not quite the same beauty that the internet once was.
 
@@ -37,4 +37,4 @@ On the contrary, it can lead to the assimilation of ideas. Too many shared sourc
 
 As usual, a healthy balanced diet is required.
 
-<a id="#1"><sup>1</sup></a>If you happen to still use RSS, you can subscribe to my blog here: <a href="https://rdjpalmer.com/rss.xml">rdjpalmer.com/rss.xml</a>
+<sup id="#rssfeed">1</sup>If you happen to still use RSS, you can subscribe to my blog here: <a href="https://rdjpalmer.com/rss.xml">rdjpalmer.com/rss.xml</a>
