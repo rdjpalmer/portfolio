@@ -3,11 +3,9 @@ layout: post
 title: "The right links to the right person"
 date: 2021-11-03
 slug: "/the-right-links-to-the-right-person"
-description: Go on, read it.
-hasTweetEmbed: true
+description: >-
+  When this information is abundant, we need help filtering that information to what is good and helpful. Share the love by sending what is relevant to those around and reduce their load.
 ---
-
-I was reminded recently, by the ever present Tiago Forte, that information flow is a critical part of your role as CEO, mentor and friend.
 
 For years and years, I have made it my mission to discover new things and ensure I'm passing it on to the right people. Sometimes, I'd go days or weeks without sending anything to anyone. Others, I'd be finding interesting tidbits, apps, companies that needed to be shared almost too frequently.
 
@@ -23,18 +21,16 @@ The real challenge is finding the cream of the crop, and serving that dessert to
 
 When this information is as abundant as it is, we need help filtering that information to what is good, and helpful to specific people. If I can do that work for people and help expose them to information they wouldn't otherwise have had, then I undoubtedly should.
 
-In the days of RSS<a href="#rssfeed"><sup>1</sup></a>, we had fantastic apps to help us do the filtering for us. Google Reader is still held in fond memory to this day.
+In the days of RSS<sup>1</sup>, we had fantastic apps to help us do the filtering for us. Google Reader is still held in fond memory to this day.
 
 We've now replaced them with an infinite number of newsletters, which pile up alongside your amazon recipients, delivery notifications and all the other email you've got. And while we have applications like Big Mail and Hey (no thanks, Basecamp) trying to provide order to this, it's not quite the same beauty that the internet once was.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Is there a Reddit alternative with a simpler and less confusing UI? I’ve never gotten into Reddit because I struggle with the user experience but also I enjoyed discussion on bulletin boards of the 90s and 00s.</p>&mdash; Rasmus Andersson (@rsms) <a href="https://twitter.com/rsms/status/1466060335689834502?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 While the very nature of subscribing to something provides you with some level of filtering, it does so within your own biases.
 
-A fascinating example of this is Mediaopoly. While intended to show you some analysis of your news diet, the findings point to a truth: we are all drawn to certain types of content, and will build biases that reflect them. Sharing what you think someone will find interesting will change their perspective. And widening perspective can only be helpful.
+A fascinating example of this is <a href="https://ground.news/mediaopoly" target="_blank" rel="noopener noreferrer">Mediaopoly</a>. While intended to show you some analysis of your news diet, the findings point to a truth: we are all drawn to certain types of content, and will build biases that reflect them. Sharing what you think someone will find interesting will change their perspective. And widening perspective can only be helpful.
 
 On the contrary, it can lead to the assimilation of ideas. Too many shared sources of information means a reduction in diverse thought which is negative.
 
 As usual, a healthy balanced diet is required.
 
-<sup id="#rssfeed">1</sup>If you happen to still use RSS, you can subscribe to my blog here: <a href="https://rdjpalmer.com/rss.xml">rdjpalmer.com/rss.xml</a>
+<sup>1</sup>If you happen to still use RSS, you can subscribe to my blog here: <a href="https://rdjpalmer.com/rss.xml">rdjpalmer.com/rss.xml</a>
