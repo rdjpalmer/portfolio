@@ -21,29 +21,7 @@ export default function HomePage(props: PageProps) {
         <link rel="canonical" href="https://rdjpalmer.com/" key="canonical" />
       </Head>
 
-      <Markdown source={body} escapeHtml={false} />
-
-      <p>
-        <Link href="/projects" as="/projects">
-          <a href="/projects">Here's what I'm working on now.</a>
-        </Link>
-      </p>
-
-      <p>
-        If you like what you see,{" "}
-        <Link href="/subscribe" as="/subscribe">
-          <a className="subscribe" href="/subscribe">
-            subscribe to my newsletter
-          </a>
-        </Link>
-        .{" "}
-        <span className="strike">
-          You'll get every post, plus some extra goodies, direct to your inbox.
-        </span>{" "}
-        Currently on pause.
-      </p>
-
-      <h2>Writing</h2>
+      <h2 className="h1">Writing</h2>
       <ul className="articles list">
         {postList.map((post) => (
           <li key={post.slug}>
@@ -54,6 +32,8 @@ export default function HomePage(props: PageProps) {
           </li>
         ))}
       </ul>
+
+      <Markdown source={body} escapeHtml={false} />
     </>
   );
 }

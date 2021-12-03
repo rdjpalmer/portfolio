@@ -128,11 +128,6 @@ export default function PostPage(props: Post) {
         )}
       </Head>
       <div>
-        <Link href="/">
-          <a className="all-posts">
-            <span>All posts</span>
-          </a>
-        </Link>
         <article>
           <h1>{title}</h1>
           <time dateTime={date}>{date}</time>

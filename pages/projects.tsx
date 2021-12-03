@@ -12,13 +12,6 @@ export default function ProjectPage() {
           key="canonical"
         />
       </Head>
-
-      <Link href="/">
-        <a className="all-posts">
-          <span>Home</span>
-        </a>
-      </Link>
-
       <h1>Projects</h1>
       <h2>Making</h2>
       <ul className="articles list">

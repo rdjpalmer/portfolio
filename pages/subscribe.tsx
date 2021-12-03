@@ -18,12 +18,6 @@ export default function SubscribePage() {
         />
       </Head>
 
-      <Link href="/">
-        <a className="all-posts">
-          <span>Home</span>
-        </a>
-      </Link>
-
       <div className="newsletter-footer">
         <h1>Subscribe to Rich's newsletter</h1>
 

@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import * as React from "react";
 
 import "../styles/_app.css";
+import Link from "next/link";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -58,6 +59,25 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <div className="container">
+        <nav>
+          <ul className="nav-list">
+            <li>
+              <Link href="/">
+                <a>Writing</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/projects">
+                <a>Projects</a>
+              </Link>
+            </li>
+            <li>
+              <a>
+                Drafts <span className="tag">Coming soon</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
         <Component {...pageProps} />
       </div>
       <script
