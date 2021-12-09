@@ -517,6 +517,10 @@ a:not([href]) {
   margin-left: 0.25rem;
 }
 
+a:hover .tag {
+  text-decoration: none;
+}
+
 /*
  * >= lg
  */

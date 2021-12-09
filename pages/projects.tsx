@@ -21,6 +21,15 @@ export default function ProjectPage() {
           Putting freelancer's todos and time tracking in one place.
         </li>
         <li>
+          <Link href="/projects/routines">
+            <a>
+              Routines <span className="tag">Coming soon</span>
+            </a>
+          </Link>
+          <br />
+          Computer enabled routines and habits.
+        </li>
+        <li>
           <a href="https://github.com/rdjpalmer/socket-notes">Socket notes</a>
           <br />
           Open Source project for utilising a Kindle as a secondary display.
@@ -40,7 +49,7 @@ export default function ProjectPage() {
           in the future.
         </li>
         <li>
-          Twitter Spell Check <span aria-label="soon">🔜</span>
+          Twitter Spell Check <span className="tag">Coming soon</span>
           <br />
           Browser extension to prevent sending of tweets with spelling mistakes
           in them.
