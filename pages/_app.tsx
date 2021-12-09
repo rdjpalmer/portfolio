@@ -73,7 +73,7 @@ export default function App({ Component, pageProps }) {
             </li>
             <li>
               <a>
-                Drafts <span className="tag">Coming soon</span>
+                Drafts<span className="tag">Coming soon</span>
               </a>
             </li>
           </ul>

@@ -23,7 +23,7 @@ export default function ProjectPage() {
         <li>
           <Link href="/projects/routines">
             <a>
-              Routines <span className="tag">Coming soon</span>
+              Routines<span className="tag">Coming soon</span>
             </a>
           </Link>
           <br />
@@ -49,7 +49,7 @@ export default function ProjectPage() {
           in the future.
         </li>
         <li>
-          Twitter Spell Check <span className="tag">Coming soon</span>
+          Twitter Spell Check<span className="tag">Coming soon</span>
           <br />
           Browser extension to prevent sending of tweets with spelling mistakes
           in them.

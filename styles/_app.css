@@ -514,7 +514,10 @@ a:not([href]) {
   font-size: 0.85rem;
   border-radius: 4px;
   padding: 3.5px 3.5px;
-  margin-left: 0.25rem;
+  margin-left: 10.5px;
+  line-height: 1;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 a:hover .tag {
