@@ -20,8 +20,7 @@ export default function RoutinesPage() {
         </li>
         <li>Edit the templates to match the habits you're trying to form</li>
         <li>
-          Let me know how you get on. Email me at{" "}
-          <a href="mailto:rich@rdjpalmer.com">rich@rdjpalmer.com</a> or{" "}
+          Let me know how you get on{" "}
           <a href="https://twitter.com/rdjpalmer">on Twitter</a>
         </li>
       </ol>

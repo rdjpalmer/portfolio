@@ -3,8 +3,6 @@ import Link from "next/link";
 import Markdown from "react-markdown/with-html";
 
 import { PostReference } from "../src/types";
-import Input from "../src/components/Input/Input";
-import Button from "../src/components/Button/Button";
 
 interface PageProps {
   postList: PostReference[];
