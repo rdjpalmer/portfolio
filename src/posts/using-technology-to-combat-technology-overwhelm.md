@@ -55,10 +55,10 @@ If you’re trying to build a writing habit, your laptop should be a brick, asid
 
 You can see how this develops into entire routines. Sets of serialised activities that can reduce the need for self discipline and help you develop the habits you've been longing to build all this time.
 
-I tweeted recently about my MVP for this. [A series of templates for Roam Research](/projects/routines). While they work in theory, they fall down the moment I don't center my work around Roam. This happens frequently enough that the experiment has failed.
+I <a href="https://twitter.com/rdjpalmer/status/1466376612136374274" target="_blank" rel="noopener noreferrer">tweeted recently</a> about my MVP for this. A series of templates for Roam Research. While they work in theory, they fall down the moment I don't center my work around Roam. This happens frequently enough that the experiment has failed.
 
 To counteract this, I'm envisaging a way to ensure Roam opens every time I open my laptop. To ensure it's there, waiting for me as the first thing I see. Roam becomes the visual que to kick off my routines.
 
 I can see this developing into its own application. One to guide me throughout the day, understanding the context in which I'm working, so as to avoid poorly timed interruptions and context switching.
 
-For now, I'll keep going with my Roam based prototype which I've shared the templates for on its project page.
+For now, I'll keep going with my Roam based prototype which I've shared the templates for on its [project page](/projects/routines).
