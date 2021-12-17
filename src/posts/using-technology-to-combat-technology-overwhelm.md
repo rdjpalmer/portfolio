@@ -15,15 +15,11 @@ Software has mimicked the advertising industry. It’s all about competing for y
 
 The advent of the smartphone only made matters worse. Instead of having lots of notifications to deal with on your computer, you have them in your pocket too, and in ever increasing numbers.
 
-I’m an advocate of software which automates away the need for self discipline, as opposed to abusing our lack of it. I changed my financial life by automating the most important parts (paying bills, putting money aside for savings and investing).
+I’m an advocate of software which automates away the need for self discipline, as opposed to abusing our lack of it. I changed my financial life by automating the most important parts (paying bills, putting money aside for savings and investing). Yet we still largely rely on self discipline to get the important stuff done. We build habit trackers to monitor how we’re performing against the habits we want to create, change and shift. Remembering to use your habit tracker is a habit that requires building in of itself.
 
-Yet we still largely rely on self discipline to get the important stuff done. We build habit trackers to monitor how we’re performing against the habits we want to create, change and shift. Yet utilising a habit tracker is a habit that requires building in of itself.
+Every book that I have read on writing, artistry and creativity can be distilled into a single piece of advice. Show up. Yet showing up is totally dependent on the self discipline to do so, thus is broken should your environment not allow for it.
 
-I’ve distilled pretty much every book on writing, artistry and creativity that I’ve read into a single piece of advice. Show up. Yet showing up is totally dependent on the self discipline to do so, thus is broken should your environment not allow for it.
-
-The amount of things we have to choose on a daily basis is ever increasing, and we’re not made for it. Choice paralysis can be too difficult to overcome, so we default to what is easy, and what is already ingrained.
-
-I’m considering this, because I’m trying to figure out how to solve it, and I believe we already have.
+The amount of things we have to choose on a daily basis is ever increasing, and we’re not buiilt for it. Choice paralysis can be too difficult to overcome. We default to what is easy, and what is already ingrained. I’m considering this because I’m trying to figure out how to solve it, and have a hunch that we already have.
 
 In the 90s and 2000s, Windows programs were renowned for utilising “Wizards” in order to help the user set up the program. They’re step by step questions and instructions you have to answer in order to proceed to the next step. They’re an attempt to guide folks with less technical know-how to make decisions and ensure success.
 
@@ -31,13 +27,11 @@ Wizards are a protocol for success with that program.
 
 What if we utilised this protocol for success with whatever habit you are trying to create? What if your computer could do all the hard work for you, and ensure “first you must do this, before you can do that”.
 
-To take a trivial example and apply the thinking above. If showing up is the most important part of any creative endeavour, how might one build a Twitter audience? By tweeting content regularly, and interacting with other users.
-
-To apply this thinking, your Twitter experience should be tailored to this requirement. Before you can browse, first you must contribute. Once you have contributed, your browsing experience could be limited based on your further contributions in the sense of replying, retweeting, liking. Then, and only then, would the full Twitter experience open up to you.
+To take a trivial example and apply this thinking. If showing up is the most important part of any creative endeavour, how might one build a Twitter audience? By tweeting content regularly, and interacting with other users. Your Twitter experience should be tailored to this requirement. Before you can browse, first you must contribute. Once you have contributed, your browsing experience could be limited based on your further contributions in the sense of replying, retweeting, liking. Then, and only then, would the full Twitter experience open up to you.
 
 Self discipline is no longer required.
 
-To consider the downside of this, is to consider the additional drop off that would occur. If you had to jump through all these hoops to get to those dopamine hits, would you bother?
+To consider the downside, is to consider the additional drop off that would occur. We're no longer optimising for the dopamine hit of impressions and engagement. If you had to jump through all these hoops to get to them, would you bother?
 
 That's a positive question.
 
