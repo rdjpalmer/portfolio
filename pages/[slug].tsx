@@ -123,17 +123,30 @@ export default function PostPage(props: Post) {
           key="twitterCreator"
         />
         {hasTweetEmbed && (
-          <Script src="https://platform.twitter.com/widgets.js" />
+          <script async src="https://platform.twitter.com/widgets.js" />
         )}
         {hasSavvyCalEmbed && (
-          <Script
-            src="https://embed.savvycal.com/v1/embed.js"
-            onLoad={() => {
-              window.SavvyCal("init");
-              window.SavvyCal("inline", {
-                link: "rdjpalmer",
-                selector: "#booking",
-              });
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.SavvyCal=window.SavvyCal||function(){(SavvyCal.q=SavvyCal.q||[]).push(arguments)};
+
+              window.SavvyCal.q = [];
+
+              const scriptElm = document.createElement("script");
+              scriptElm.async = true;
+              scriptElm.type = "text/javascript";
+              scriptElm.src = "https://embed.savvycal.com/v1/embed.js";
+              scriptElm.onload = () => {
+                window.SavvyCal("init");
+                window.SavvyCal("inline", {
+                  link: "rdjpalmer",
+                  selector: "#booking",
+                });
+              }
+
+              (document.body || document.head).appendChild(scriptElm);
+              `,
             }}
           />
         )}
@@ -179,7 +192,7 @@ export async function getStaticProps({ ...ctx }): Promise<{ props: Post }> {
 
 export async function getStaticPaths() {
   const path = await import("path");
-  const glob = await import("glob");
+  const { default: glob } = await import("glob");
 
   //get all .md files in the posts dir
   const blogs = glob.sync(path.resolve("./src/posts/**/*.md"));
