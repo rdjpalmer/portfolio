@@ -1,13 +1,11 @@
 import * as React from "react";
 import Head from "next/head";
-import Link from "next/link";
+import Script from "next/script";
 import matter from "gray-matter";
 import Markdown from "react-markdown/with-html";
 
 import { Post } from "../src/types";
 import SavvyCal from "../src/components/SavvyCal/SavvyCal";
-import Input from "../src/components/Input/Input";
-import Button from "../src/components/Button/Button";
 
 /**
  * @param string
@@ -125,15 +123,22 @@ export default function PostPage(props: Post) {
           key="twitterCreator"
         />
         {hasTweetEmbed && (
-          <script async src="https://platform.twitter.com/widgets.js" />
+          <Script src="https://platform.twitter.com/widgets.js" />
+        )}
+        {hasSavvyCalEmbed && (
+          <Script
+            src="https://embed.savvycal.com/v1/embed.js"
+            onLoad={() => {
+              window.SavvyCal("init");
+              window.SavvyCal("inline", {
+                link: "rdjpalmer",
+                selector: "#booking",
+              });
+            }}
+          />
         )}
       </Head>
       <div>
-        {hasSavvyCalEmbed && (
-          <SavvyCal
-            inlineOptions={{ link: "rdjpalmer", selector: "#booking" }}
-          />
-        )}
         <article>
           <h1>{title}</h1>
           <time dateTime={date}>{date}</time>
