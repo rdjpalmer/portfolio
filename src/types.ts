@@ -12,5 +12,6 @@ export interface Post extends PostReference {
   body: string;
   created: string;
   updated: string;
-  hasTweetEmbed: boolean;
+  hasTweetEmbed?: boolean;
+  hasSavvyCalEmbed?: boolean;
 }

@@ -661,3 +661,16 @@ a:hover .tag {
 .strike {
   text-decoration: line-through;
 }
+
+#booking {
+  margin-top: 2rem;
+  width: min(100%, 432px);
+}
+
+#booking iframe {
+  min-height: 780px !important;
+}
+
+#booking + * {
+  margin-top: 2rem;
+}
