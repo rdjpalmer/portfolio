@@ -1,10 +1,11 @@
-import { createElement, useEffect, useRef } from "react";
+import * as React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import matter from "gray-matter";
 import Markdown from "react-markdown/with-html";
 
 import { Post } from "../src/types";
+import SavvyCal from "../src/components/SavvyCal/SavvyCal";
 import Input from "../src/components/Input/Input";
 import Button from "../src/components/Button/Button";
 
@@ -45,7 +46,7 @@ function Heading(props) {
     .replace(/\s+/g, "-")
     .replace(/[^a-z-]/g, "");
 
-  return createElement(`h${props.level}`, { id: slug }, props.children);
+  return React.createElement(`h${props.level}`, { id: slug }, props.children);
 }
 
 const renderers = {
@@ -67,11 +68,11 @@ export default function PostPage(props: Post) {
     date,
     slug,
     hasTweetEmbed,
+    hasSavvyCalEmbed,
     shortTitle,
   } = props;
   const [minutes] = getEstimatedReadingTime(body);
-  const mainRef = useRef(null);
-
+  const mainRef = React.useRef(null);
   const ogImageFileName = shortTitle || title;
 
   return (
@@ -128,6 +129,11 @@ export default function PostPage(props: Post) {
         )}
       </Head>
       <div>
+        {hasSavvyCalEmbed && (
+          <SavvyCal
+            inlineOptions={{ link: "rdjpalmer", selector: "#booking" }}
+          />
+        )}
         <article>
           <h1>{title}</h1>
           <time dateTime={date}>{date}</time>
@@ -135,52 +141,6 @@ export default function PostPage(props: Post) {
             <Markdown source={body} escapeHtml={false} renderers={renderers} />
           </main>
         </article>
-        {/* <footer className="newsletter-footer">
-          <h2>Enjoyed what you've read so far?</h2>
-          <p>
-            Subscribe to get each blog post, plus a tonne of thought provoking
-            or useful articles, direct to your inbox.
-          </p>
-
-          <form
-            action="https://rdjpalmer.us20.list-manage.com/subscribe/post?u=0cb4f80ca9869534161bfc334&amp;id=5e488d017e"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            target="_blank"
-          >
-            <div className="subscribe-form">
-              <Input
-                label="Name"
-                placeholder=""
-                type="text"
-                name="FNAME"
-                required
-              />
-              <Input name="EMAIL" label="Email" required />
-              <Button>Subscribe</Button>
-            </div>
-            <div
-              style={{ position: "absolute", left: "-5000px" }}
-              aria-hidden="true"
-            >
-              <input
-                type="text"
-                name="b_0cb4f80ca9869534161bfc334_5e488d017e"
-                tabIndex={-1}
-                value=""
-                readOnly
-              />
-            </div>
-            <p className="small">
-              <small>
-                You can unsubscribe at any time, by hitting the unsubscribe link
-                at the bottom of the emails you'll receive. I use Mailchimp, so
-                by signing up, I will share your data with them.
-              </small>
-            </p>
-          </form>
-        </footer> */}
         <div className="reading-time">
           {minutes} min{minutes !== 1 && "s"} to read
         </div>
@@ -206,6 +166,7 @@ export async function getStaticProps({ ...ctx }): Promise<{ props: Post }> {
       updated: date.parseAndFormat(data.updated || data.date, "yyyy-MM-dd"),
       body: content,
       hasTweetEmbed: data.hasTweetEmbed || false,
+      hasSavvyCalEmbed: data.hasSavvyCalEmbed || false,
       shortTitle: data.shortTitle || "",
     },
   };
