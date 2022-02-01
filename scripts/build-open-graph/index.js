@@ -9,10 +9,8 @@ const prerenderManifest = require("../../.next/prerender-manifest.json");
 
 const writeFile = util.promisify(fs.writeFile);
 
-const { VERCEL_URL } = process.env;
-const pagePath = VERCEL_URL
-  ? "./.next/serverless/pages/"
-  : "./.next/server/pages/";
+// const { VERCEL_URL } = process.env;
+const pagePath = "./.next/server/pages/";
 
 function encodeTitle(title) {
   return title
