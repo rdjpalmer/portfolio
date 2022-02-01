@@ -26,11 +26,8 @@ const rssDefaultValues = {
   author: "Richard Palmer",
 };
 
-const { VERCEL_URL } = process.env;
 const siteUrl = "https://rdjpalmer.com";
-const pagePath = VERCEL_URL
-  ? "./.next/serverless/pages/"
-  : "./.next/server/pages/";
+const pagePath = "./.next/server/pages/";
 
 async function buildRssFeedAndSiteMap() {
   try {
