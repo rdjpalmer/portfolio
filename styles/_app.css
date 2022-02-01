@@ -674,3 +674,8 @@ a:hover .tag {
 #booking + * {
   margin-top: 2rem;
 }
+
+figcaption {
+  font-size: 0.875rem;
+  font-style: italic;
+}
