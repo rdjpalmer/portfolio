@@ -22,4 +22,4 @@ I'm choosing to uncover the picture underneath. To inspect it closer. To see the
 
 I will rebuild my relationship with my roots. Nurture them into something that can flourish. Forgive the people, the place and look to see its beauty. 
 
-I don't suspect I will stay. But when I return in future, I won't wish to leave so soon.
+I don't suspect I will stay. But when I return in future, I won't wish to leave so soon either.
