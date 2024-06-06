@@ -1,11 +1,8 @@
 import * as React from "react";
 import Head from "next/head";
-import Script from "next/script";
 import matter from "gray-matter";
 import Markdown from "react-markdown/with-html";
-
 import { Post } from "../src/types";
-import SavvyCal from "../src/components/SavvyCal/SavvyCal";
 
 /**
  * @param string
@@ -66,7 +63,6 @@ export default function PostPage(props: Post) {
     date,
     slug,
     hasTweetEmbed,
-    hasSavvyCalEmbed,
     shortTitle,
   } = props;
   const [minutes] = getEstimatedReadingTime(body);
@@ -77,7 +73,7 @@ export default function PostPage(props: Post) {
     <>
       <Head>
         <title key="title">
-          {title} | Richard Palmer, Creator of Timo and Byozo
+          {title} | Richard Palmer
         </title>
         <link
           rel="canonical"
@@ -124,31 +120,6 @@ export default function PostPage(props: Post) {
         />
         {hasTweetEmbed && (
           <script async src="https://platform.twitter.com/widgets.js" />
-        )}
-        {hasSavvyCalEmbed && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.SavvyCal=window.SavvyCal||function(){(SavvyCal.q=SavvyCal.q||[]).push(arguments)};
-
-              window.SavvyCal.q = [];
-
-              const scriptElm = document.createElement("script");
-              scriptElm.async = true;
-              scriptElm.type = "text/javascript";
-              scriptElm.src = "https://embed.savvycal.com/v1/embed.js";
-              scriptElm.onload = () => {
-                window.SavvyCal("init");
-                window.SavvyCal("inline", {
-                  link: "rdjpalmer",
-                  selector: "#booking",
-                });
-              }
-
-              (document.body || document.head).appendChild(scriptElm);
-              `,
-            }}
-          />
         )}
       </Head>
       <div>
