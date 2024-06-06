@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import * as React from "react";
 
 import "../styles/_app.css";
@@ -16,7 +15,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="description"
-          content="Creator of Timo & Byozo. Product focused engineer."
+          content="Making stuff for fun"
           key="description"
         />
         <meta name="author" content="Richard Palmer" key="author" />
@@ -34,7 +33,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:url" content="https://rdjpalmer.com" key="ogUrl" />
         <meta
           property="og:description"
-          content="Creator of Timo & Byozo. Product focused engineer."
+          content="Making stuff for fun"
           key="ogDescription"
         />
         <meta property="og:type" content="article" key="ogType" />
@@ -71,35 +70,10 @@ export default function App({ Component, pageProps }) {
                 <a>Projects</a>
               </Link>
             </li>
-            <li>
-              <a>
-                Drafts<span className="tag">Coming soon</span>
-              </a>
-            </li>
           </ul>
         </nav>
         <Component {...pageProps} />
       </div>
-      <script
-        src="https://adventure-truthful.rdjpalmer.com/script.js"
-        data-site="SYLMDFCN"
-        data-honor-dnt="true"
-        data-included-domains="rdjpalmer.com"
-        defer
-      ></script>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          document.addEventListener("DOMContentLoaded", function() {
-            var form = document.querySelector('#mc-embedded-subscribe-form');
-            form && form.addEventListener("submit", function() {
-              window.fathom && window.fathom.trackGoal('GVICDJHG', 0);
-            }, { once: true });
-          });
-      `,
-        }}
-        defer
-      ></script>
     </>
   );
 }

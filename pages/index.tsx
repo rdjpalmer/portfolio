@@ -15,7 +15,7 @@ export default function HomePage(props: PageProps) {
   return (
     <>
       <Head>
-        <title>Richard Palmer, Creator of Timo</title>
+        <title>Richard Palmer</title>
         <link rel="canonical" href="https://rdjpalmer.com/" key="canonical" />
       </Head>
 

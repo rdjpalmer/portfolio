@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 
 import Input from "../src/components/Input/Input";
 import Button from "../src/components/Button/Button";
