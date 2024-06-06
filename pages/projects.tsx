@@ -67,9 +67,7 @@ export default function ProjectPage() {
         </li>
         <li>
           <span className="strike">
-            <a>
-              Routines<span className="tag">Coming soon</span>
-            </a>
+            Routines
           </span>
           <br />
           Computer enabled routines and habits.
